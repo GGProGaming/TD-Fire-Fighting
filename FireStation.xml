@@ -207,7 +207,7 @@
 						</voxagon>
 					</group>
 				</group>
-				<group id_="560104832" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+				<group id_="560104832" open_="true" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 					<vox id_="639342720" pos="0.4 0.3 0.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1236739840" pos="0.4 0.3 2.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1153897216" pos="0.2 0.2 9.0" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
@@ -215,9 +215,13 @@
 					<vox id_="1809100672" pos="4.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1083966080" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="1730911360" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
+						<joint id_="30541640" pos="-0.0 3.9 1.4" rot="180" type="hinge" limits="-90 0"/>
+						<joint id_="610046336" pos="-0.0 3.9 -1.4" rot="180" type="hinge" limits="-90 0"/>
 					</vox>
-					<vox id_="1446795520" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+					<vox id_="1446795520" open_="true" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="746304000" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
+						<joint id_="601263936" pos="-0.0 3.9 1.4" rot="180" type="hinge" limits="-90 0"/>
+						<joint id_="224998816" pos="-0.0 3.9 -1.4" rot="180" type="hinge" limits="-90 0"/>
 					</vox>
 					<vox id_="475296064" open_="true" pos="-4.0 1.1 5.9" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
 						<vox id_="506427584" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
@@ -279,6 +283,10 @@
 					<voxbox id_="2036786560" pos="25.49995 8.7 4.60002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
 					<voxbox id_="1440831360" pos="-4.60002 8.8 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
 					<voxbox id_="903403392" pos="-3.60001 8.8 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1102579456" pos="25.4 8.7 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+					<voxbox id_="875221184" pos="15.6 8.7 -4.8" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+					<voxbox id_="2012864512" pos="25.39999 8.7 16.89999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="432498464" pos="15.59996 8.7 14.49998" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
 				</group>
 			</group>
 			<group id_="493450656" open_="true" name="2nd floor">
