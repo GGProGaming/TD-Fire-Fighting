@@ -213,15 +213,15 @@
 					<vox id_="1153897216" pos="0.2 0.2 9.0" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
 					<vox id_="1885651328" pos="2.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1809100672" pos="4.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
-					<vox id_="1083966080" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+					<vox id_="1083966080" open_="true" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="1730911360" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
-						<joint id_="30541640" pos="-0.0 3.9 1.4" rot="180" type="hinge" limits="-90 0"/>
-						<joint id_="610046336" pos="-0.0 3.9 -1.4" rot="180" type="hinge" limits="-90 0"/>
+						<joint id_="30541640" pos="0.0 3.9 1.4" rot="180" type="hinge"/>
+						<joint id_="610046336" pos="0.0 3.9 -1.4" rot="180" type="hinge"/>
 					</vox>
 					<vox id_="1446795520" open_="true" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="746304000" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
-						<joint id_="601263936" pos="-0.0 3.9 1.4" rot="180" type="hinge" limits="-90 0"/>
-						<joint id_="224998816" pos="-0.0 3.9 -1.4" rot="180" type="hinge" limits="-90 0"/>
+						<joint id_="601263936" pos="0.0 3.9 1.4" rot="180" type="hinge"/>
+						<joint id_="224998816" pos="0.0 3.9 -1.4" rot="180" type="hinge"/>
 					</vox>
 					<vox id_="475296064" open_="true" pos="-4.0 1.1 5.9" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
 						<vox id_="506427584" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
