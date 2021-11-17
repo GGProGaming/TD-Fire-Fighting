@@ -1,0 +1,3 @@
+name = Drive to survive
+author = Tuxedo Labs
+description = Some maniac has attached a bomb to you (Or possibly your car. It's unclear), and you need to complete the track in time to neutralize the bomb.
