@@ -1,0 +1,373 @@
+<scene id_="630036032" open_="true" version="0.8.0" shadowVolume="200 40 320">
+	<group id_="1166743040" open_="true" name="Scene Basics" pos="0.0 0.0 0.0">
+		<spawnpoint id_="1315518848" pos="-6.2 8.3 13.5"/>
+		<boundary id_="1270689536" pos="0.0 0.0 0.0">
+			<vertex pos="-59.5 -9.2"/>
+			<vertex pos="-55.1 -40.4"/>
+			<vertex pos="-48.1 -54.7"/>
+			<vertex pos="-42.8 -56.0"/>
+			<vertex pos="-21.3 -85.5"/>
+			<vertex pos="24.5 -86.2"/>
+			<vertex pos="53.9 -37.8"/>
+			<vertex pos="100.0 100.0"/>
+			<vertex pos="-68.2 107.3"/>
+		</boundary>
+		<environment id_="858705088" template="night" skyboxrot="-45" fogParams=" 50 150 1.5 8"/>
+		<script id_="426009984" file="main.lua"/>
+	</group>
+	<body id_="696821248" open_="true">
+		<voxscript id_="1443780608" open_="true" pos="-100.00001 0.0 -150.0" texture="1 .6" file="MOD/script/ground.lua">
+			<parameters file="MOD/heightmaps/hub.png"/>
+			<voxscript id_="2039408128" pos="117.7 1.8 -82.3" rot="0.0 -90.0 0.0" texture="1 .6" file="MOD/script/ground.lua">
+				<parameters file="MOD/heightmaps/mountain_start.png" scale="150"/>
+			</voxscript>
+			<voxscript id_="1582922112" pos="237.60001 1.8 -82.3" rot="0.0 -90.0 0.0" texture="1 .6" file="MOD/script/ground.lua">
+				<parameters file="MOD/heightmaps/mountain.png" scale="150"/>
+			</voxscript>
+		</voxscript>
+		<group id_="1066466880" open_="true" name="station" pos="-5.2 1.9 9.0">
+			<voxbox id_="19399840" name="base" pos="-10.0 0.0 -30.0" texture="1 .6" size="200 30 500" color=".3 .3 .3"/>
+			<voxbox id_="1119750912" open_="true" name="concrete floor" pos="-10.0 3.0 -30.0" rot="0.0 0.0 0.0" texture="1 .6" size="200 5 500" brush="MOD/assets/industrial/innerfloors.vox" object="concrete">
+				<voxagon id_="526679424" pos="6.3 0.9 21.6" rot="90.0 0.0 0.0" brush="MOD/vox/255.vox" extrude="284">
+					<vertex pos="-1.1 0.6"/>
+					<vertex pos="-1.3 0.5"/>
+					<vertex pos="-1.3 0.3"/>
+					<vertex pos="1.2 0.3"/>
+					<vertex pos="1.2 0.5"/>
+					<vertex pos="1.0 0.6"/>
+					<vertex pos="1.0 1.0"/>
+					<vertex pos="-1.1 1.0"/>
+				</voxagon>
+			</voxbox>
+			<group id_="1686540800" open_="true" name="warehouse" pos="-3.7 3.5 5.0">
+				<group id_="1178212608" open_="true" name="walls" pos="3.7 -3.5 -5.0">
+					<voxbox id_="962389376" open_="true" name="wall" pos="2.1 3.5 17.0" rot="0.0 90.0 0.0" size="218 96 5" brush="MOD/assets/industrial/components.vox" object="wall-brick-plain">
+						<vox id_="975300736" pos="2.8 0.0 0.3" file="MOD/assets/industrial/components.vox" object="arch-brick-50x45x7"/>
+						<vox id_="684827456" pos="8.2 0.0 0.3" file="MOD/assets/industrial/components.vox" object="arch-brick-50x45x7"/>
+						<vox id_="764327488" pos="13.6 0.0 0.3" file="MOD/assets/industrial/components.vox" object="arch-brick-50x45x7"/>
+						<vox id_="690005120" pos="19.0 0.0 0.3" file="MOD/assets/industrial/components.vox" object="arch-brick-50x45x7"/>
+					</voxbox>
+					<voxbox id_="435972096" name="corner" pos="2.6 3.5 17.0" rot="0.0 -90.0 0.0" size="6 96 6" brush="MOD/assets/industrial/components.vox" object="corner-brick-plain"/>
+					<voxbox id_="2125658880" name="corner" pos="-9.4 3.5 17.6" rot="0.0 180.0 0.0" size="6 96 6" brush="MOD/assets/industrial/components.vox" object="corner-brick-plain"/>
+					<voxbox id_="184757264" name="wall" pos="-10.0 3.5 17.0" rot="0.0 90.0 0.0" size="218 96 5" brush="MOD/assets/industrial/components.vox" object="wall-brick-plain"/>
+					<group id_="128261776" open_="true" name="garage door" pos="-9.4 3.5 16.8">
+						<group id_="145629888" open_="true" name="slats" pos="5.7 0.0 0.0">
+							<voxbox id_="2045568896" pos="-5.7 0.0 0.0" density="1" strength="40" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated">
+								<joint id_="1108871296" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="889967680" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="551715712" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="544834048" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="1828041728" pos="-5.7 1.0 0.0" rot="0.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 10 0">
+								<joint id_="1107822592" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="228537984" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="1052441344" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="1170937600" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="100079584" pos="-5.7 2.0 0.0" rot="0.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 20 0">
+								<joint id_="709601600" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="1095435520" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="765703808" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="1131744768" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="1202069120" open_="true" pos="-5.7 3.0 0.0" rot="0.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 30 0">
+								<joint id_="610636160" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="389438688" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="1815523584" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="790477952" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="1210720384" pos="-5.7 4.0 0.0" rot="0.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 40 0">
+								<joint id_="1454070400" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="2133195904" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="2101736704" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="1488216832" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="913693120" open_="true" pos="-5.7 5.0 0.0" rot="0.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 50 0">
+								<joint id_="1632011520" pos="0.4 1.0 0.0" size="0.2" collide="true"/>
+								<joint id_="1891222272" pos="11.0 1.0 0.0" rot="0.0 0.0 0.0" size="0.2" collide="true"/>
+								<voxagon id_="111024760" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="2008669952" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+							<voxbox id_="42535460" pos="-5.7 6.0 0.0" rot="-20.0 0.0 0.0" strength="2" prop="true" size="114 10 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 50 0">
+								<voxagon id_="2054220160" pos="11.05 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="0.1 0.0"/>
+									<vertex pos="0.1 -0.3"/>
+									<vertex pos="0.3 -0.3"/>
+									<vertex pos="0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+								<voxagon id_="1005711296" pos="0.35 0.8 0.0" strength="5" brush="MOD/vox/rails.vox" object="metal-red-3x4" extrude="1">
+									<vertex pos="-0.1 0.0"/>
+									<vertex pos="-0.1 -0.3"/>
+									<vertex pos="-0.3 -0.3"/>
+									<vertex pos="-0.3 -0.4"/>
+									<vertex pos="0.0 -0.4"/>
+									<vertex pos="0.0 0.0"/>
+								</voxagon>
+							</voxbox>
+						</group>
+						<group id_="1050212992" open_="true" name="rails" pos="5.7 0.0 0.0" rot="0.0 0.0 0.0">
+							<voxbox id_="1115752960" open_="true" pos="-5.6 0.0 -0.1" rot="0.0 90.0 0.0" strength="10" size="1 60 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated">
+								<voxbox id_="1025832064" open_="true" pos="0.0 6.0 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 60">
+									<voxbox id_="1198267776" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 63">
+										<voxbox id_="1831777408" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 66">
+											<voxbox id_="1419072128" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 69">
+												<voxbox id_="1628341248" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 72">
+													<voxbox id_="1300903424" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 75">
+														<voxbox id_="76550720" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 78">
+															<voxbox id_="326716896" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="081">
+																<voxbox id_="242629088" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 70 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated"/>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+							<voxbox id_="1805823616" open_="true" pos="5.5 0.0 -0.1" rot="0.0 90.0 0.0" strength="10" size="1 60 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated">
+								<voxbox id_="1499424128" open_="true" pos="0.0 6.0 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 60">
+									<voxbox id_="994635008" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 63">
+										<voxbox id_="164964176" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 66">
+											<voxbox id_="541032704" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 69">
+												<voxbox id_="2047141888" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 72">
+													<voxbox id_="1814016128" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 75">
+														<voxbox id_="1413959936" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="0 78">
+															<voxbox id_="1783933312" open_="true" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 3 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated" offset="081">
+																<voxbox id_="1591049088" pos="0.0 0.3 0.0" rot="0.0 0.0 -10.0" strength="10" size="1 70 1" brush="MOD/assets/industrial/components.vox" object="wall-metal-corugated"/>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</voxbox>
+						</group>
+						<rope id_="479425088" open_="true" pos="5.7 6.7 0.0" strength="-1">
+							<location id_="1353138816" pos="0.0 1.9 -2.3" rot="0.0 0.0 0.0"/>
+							<location id_="1294349440" pos="0.0 0.18633 -0.15628" rot="-10.0 0.0 0.0"/>
+						</rope>
+						<group id_="0" open_="true" name="opener" pos="5.7 10.4 -2.6">
+							<script id_="311249472" open_="true" pos="-0.0 0.6 0.1" rot="0.0 0.0 0.0" file="MOD/script/garage.lua">
+								<joint id_="626627968" tags="joint" pos="0.0 -1.9 -0.3" rot="0.0 0.0 0.0" type="prismatic" size="0.3" limits="-1 7"/>
+								<body id_="1205346176" open_="true" pos="0.0 -2.3 -0.4" dynamic="true">
+									<vox id_="807125120" pos="-0.05 -0.3 0.1" texture="1" file="MOD/vox/garage_opener.vox" object="body"/>
+									<vox id_="1713084544" tags="nocull" pos="0.35 0.2 0.5" texture="1" file="MOD/vox/garage_opener.vox" object="on"/>
+									<vox id_="1015214592" tags="nocull" pos="0.35 0.2 0.3" texture="1" file="MOD/vox/garage_opener.vox" object="warn"/>
+									<vox id_="2145386368" pos="0.05 -0.4 0.3" texture="1" prop="true" file="MOD/vox/garage_opener.vox" object="wheel">
+										<joint id_="826524928" tags="wheel" pos="0.05 0.25 -0.05" rot="0.0 90.0 0.0" type="hinge" size="0.15"/>
+									</vox>
+								</body>
+								<vox id_="410608096" tags="switch interact=open" pos="6.1 -9.8 1.9" rot="0.0 180.0 0.0" file="MOD/vox/garage_opener.vox" object="switch"/>
+							</script>
+							<voxbox id_="927587648" open_="true" pos="-0.15 -1.5 -19.0" size="3 4 220" brush="MOD/vox/rails.vox" object="metal-red-3x4">
+								<vox id_="136781984" open_="true" tags="nocull" pos="0.15 -0.2 3.65" file="MOD/vox/custom_light.vox" object="roof_light">
+									<light id_="1830925440" pos="0.0 0.0 0.0" rot="90.0 0.0 0.0" type="cone" color="1.0 1.0 1.0" scale="2" angle="120" size="0.1"/>
+								</vox>
+							</voxbox>
+						</group>
+					</group>
+				</group>
+				<group id_="2046945280" open_="true" name="catwalks" pos="3.7 -3.5 -5.0" prop0="texture=1 0.6">
+					<voxbox id_="1155273600" open_="true" name="left walkway" pos="0.6 8.4 -3.3" size="15 1 183" brush="MOD/vox/catwalks.vox" object="floor">
+						<voxbox id_="55840080" name="rails" pos="0.0 0.1 18.3" rot="0.0 90.0 0.0" size="154 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+						<voxbox id_="1319189120" name="small rail section" pos="0.0 0.1 1.4" rot="0.0 90.0 0.0" size="14] 10 1" brush="MOD/vox/catwalks.vox" object="fence" offset="1"/>
+						<voxbox id_="1653770880" name="end rail" pos="1.5 0.1 18.3" rot="0.0 180.0 0.0" size="14 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+						<group id_="1421366016" open_="true" name="crates" pos="0.8 0.1 17.49999" rot="0.0 0.0 0.0">
+							<vox id_="865390144" pos="-0.08283 0.0012 0.13103" rot="0.0 -9.1 0.0" prop="true" file="MOD/assets/props/crates.vox" object="small"/>
+							<vox id_="1059191936" pos="-0.18536 1.02448 0.28028" rot="-13.6 -34.2 6.5" prop="true" file="MOD/assets/props/toolbox.vox"/>
+							<vox id_="1312635136" pos="0.2831 0.00006 -0.63412" rot="0.0 -8.1 0.0" prop="true" file="MOD/assets/props/crates.vox" object="tiny"/>
+							<vox id_="1293431936" open_="true" pos="0.17361 0.60026 -0.66342" rot="0.0 -45.5 -0.1" prop="true" file="MOD/assets/furniture/bedroom_oldie.vox" object="lamp">
+								<light id_="1203117824" pos="0.05 0.7 -0.05" color="1.0 0.94 0.78" scale="0.3" unshadowed="0.3"/>
+							</vox>
+							<vox id_="1061092608" pos="-0.62191 0.00962 -5.03106" rot="-3.7 -91.2 -1.1" prop="true" file="MOD/assets/props/ladder.vox"/>
+						</group>
+					</voxbox>
+					<voxbox id_="355816672" open_="true" name="right walkway" pos="-9.5 8.4 -4.7" size="15 1 197" brush="MOD/vox/catwalks.vox" object="floor">
+						<voxbox id_="1978062720" name="rails" pos="1.4 0.1 19.7" rot="0.0 90.0 0.0" size="154 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+						<voxbox id_="850643648" name="small rail section" pos="1.4 0.1 2.8" rot="0.0 90.0 0.0" size="28 10 1" brush="MOD/vox/catwalks.vox" object="fence" offset="14"/>
+						<voxbox id_="843434240" name="end rail" pos="0.0 0.1 19.6" rot="0.0 0.0 0.0" size="14 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+					</voxbox>
+					<voxbox id_="138354944" name="crossing" pos="-7.25 9.5 -1.9" rot="0.0 0.0 0.0" size="71 1 15" brush="MOD/vox/catwalks.vox" object="floor">
+						<voxbox id_="1909770112" open_="true" name="stairs" pos="8.15 -1.1 1.5" rot="0.0 -180.0 0.0" size="15 11 15" brush="MOD/assets/industrial/components.vox" object="stairs-industrial-metal">
+							<voxbox id_="1550545280" name="rails" pos="0.2 0.4 0.0" rot="0.0 0.0 0.0" size="9 18 1" brush="MOD/vox/catwalks.vox" object="stairs_fence"/>
+							<voxbox id_="2117335296" name="rails" pos="0.2 0.4 1.4" rot="0.0 0.0 0.0" size="9 18 1" brush="MOD/vox/catwalks.vox" object="stairs_fence"/>
+						</voxbox>
+						<voxbox id_="1223172992" open_="true" name="stairs" pos="-1.05 -1.1 0.0" size="15 11 15" brush="MOD/assets/industrial/components.vox" object="stairs-industrial-metal">
+							<voxbox id_="1147801984" name="rails" pos="0.2 0.4 0.0" rot="0.0 0.0 0.0" size="9 18 1" brush="MOD/vox/catwalks.vox" object="stairs_fence"/>
+							<voxbox id_="34736200" name="rails" pos="0.2 0.4 1.4" rot="0.0 0.0 0.0" size="9 18 1" brush="MOD/vox/catwalks.vox" object="stairs_fence"/>
+						</voxbox>
+						<voxbox id_="1268854400" open_="true" name="rails" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" size="71 10 1" brush="MOD/vox/catwalks.vox" object="fence">
+							<voxbox id_="1497457920" name="end post" pos="7.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+						</voxbox>
+						<voxbox id_="1853405696" open_="true" name="rails" pos="0.0 0.1 1.4" rot="0.0 0.0 0.0" size="71 10 1" brush="MOD/vox/catwalks.vox" object="fence">
+							<voxbox id_="961144128" name="end post" pos="7.0 0.0 0.0" rot="0.0 0.0 0.0" size="1 10 1" brush="MOD/vox/catwalks.vox" object="fence"/>
+						</voxbox>
+					</voxbox>
+					<voxbox id_="1909573376" open_="true" name="stairs" pos="2.1 3.5 -8.4" rot="0.0 -90.0 0.0" size="51 50 15" brush="MOD/assets/industrial/components.vox" object="stairs-industrial-metal">
+						<voxbox id_="624792832" name="rails" pos="-0.1 -0.1 1.4" rot="0.0 0.0 0.0" size="52 61 1" brush="MOD/vox/catwalks.vox" object="stairs_fence"/>
+					</voxbox>
+				</group>
+				<group id_="1322793856" open_="true" name="lights">
+					<vox id_="1660324864" open_="true" pos="5.5 8.4 0.0" rot="0.0 -90.0 0.0" file="MOD/assets/industrial/lamps.vox" object="wall_fluorecent_long">
+						<light id_="396713632" pos="0.0 0.3 0.1" rot="90.0 0.0 0.0" type="area" scale="2.5" size="3.8 0.2"/>
+					</vox>
+					<vox id_="352605184" open_="true" pos="5.5 8.4 -7.0" rot="0.0 -90.0 0.0" file="MOD/assets/industrial/lamps.vox" object="wall_fluorecent_long">
+						<light id_="375609728" pos="0.0 0.3 0.1" rot="90.0 0.0 0.0" type="area" scale="2.5" size="3.8 0.2"/>
+					</vox>
+					<vox id_="1750507904" open_="true" pos="-5.5 8.4 -7.0" rot="0.0 90.0 0.0" file="MOD/assets/industrial/lamps.vox" object="wall_fluorecent_long">
+						<light id_="1673170688" pos="0.0 0.3 0.1" rot="90.0 0.0 0.0" type="area" scale="2.5" size="3.8 0.2"/>
+					</vox>
+					<vox id_="1183914496" open_="true" pos="-5.5 8.4 0.00001" rot="0.0 90.0 0.0" file="MOD/assets/industrial/lamps.vox" object="wall_fluorecent_long">
+						<light id_="1706465024" pos="0.0 0.3 0.1" rot="90.0 0.0 0.0" type="area" scale="2.5" size="3.8 0.2"/>
+					</vox>
+				</group>
+			</group>
+			<group id_="1270099712" name="building" pos="-3.7 3.5 -9.0"/>
+		</group>
+		<group id_="496334432" name="service line" pos="-8.9 4.6 29.0" rot="0.0 0.0 0.0">
+			<group id_="1889845888" name="rails" pos="-0.1 0.0 -3.80009" rot="0.0 0.0 0.0">
+				<voxbox id_="270024800" name="rail" pos="-0.9 0.2 -24.5" rot="0.0 0.0 0.0" size="3 4 335" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="1435260416" name="rail" pos="0.7 0.2 -24.5" rot="0.0 0.0 0.0" size="3 4 335" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="2030953472" pos="1.2 0.0 6.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+			</group>
+			<group id_="397369024" name="rails" pos="-1.0 0.6 5.2" rot="0.0 5.0 0.0">
+				<voxbox id_="293422592" pos="2.1 -0.6 48.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="449276704" name="rail" pos="-0.0 -0.4 0.0" rot="0.0 0.0 0.0" size="3 4 600]" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="1572632320" name="rail" pos="1.6 -0.4 0.0" rot="0.0 0.0 0.0" size="3 4 600]" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="1872019072" pos="2.1 -0.6 0.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="73404800" pos="2.1 -0.6 3.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="397172416" pos="2.1 -0.6 9.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="379607680" pos="2.1 -0.6 6.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="627873216" pos="2.1 -0.6 21.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1937755648" pos="2.1 -0.6 18.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="26543700" pos="2.1 -0.6 15.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="2002443648" pos="2.1 -0.6 12.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1529244800" pos="2.1 -0.6 45.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="820364160" pos="2.1 -0.6 42.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="2062347136" pos="2.1 -0.6 39.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="251280352" pos="2.1 -0.6 36.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1083441792" pos="2.1 -0.6 33.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1441290112" pos="2.1 -0.6 30.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="2101671168" pos="2.1 -0.6 27.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1612349568" pos="2.1 -0.6 24.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1074135040" pos="2.1 -0.6 57.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="224671120" pos="2.1 -0.6 54.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="177089088" pos="2.1 -0.6 51.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+			</group>
+			<group id_="489714880" name="rails" pos="4.22932 0.6 64.97168" rot="0.0 5.0 0.0">
+				<voxbox id_="1495164032" pos="2.1 -0.6 48.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1397574912" name="rail" pos="0.0 -0.4 0.0" rot="0.0 0.0 0.0" size="3 4 562" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="2123430400" name="rail" pos="1.6 -0.4 0.0" rot="0.0 0.0 0.0" size="3 4 564" brush="MOD/vox/rails.vox"/>
+				<voxbox id_="71438600" pos="2.1 -0.6 0.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="501118848" pos="2.1 -0.6 3.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1298150784" pos="2.1 -0.6 9.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="345199168" pos="2.1 -0.6 6.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="499283712" pos="2.1 -0.6 21.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="100997136" pos="2.1 -0.6 18.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="557286592" pos="2.1 -0.6 15.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1969083776" pos="2.1 -0.6 12.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1655802624" pos="2.1 -0.6 45.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="211628656" pos="2.1 -0.6 42.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1804250624" pos="2.1 -0.6 39.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1633650048" pos="2.1 -0.6 36.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="235223056" pos="2.1 -0.6 33.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1271869184" pos="2.1 -0.6 30.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1017705088" pos="2.1 -0.6 27.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="1261382784" pos="2.1 -0.6 24.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="491877696" pos="2.1 -0.6 54.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+				<voxbox id_="183905248" pos="2.1 -0.6 51.0" rot="0.0 -90.0 0.0" size="4 2 23" brush="MOD/vox/beams.vox" object="wood-light-4x4" offset="0 1 0"/>
+			</group>
+		</group>
+	</body>
+	<layers/>
+</scene>
+

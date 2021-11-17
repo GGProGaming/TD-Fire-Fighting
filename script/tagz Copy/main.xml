@@ -1,0 +1,220 @@
+<scene id_="1180965248" open_="true" version="0.8.0" shadowVolume="200 50 200">
+	<instance id_="573081728" pos="0.0 -0.2 0.0" rot="0.0 0.0 0.0" file="MOD/prefab/tagz.xml"/>
+	<script id_="657366208" file="main.lua"/>
+	<script id_="1179064576" file="sandbox.lua"/>
+	<environment id_="2119629184" name="environment" template="night" ambient=".02" ambientexponent="3"/>
+	<spawnpoint id_="276906496" name="the best spawnpoint" pos="-20.0 0.1 8.9" rot="0.0 90.0 0.0"/>
+	<group id_="1391741952" name="dynamite" pos="-3.5 0.1 -18.7">
+		<voxbox id_="1038481280" pos="-8.1 0.0 0.7" rot="0.0 0.0 0.0" size="5 6 5" color="0.65 0.51 0.34"/>
+		<rope id_="1153307392" pos="-7.6 0.4 0.9" rot="0.0 0.0 0.0" slack="2" maxstretch="2">
+			<location id_="1487954560" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+			<location id_="18285660" pos="15.7 -0.2 -2.0" rot="0.0 0.0 0.0"/>
+		</rope>
+		<voxbox id_="1475960832" pos="-7.9 0.6 0.9" rot="0.0 0.0 0.0" size="1 3 1" color="0.29 0.29 0.29"/>
+		<voxbox id_="1226122368" tags="button=toggle target=d" pos="-7.9 0.9 0.7" rot="0.0 0.0 0.0" desc="Detonate" size="1 1 5" color="0.29 0.29 0.29"/>
+	</group>
+	<group id_="908253312" name="dynamite with delays" pos="-3.5 0.2 -10.3">
+		<voxbox id_="659004672" pos="-8.1 0.0 0.7" rot="0.0 0.0 0.0" size="5 6 5" color="0.65 0.51 0.34"/>
+		<rope id_="1990974080" pos="-7.6 0.4 0.9" rot="0.0 0.0 0.0" slack="2" maxstretch="2">
+			<location id_="1614512384" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+			<location id_="466579264" pos="15.7 -0.3 -2.0" rot="0.0 0.0 0.0"/>
+		</rope>
+		<rope id_="1864481920" pos="8.2 0.1 -0.8" rot="0.0 0.0 0.0" slack="2" maxstretch="2">
+			<location id_="244529744" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+			<location id_="174467488" pos="5.7 0.0 -0.3" rot="0.0 0.0 0.0"/>
+		</rope>
+		<rope id_="249510784" pos="13.9 0.1 -0.9" rot="0.0 0.0 0.0" slack="2" maxstretch="2">
+			<location id_="553681920" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+			<location id_="1518168576" pos="6.2 0.0 -0.2" rot="0.0 0.0 0.0"/>
+		</rope>
+		<voxbox id_="1106511872" pos="-7.9 0.6 0.9" rot="0.0 0.0 0.0" size="1 3 1" color="0.29 0.29 0.29"/>
+		<voxbox id_="1070661440" tags="button target=d2" pos="-7.9 0.9 0.7" rot="0.0 0.0 0.0" desc="Detonate three sticks of dynamite with 1 second delay in between" size="1 1 5" color="0.29 0.29 0.29"/>
+		<voxbox id_="1150095872" tags="d2 explode=1" pos="8.1 0.0 -1.2" rot="0.0 0.0 0.0" prop="true" size="1 1 5" material="wood" color="0.8 0.37 0.37"/>
+		<voxbox id_="56036700" tags="d2 explode=1 delay=1" pos="13.8 0.0 -1.2" rot="0.0 0.0 0.0" prop="true" size="1 1 5" material="wood" color="0.8 0.37 0.37"/>
+		<voxbox id_="1507616640" tags="d2 explode=1 delay=2" pos="20.1 0.0 -1.2" rot="0.0 0.0 0.0" prop="true" size="1 1 5" material="wood" color="0.8 0.37 0.37"/>
+	</group>
+	<group id_="5570900" name="trigger movable mine" pos="40.7 0.1 41.2">
+		<voxbox id_="244136496" tags="d3 explode=5 delay=1.5" pos="-2.0 1.1 0.4" rot="0.0 -30.0 0.0" prop="true" size="2 2 9" material="wood" color="0.8 0.37 0.37"/>
+		<trigger id_="1039398848" tags="trigger target=d3" pos="-2.1 0.0 1.2" type="box" size="10 10 10"/>
+		<voxbox id_="263798496" pos="-7.1 0.1 -3.8" rot="0.0 0.0 0.0" desc="WARNING! EXPLOSIVE AREA!" size="100 1 100" color="1.0 0.97 0.35"/>
+		<voxbox id_="1300051456" pos="-2.4 0.2 0.5" rot="0.0 0.0 0.0" size="7 8 6" color="1.0 0.97 0.35"/>
+		<voxbox id_="478114304" pos="-2.7 1.0 0.2" rot="0.0 0.0 0.0" size="13 1 12" color="1.0 0.97 0.35"/>
+	</group>
+	<group id_="1147998592" name="trigger mine" pos="40.7 0.1 29.0">
+		<trigger id_="2091840128" tags="trigger target=d4" pos="-2.1 0.0 1.2" type="box" size="10 10 10"/>
+		<voxbox id_="186068064" pos="-7.1 0.1 -3.8" rot="0.0 0.0 0.0" desc="WARNING! EXPLOSIVE AREA!" size="100 1 100" color="1.0 0.97 0.35"/>
+		<location id_="1519020544" tags="d4 explode=1" pos="-3.1 2.7 0.6"/>
+	</group>
+	<group id_="705669184" name="trapdoor" pos="30.3 5.0 8.7">
+		<voxbox id_="731688576" tags="trapdoor delete" pos="-0.5 0.0 -1.1" rot="0.0 90.0 0.0" prop="false" size="6 2 6"/>
+		<voxbox id_="2081157120" pos="-1.8 0.2 1.4" rot="0.0 90.0 0.0" prop="true" size="27 1 34" color="0.48 0.84 0.23" pbr="0 0 0 1">
+			<joint id_="300631968" pos="-0.0 0.0 0.4"/>
+			<joint id_="1117719168" pos="-0.0 0.0 3.3"/>
+			<light id_="407527712" tags="light off stadiolights" pos="1.4 0.1 1.7" rot="270.0 0.0 0.0" type="area" color="0.48 0.84 0.23" scale="4" size="2.7 3.4"/>
+		</voxbox>
+		<trigger id_="1279734016" tags="trigger target=trapdoor" pos="-0.0 0.3 0.0" type="box" size="5 5 5"/>
+		<light id_="1500079488" tags="trap delay=3.5 off light" pos="13.6 -0.7 0.2" rot="10.0 -90.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="936894272" tags="trap delay=4 off light" pos="13.6 -0.7 9.0" rot="10.0 -90.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="874369152" tags="trap delay=4.5 off light" pos="13.6 -0.7 17.9" rot="10.0 -90.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="668311360" tags="trap delay=5 off light" pos="13.6 -0.7 27.9" rot="10.0 -90.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="218969136" tags="trap delay=5.5 off light" pos="13.6 -0.7 36.4" rot="10.0 -90.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="1183783424" tags="trap delay=6 off light" pos="5.9 -0.1 39.2" rot="10.0 -180.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="1193483392" tags="trap delay=6.5 off light" pos="5.9 6.5 39.2" rot="10.0 -180.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+		<light id_="2138308096" tags="trap delay=7 off light" pos="5.9 12.2 39.2" rot="10.0 -180.0 0.0" type="cone" color="0.24 0.82 0.09" scale="8" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+	</group>
+	<group id_="2095838080" name="trap" pos="30.3 0.0 8.7">
+		<trigger id_="1797368960" tags="trigger target=trap" pos="0.0 0.3 0.0" type="box" size="5 2 5"/>
+	</group>
+	<group id_="2065624192" name="button toggle joint" pos="-3.8 0.1 36.1" rot="0.0 0.0 0.0">
+		<joint id_="1275342848" tags="oscillate=-1.1 hammer" pos="-0.4 2.6 -2.2" rot="270.0 0.0 0.0" type="prismatic" size="0.3" limits="-2.7 1"/>
+		<voxbox id_="322391264" tags="button=toggle target=hammer" pos="0.3 1.1 2.3" rot="0.0 0.0 0.0" desc="Start and stop this thing in front of you" prop="false" size="2 1 2" color="0.27 0.76 0.08" pbr="0 0 0 24"/>
+		<body id_="1632208128" pos="0.0 3.2 -0.8" dynamic="true">
+			<voxbox id_="1289630592" pos="-1.3 -0.8 -1.3" rot="0.0 0.0 0.0" prop="false" size="26 4 26">
+				<voxbox id_="1383614976" pos="0.3 0.4 0.4" rot="0.0 0.0 0.0" prop="false" size="20 37 11"/>
+			</voxbox>
+		</body>
+		<voxbox id_="2036917632" pos="0.3 0.0 2.3" rot="0.0 0.0 0.0" prop="false" size="2 11 2"/>
+	</group>
+	<group id_="1113131392" name="button toggle joints and light" pos="-1.3 0.1 17.6" rot="0.0 0.0 0.0">
+		<voxbox id_="486896672" tags="button=toggle target=mytag nocull" pos="-2.2 1.1 3.5" rot="0.0 0.0 0.0" desc="Toggle any interactable with tag mytag" prop="false" size="2 1 2" color="0.27 0.76 0.08" pbr="0 0 0 24"/>
+		<voxbox id_="1359496192" pos="-2.2 0.0 3.5" rot="0.0 0.0 0.0" prop="false" size="2 11 2"/>
+		<joint id_="311249472" tags="rotate=-1 mytag" pos="-3.3 5.8 -3.5" rot="0.0 0.0 0.0" type="hinge"/>
+		<joint id_="1689424640" tags="rotate=1.1 mytag" pos="-2.2 5.8 -3.3" rot="0.0 0.0 0.0" type="hinge"/>
+		<joint id_="986442560" tags="rotate=-1.2 mytag" pos="-1.2 5.8 -3.1" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="1087243008" pos="-1.7 5.6 -3.1" rot="0.0 0.0 0.0" prop="true" size="22 4 2">
+			<light id_="1140133888" tags="light mytag" pos="1.8 0.2 0.0" rot="-180.0 -53.0 0.0" type="cone" color="1.0 0.0 0.0" scale="20" angle="36" reach="1.5"/>
+		</voxbox>
+		<voxbox id_="1362052224" pos="-2.6 5.6 -3.3" rot="0.0 0.0 0.0" prop="true" size="17 4 2"/>
+		<voxbox id_="1195252992" pos="-3.6 5.6 -3.5" rot="0.0 0.0 0.0" prop="true" size="17 4 2"/>
+		<group id_="1894892544" name="Big Lights" pos="-15.8 0.0 -8.7" prop0="scale=69" prop1="glare=2.5" prop2="material=plastic">
+			<voxbox id_="1986779520" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" prop="false" size="2 11 2"/>
+			<voxbox id_="1251224192" tags="button target=stadiolights nocull" pos="-0.1 1.1 -0.1" rot="0.0 0.0 0.0" desc="Cool button that you should totally press" prop="false" size="2 1 2" color="0.27 0.76 0.08" pbr="0 0 0 24"/>
+			<group id_="1833481472" name="light" pos="6.2 0.0 -31.6">
+				<voxbox id_="2002509184" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="47909740" tags="trap explode=3 delay=10" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="318131168" tags="stadiolights off delay=1 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="1436046976" tags="stadiolights off delay=1 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+			<group id_="2137849216" name="light" pos="6.2 0.0 36.2" rot="0.0 180.0 0.0">
+				<voxbox id_="1890501248" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="1900659968" tags="trap explode=3 delay=9.5" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="776976704" tags="stadiolights off delay=1 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="1710397440" tags="stadiolights off delay=1 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+			<group id_="359486912" name="light" pos="26.4 0.0 -31.6">
+				<voxbox id_="767407872" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="1534291456" tags="trap explode=3 delay=10.5" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="923393088" tags="stadiolights off delay=2 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="1922615936" tags="stadiolights off delay=2 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+			<group id_="1425560576" name="light" pos="26.4 0.0 36.2" rot="0.0 180.0 0.0">
+				<voxbox id_="345526880" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="773044288" tags="trap explode=3 delay=9" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="1605402240" tags="stadiolights off delay=2 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="271335616" tags="stadiolights off delay=2 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+			<group id_="641177792" name="light" pos="48.7 0.0 -31.6">
+				<voxbox id_="884003520" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="1257057152" tags="trap explode=3 delay=11" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="1623753472" tags="stadiolights off delay=3 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="1177819392" tags="stadiolights off delay=3 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+			<group id_="1048902144" name="light" pos="48.7 0.0 36.2" rot="0.0 180.0 0.0">
+				<voxbox id_="1577416704" pos="-0.4 0.0 -0.5" size="9 191 10"/>
+				<voxbox id_="433874816" tags="trap explode=3 delay=8.5" pos="-2.6 19.1 0.2" rot="30.0 0.0 0.0" size="52 26 10">
+					<light id_="470249504" tags="stadiolights off delay=3 light" pos="0.8 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+					<light id_="703047552" tags="stadiolights off delay=3 light" pos="4.2 0.6 1.039" rot="10.0 0.0 0.0" type="cone" penumbra="5" size="2" fogscale="1.6" fogiter="2"/>
+				</voxbox>
+			</group>
+		</group>
+	</group>
+	<group id_="392977856" name="spinning wall that you can delete" pos="4.4 2.3 2.0" rot="0.0 0.0 0.0" prop0="color=0.7 0.59 0.1" prop1="pbr=0 0 0 12" prop2="material=glass">
+		<joint id_="1037432640" tags="rotate=-1" pos="-6.9 3.6 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<joint id_="1365132672" tags="rotate=-1.5" pos="6.6 3.6 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="222115056" pos="1.4 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="519470048" tags="rotate=2" pos="2.3 0.2 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="1562473600" pos="5.7 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="1860549504" tags="rotate=1.5" pos="6.6 0.2 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<joint id_="817021632" tags="rotate=1" pos="-6.9 0.2 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="766031488" pos="-7.8 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<voxbox id_="568559488" pos="-3.1 3.4 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="1314077056" tags="rotate=-1" pos="-2.2 3.6 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="1809756032" pos="1.4 3.4 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="1425560576" tags="rotate=-2" pos="2.3 3.6 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="1751490944" pos="5.7 3.4 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="1617068416" tags="rotate" pos="-2.2 0.2 0.0" rot="0.0 0.0 0.0" type="hinge"/>
+		<voxbox id_="1429755136" pos="-3.1 0.0 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<voxbox id_="1983764736" tags="button target=test test delete" pos="-9.6 -1.2 -1.4" rot="0.0 0.0 0.0" desc="If you press this the wall will be deleted" size="1 3 3" color="0.29 0.29 0.29"/>
+		<voxbox id_="1987697152" pos="-7.8 3.4 0.0" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+	</group>
+	<group id_="1779017728" name="exit" pos="39.8 0.1 -12.8" rot="0.0 0.0 0.0">
+		<light id_="655203392" tags="trap light off delay=12" pos="3.761 2.2 0.0" rot="0.0 270.0 0.0" type="cone" color="0.87 0.69 0.24" scale="130" angle="70" penumbra="5" size="2" fogscale="1.6" fogiter="4" glare="1"/>
+		<voxbox id_="1873198720" tags="trap delete delay=12" pos="-4.6 0.1 3.7" rot="-90.0 0.0 90.0" texture="6" prop="false" size="60 73 10" color=".5 .5 .5"/>
+		<trigger id_="1441159040" tags="trigger level=main" pos="1.6 -0.2 0.0" type="box" size="7 4 7"/>
+	</group>
+	<group id_="1076428928" name="restart level" pos="-20.2 0.2 42.2" rot="0.0 0.0 0.0">
+		<voxbox id_="616076032" pos="-0.1 0.0 -0.1" rot="0.0 0.0 0.0" prop="false" size="2 11 2"/>
+		<voxbox id_="656383104" tags="button nocull level=main" pos="-0.1 1.1 -0.1" rot="0.0 0.0 0.0" desc="Wanna go again? Press to reload level." prop="false" size="2 1 2" color="0.76 0.08 0.08" pbr="0 0 0 24"/>
+	</group>
+	<group id_="1053817664" name="whiteboxing" pos="9.7 -1.0 11.6" prop0="texture=6" prop1="color=.5 .5 .5">
+		<voxbox id_="706127936" tags="test delete" pos="-14.8 1.0 -11.6" rot="0.0 0.0 0.0" prop="false" size="196 80 20" material="wood"/>
+		<voxbox id_="835962688" pos="-14.8 1.0 0.5" rot="0.0 0.0 0.0" prop="false" size="196 80 20" material="wood"/>
+		<voxbox id_="266157936" pos="16.1 1.0 1.5" rot="0.0 0.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="958391424" pos="25.5 1.0 -28.0" rot="0.0 0.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="940564544" pos="25.5 1.0 -21.7" rot="0.0 0.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="984017536" pos="25.5 6.2 -20.7" rot="-90.0 0.0 0.0" prop="false" size="88 73 10"/>
+		<voxbox id_="644651456" pos="16.1 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="1314208128" tags="trap delete delay=3" pos="23.9 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="232470384" pos="14.3 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 41 10"/>
+		<voxbox id_="970844032" pos="15.3 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 48 10"/>
+		<voxbox id_="617845568" pos="13.3 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 31 10"/>
+		<voxbox id_="1024193600" pos="12.3 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 19 10"/>
+		<voxbox id_="1022620608" pos="11.3 1.0 1.5" rot="0.0 90.0 0.0" prop="false" size="88 10 10"/>
+		<voxbox id_="2121988608" pos="22.3 6.2 2.5" rot="0.0 90.0 0.0" prop="false" size="108 2 26"/>
+		<voxbox id_="724741312" pos="16.1 6.2 2.5" rot="0.0 90.0 0.0" prop="false" size="108 2 26"/>
+		<voxbox id_="1941098240" pos="18.7 6.2 2.5" rot="0.0 90.0 0.0" prop="false" size="40 2 36"/>
+		<voxbox id_="646355456" pos="18.7 6.2 -4.3" rot="0.0 90.0 0.0" prop="false" size="40 2 36"/>
+		<voxbox id_="280707808" pos="16.1 1.0 -8.3" rot="0.0 0.0 0.0" prop="false" size="88 52 10"/>
+		<voxbox id_="348934976" pos="-16.7 1.0 20.4" rot="0.0 0.0 0.0" prop="false" size="196 80 20" material="wood"/>
+		<voxbox id_="959308992" pos="-16.7 7.3 22.4" rot="0.0 0.0 0.0" prop="false" size="18 17 20"/>
+		<voxbox id_="788380672" pos="-12.0 7.3 22.4" rot="0.0 0.0 0.0" prop="false" size="18 17 20"/>
+		<voxbox id_="1385974400" pos="-16.7 7.3 24.4" rot="0.0 0.0 0.0" prop="false" size="65 17 20"/>
+		<voxbox id_="1471045248" pos="-16.8 0.0 22.2" rot="0.0 0.0 0.0" prop="false" size="80 17 33"/>
+		<voxbox id_="1523739520" pos="-8.2 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 9"/>
+		<voxbox id_="633050880" pos="-5.7 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 14"/>
+		<joint id_="1349206400" tags="oscillate=2" pos="0.8 6.9 2.4" rot="-90.0 0.0 0.0" type="prismatic" size="0.3" limits="0 10"/>
+		<joint id_="1058339904" tags="oscillate=-3.1 myjoint" pos="-4.8 6.9 2.5" rot="-90.0 0.0 0.0" type="prismatic" size="0.3" limits="-5.2 2 "/>
+		<joint id_="457469184" tags="oscillate=6" pos="-7.3 6.9 2.5" rot="0.0 0.0 0.0" type="hinge" limits="-50 50"/>
+		<voxbox id_="676569408" pos="-0.1 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 13"/>
+		<joint id_="1320041088" tags="oscillate=0.3" pos="3.2 6.9 2.4" rot="270 0 0" type="prismatic" size="0.3" limits="-2 2 "/>
+		<voxbox id_="1369589376" pos="2.3 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 14"/>
+		<voxbox id_="236337248" tags="d explode=1" pos="-5.1 1.2 -31.5" rot="0.0 0.0 0.0" prop="true" size="1 1 5" material="wood" color="0.8 0.37 0.37"/>
+		<voxbox id_="956687360" pos="-34.7 0.7 -36.6" size="696 5 732" color="0.71 0.71 0.71"/>
+		<voxbox id_="1837741568" pos="-34.7 24.5 -36.6" size="696 5 732" color="0.71 0.71 0.71"/>
+		<voxbox id_="1682477312" pos="-34.7 1.0 -36.6" rot="270.0 0.0 0.0" size="696 5 240" color="0.71 0.71 0.71"/>
+		<voxbox id_="22414680" pos="-34.7 1.0 36.8" rot="270.0 0.0 0.0" size="696 5 240" color="0.71 0.71 0.71"/>
+		<voxbox id_="1008464000" pos="-34.7 1.0 36.7" rot="-90.0 90.0 0.0" size="736 5 240" color="0.71 0.71 0.71"/>
+		<voxbox id_="907270208" pos="34.7 1.0 36.7" rot="-90.0 90.0 0.0" size="736 5 240" color="0.71 0.71 0.71"/>
+		<voxbox id_="1293956224" pos="-4.6 5.9 22.4" rot="0.0 0.0 0.0" prop="true" size="26 4 26"/>
+		<voxbox id_="1720228352" pos="-4.3 4.6 23.2" rot="0.0 0.0 0.0" prop="true" size="20 42 11"/>
+		<group id_="1672646400" pos="-3.2 5.9 22.9">
+			<joint id_="557089984" tags="oscillate=4.5" pos="0.0 0.3 0.8" rot="-90.0 0.0 0.0" type="prismatic" limits="-1 1"/>
+			<joint id_="1301493376" tags="rotate=0.4" pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" type="hinge" sound="false"/>
+		</group>
+		<voxbox id_="301221824" pos="-3.3 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="12 4 14"/>
+		<joint id_="1427133440" tags="oscillate=7.2 myjoint" pos="-2.7 6.9 2.5" rot="-90.0 0.0 0.0" type="prismatic" size="0.3" limits="-5.2 2 "/>
+		<joint id_="609915264" tags="oscillate=12" pos="-7.3 3.7 2.5" rot="0.0 0.0 0.0" type="hinge" limits="-50 50"/>
+		<voxbox id_="333926304" pos="-8.2 3.5 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 11"/>
+		<voxbox id_="1933167872" pos="-1.9 6.7 2.5" rot="0.0 0.0 0.0" prop="true" size="12 4 13"/>
+		<joint id_="329338496" tags="oscillate=14.4 myjoint" pos="-1.3 6.9 2.5" rot="-90.0 0.0 0.0" type="prismatic" size="0.3" limits="-5.2 2 "/>
+		<voxbox id_="1162155264" pos="-11.7 3.5 2.5" rot="0.0 0.0 0.0" prop="true" size="22 4 2"/>
+		<joint id_="1551462912" tags="rotate=.3" pos="-10.8 3.7 2.5" rot="0.0 0.0 0.0" type="hinge"/>
+	</group>
+	<layers/>
+</scene>
+

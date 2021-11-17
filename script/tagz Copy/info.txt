@@ -1,0 +1,27 @@
+name = tagz
+author = ONSVRG
+description = tagz is a set of tags to build interactive environments in Teardown without any coding.
+
+Examle 1: To make a joint act as a motor give a hinge joint the tag "rotate=2" to make it rotate 2 rounds per second clockwise or "rotate=-2.5" to make it rotate 2 and a half rounds per second counter clockwise.
+
+Available tags:
+rotate
+oscillate
+light
+explode
+delete
+
+If a light have the tag "off" it will start deactivated.
+The "oscillate" tag requires that the joint have limits set up.
+
+BUTTONS AND TRIGGERS
+Buttons and triggers can be used to activate, deactivate and toggle interactions, to connect a button or trigger to another object use the tags "button target=tagThatShouldBeAffected" and then give the other object the tags "light off tagThatShouldBeAffected" to use the button to turn on the light or "explode=3 tagThatShouldBeAffected" to make the other objet explode when the button is pressed.
+
+SWITCHING LEVELS
+--make a trigger start a level
+trigger level=main
+--make a button start a level
+button level=someotherlevel
+
+tags=Asset
+

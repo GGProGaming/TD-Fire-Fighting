@@ -1,0 +1,12 @@
+<prefab version="0.8.0">
+	<group id_="2021253632" name="tagz" pos="0.0 -0.2 0.0">
+		<script id_="971630528" pos="0.0 0.2 0.0" file="MOD/script/tagz/rotate.lua"/>
+		<script id_="1657899776" pos="0.0 0.2 0.0" file="MOD/script/tagz/oscillate.lua"/>
+		<script id_="481325760" pos="0.0 0.2 0.0" file="MOD/script/tagz/light.lua"/>
+		<script id_="1695913088" pos="0.0 0.2 0.0" file="MOD/script/tagz/button.lua"/>
+		<script id_="810926400" pos="0.0 0.2 0.0" file="MOD/script/tagz/trigger.lua"/>
+		<script id_="376002976" pos="0.0 0.2 0.0" file="MOD/script/tagz/explode.lua"/>
+		<script id_="960292096" pos="0.0 0.2 0.0" file="MOD/script/tagz/delete.lua"/>
+	</group>
+</prefab>
+

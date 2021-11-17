@@ -1,0 +1,66 @@
+CORE TARGET TAGS
+rotate=-2 --if activated rotate
+oscillate=4 --if activated oscillate
+explode=tag --if activated explode self
+generator=tag --if destroyed, deactivate target
+delete=tag --if activated delete self
+lock=tag --prevent deactivate() and activate() on tag
+emitter=tag --if activated emit
+levelloader=levelname --if activated load level
+light=tag --if activated turn on
+
+active=true/false -- start active, , default = true
+locked=true/false -- if locked can not be activated, default = false
+
+--CORE functions
+toggel()
+activate()
+deactivate()
+lock()
+unlock()
+
+-- interactions to core
+pickup=activate, default --set registry to "pickup.id=true" and delete object (shape,body) when interacted with
+pickup=deactivate
+pickup=toggle
+pickup=lock
+pickup=unlock
+
+button=activate, default
+button=deactivate
+button=toggel
+button=lock
+button=unlock
+
+trigger=activate, default
+trigger=deactivate
+trigger=toggle
+trigger=lock
+trigger=unlock
+
+target=targettag -- when an interation affects a target it triggers affected ids
+--
+GAMEPLAY
+
+key=frontdoorkey --set registry to "pickup.frontdoor=true" and delete object (shape,body)
+lock=frontdoorkey --find lock joint with correct value and destroy (joint,shape,body)
+
+elevator=id (shape,body)
+floor=id1 (location)
+floor=id2 (location)
+floor=id3 (location)
+button=activate target=id1
+button=activate target=id2
+button=activate target=id3
+
+-- use in editor
+button active=false interact target=dynamite --explodes center of dynamite tagged objects
+dynamite explode
+
+button=toggle active=true interact target=spotlight -- turn light on and off
+spotlight light
+
+trigger target=spotlight -- turns light on
+spotlight light active=false
+
+self button=interact target=self explode delete --explode and delete self
