@@ -1,0 +1,3 @@
+name = hihihi
+author = Tuxedo Labs
+description = A small sandbox level for demonstration purposes with a single house

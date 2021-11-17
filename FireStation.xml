@@ -1,0 +1,476 @@
+<scene id_="331829024" open_="true" version="0.8.0" shadowVolume="200 100 200">
+	<group id_="1986582912" open_="true" name="Basic">
+		<script id_="1732549888" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="sandbox.lua"/>
+		<environment id_="626890112" template="sunny" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" skyboxrot="-45"/>
+		<voxbox id_="366696288" pos="-100.0 -0.1 -100.0" rot="0.0 0.0 0.0" size="2000 1 2000"/>
+		<boundary id_="1286812416" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+			<vertex pos="-100.0 -100.0"/>
+			<vertex pos="100.0 -100.0"/>
+			<vertex pos="100.0 100.0"/>
+			<vertex pos="-100.0 100.0"/>
+		</boundary>
+		<script id_="892064960" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="main.lua"/>
+	</group>
+	<group id_="586517440" open_="true" name="Firestation">
+		<group id_="962979200" open_="true" name="Structure">
+			<group id_="1847441536" open_="true" name="1st floor">
+				<group id_="1694209024" open_="true" name="Walls" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+					<group id_="1398492544" open_="true" name="Interior">
+						<group id_="247544576" open_="true" name="Grey blocks">
+							<voxbox id_="1890239104" pos="15.0 0.3 15.7" rot="0.0 0.0 0.0" size="3 39 132" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1468620288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1649838464" pos="-3.8 0.3 28.9" rot="0.0 180.0 0.0" size="2 39 335" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="337727616" pos="10.6 0.3 8.7" rot="0.0 -90.0 0.0" size="3 39 146" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="382819136" pos="15.0 0.3 -4.5" rot="0.0 0.0 0.0" size="3 39 162" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1517709824" pos="6.0 0.3 8.8" rot="0.0 0.0 0.0" size="3 39 69" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="815841920" pos="10.4 0.3 8.8" rot="0.0 0.0 0.0" size="3 39 69" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="2119104768" pos="6.2 0.3 15.5" rot="0.0 -90.0 0.0" size="3 47 102" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1248733568" pos="25.1 0.3 -4.5" rot="0.0 0.0 0.0" size="2 39 334" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="361125408" pos="15.1 0.3 11.7" rot="0.0 90.0 0.0" size="3 39 101" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="2029773824" pos="-4.0 0.3 28.9" rot="0.0 90.0 0.0" size="3 46 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1188240256" pos="21.9 0.3 11.5" rot="0.0 0.0 0.0" size="3 39 43" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="1633715584" pos="15.1 0.3 3.8" rot="0.0 90.0 0.0" size="3 39 101" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="2137587072" pos="22.2 0.3 15.5" rot="0.0 -90.0 0.0" size="3 47 118" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+							<voxbox id_="212349600" pos="10.4 4.3 15.3" rot="0.0 -90.0 0.0" size="5 7 42" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						</group>
+						<group id_="779401664" open_="true" name="Deco">
+							<voxbox id_="1330789760" pos="0.5 0.3 -4.1" rot="0.0 90.0 0.0" size="3 39 85" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1180506496" pos="8.4 0.3 -4.4" rot="0.0 0.0 0.0" size="5 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1766565120" pos="0.8 0.3 4.0" rot="0.0 -180.0 0.0" size="6 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1770300928" pos="5.5 0.3 9.0" rot="0.0 0.0 0.0" size="5 39 65" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1782294784" pos="5.9 0.3 15.0" rot="0.0 -90.0 0.0" size="5 39 97" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1855830656" pos="-3.5 0.3 15.4" rot="0.0 -180.0 0.0" size="3 39 64" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1842526080" pos="-3.7 0.3 9.4" rot="0.0 90.0 0.0" size="4 39 95" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="726969664" pos="9.0 0.3 0.8" rot="0.0 90.0 0.0" size="3 39 60" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1624867712" pos="15.0 0.3 0.2" rot="0.0 -90.0 0.0" size="3 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="1473732480" pos="9.3 0.3 0.5" rot="0.0 -180.0 0.0" size="3 39 49" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="1194269824" pos="14.7 0.3 -4.4" rot="0.0 0.0 0.0" size="3 39 49" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="1801497984" pos="9.2 0.3 -4.1" rot="0.0 90.0 0.0" size="3 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="445540928" pos="11.6 0.3 -4.4" rot="0.0 0.0 0.0" size="5 39 49" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="577472960" pos="12.4 0.3 0.5" rot="0.0 -180.0 0.0" size="3 39 49" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+							<voxbox id_="1351238144" pos="14.8 0.3 0.6" rot="0.0 0.0 0.0" size="2 39 112" material="wood"/>
+							<voxbox id_="591367424" pos="14.9 0.3 11.9" rot="0.0 90.0 0.0" size="2 43 70" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1231103360" pos="21.9 0.3 15.2" rot="0.0 -90.0 0.0" size="3 44 113" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="467824512" pos="15.2 0.3 -4.3" rot="0.0 90.0 0.0" size="1 39 100" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall4"/>
+							<voxbox id_="916576896" pos="15.3 0.3 24.1" rot="0.0 90.0 0.0" size="4 67 99" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1287795456" pos="0.0 0.3 -4.5" rot="0.0 0.0 0.0" size="3 39 89" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1068826304" pos="0.2 0.3 4.6" rot="0.0 90.0 0.0" size="3 39 87" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="1301624448" pos="8.90001 0.3 3.8" rot="0.0 -90.0 0.0" size="6 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
+							<voxbox id_="465006304" pos="9.0 0.3 4.4" rot="0.0 -180.0 0.0" size="1 39 58" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="104536304" pos="25.0 0.3 -4.3" rot="0.0 0.0 0.0" size="1 39 79" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall4"/>
+							<voxbox id_="1398492544" pos="25.1 0.3 28.7" rot="0.0 -180.0 0.0" size="1 43 171" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxagon id_="1672056448" pos="25.0 5.2 22.7" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3.2" extrude="1">
+								<vertex pos="-0.6 -6.0"/>
+								<vertex pos="2.6 0.4"/>
+								<vertex pos="-0.6 6.6"/>
+							</voxagon>
+							<voxbox id_="1674415872" pos="10.3 4.2 11.9" rot="0.0 90.0 0.0" size="1 5 116" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1363559680" pos="12.5 4.2 11.9" rot="0.0 0.0 0.0" size="1 5 34" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+						</group>
+						<group id_="1361069184" name="floor">
+							<voxagon id_="1909245696" brush="MOD/main/Structure/Structure/Floors.vox" object="Wood" extrude="3">
+								<vertex pos="-4.1 -4.6"/>
+								<vertex pos="0.1 -4.7"/>
+								<vertex pos="0.2 4.1"/>
+								<vertex pos="8.7 4.0"/>
+								<vertex pos="8.7 0.6"/>
+								<vertex pos="15.0 0.6"/>
+								<vertex pos="15.1 -4.3"/>
+								<vertex pos="25.3 -4.5"/>
+								<vertex pos="25.3 3.6"/>
+								<vertex pos="15.0 3.8"/>
+								<vertex pos="15.1 11.5"/>
+								<vertex pos="25.4 11.5"/>
+								<vertex pos="25.3 15.6"/>
+								<vertex pos="25.2 28.8"/>
+								<vertex pos="15.2 28.8"/>
+								<vertex pos="15.2 15.6"/>
+								<vertex pos="10.5 15.6"/>
+								<vertex pos="10.5 8.9"/>
+								<vertex pos="-4.0 8.9"/>
+							</voxagon>
+							<voxagon id_="4325640" pos="4.0 0.0 0.0" rot="0.0 45.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles" extrude="3">
+								<vertex pos="0.5 -5.6"/>
+								<vertex pos="10.8 4.6"/>
+								<vertex pos="7.3 8.3"/>
+								<vertex pos="2.9 3.8"/>
+								<vertex pos="0.3 6.4"/>
+								<vertex pos="-5.8 0.5"/>
+							</voxagon>
+							<voxagon id_="358176096" pos="20.7 0.0 5.3" rot="0.0 45.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles 2" extrude="3">
+								<vertex pos="-2.9 -5.2"/>
+								<vertex pos="4.5 2.1"/>
+								<vertex pos="-1.2 7.8"/>
+								<vertex pos="-8.5 0.6"/>
+							</voxagon>
+							<voxagon id_="516913984" pos="1.1 -0.01 11.7" rot="0.0 45.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles 2" extrude="3">
+								<vertex pos="-1.4 -5.5"/>
+								<vertex pos="5.5 1.5"/>
+								<vertex pos="1.0 6.1"/>
+								<vertex pos="-6.1 -0.8"/>
+							</voxagon>
+							<voxagon id_="1236215424" pos="1.1 -0.01 20.9" texture="1 0.5" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete" extrude="3">
+								<vertex pos="-4.9 -5.5"/>
+								<vertex pos="5.1 -5.5"/>
+								<vertex pos="5.0 -12.1"/>
+								<vertex pos="9.5 -12.1"/>
+								<vertex pos="9.5 -5.4"/>
+								<vertex pos="13.9 -5.4"/>
+								<vertex pos="14.2 7.9"/>
+								<vertex pos="-5.0 7.9"/>
+							</voxagon>
+							<voxbox id_="1324956672" open_="true" pos="-5.0 0.0 16.9" rot="0.0 0.0 0.0" texture="1 0.5" size="12 3 105" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete">
+								<voxbox id_="1515743616" pos="0.1 0.0 10.4" rot="0.0 -180.0 -20.0" texture="1 0.5" size="12 3 105" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete"/>
+							</voxbox>
+							<voxbox id_="531857088" open_="true" pos="-5.0 0.0 -3.7" rot="0.0 0.0 0.0" texture="1 0.5" size="12 3 77" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete">
+								<voxbox id_="765572736" pos="0.1 -0.2 6.4" rot="0.0 -180.0 0.0" texture="1 0.5" size="7 3 49" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete"/>
+							</voxbox>
+							<voxbox id_="1820832256" open_="true" pos="6.9 0.0 29.9" rot="0.0 90.0 0.0" texture="1 0.5" size="12 3 72" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete">
+								<voxbox id_="767538944" pos="0.1 -0.2 6.1" rot="0.0 -180.0 0.0" texture="1 0.5" size="7 3 49" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete"/>
+							</voxbox>
+						</group>
+					</group>
+					<group id_="143270432" open_="true" name="Exterior">
+						<voxbox id_="339038432" pos="-4.2 0.0 -4.6" rot="0.0 0.0 0.0" size="2 44 335" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="1992547072" open_="true" pos="-5.3 0.0 -2.2" rot="0.0 -180.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1901970816" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1107167232" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1490248576" open_="true" pos="-5.3 0.0 4.0" rot="0.0 -180.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="672178240" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="914020864" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="608080128" open_="true" pos="-5.3 0.0 17.0" rot="0.0 -180.0 0.0" size="3 52 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="664575616" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 55 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="813023680" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 50 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="843041024" open_="true" pos="-5.3 0.0 28.7" rot="0.0 -180.0 0.0" size="3 53 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="407920960" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 49 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="578718208" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 55 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxagon id_="314788608" pos="25.2 5.2 22.7" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-1.0 -6.3"/>
+							<vertex pos="-0.2 -6.3"/>
+							<vertex pos="2.5 0.4"/>
+							<vertex pos="-0.2 6.9"/>
+							<vertex pos="-0.9 6.9"/>
+						</voxagon>
+						<voxbox id_="162866896" open_="true" pos="26.6 0.0 16.5" rot="0.0 0.0 0.0" size="3 54 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="822789184" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 50 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="742371584" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 59 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1710659584" open_="true" pos="26.59999 0.0 27.40003" rot="0.0 0.0 0.0" size="3 53 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="2046945280" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 55 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1892664064" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 49 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1346846976" pos="25.4 0.0 -4.8" rot="0.0 -90.0 0.0" size="2 44 295" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="271007904" pos="0.1 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="2010505088" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1146097920" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="671785024" pos="7.5 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1715771648" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1619755520" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1062468928" pos="23.4 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="885707584" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1860025216" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1098122752" pos="16.0 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="381180640" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="25036280" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1281044864" pos="26.7 0.0 2.5" rot="0.0 0.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="694986176" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="2075586304" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="554533952" pos="26.7 0.0 -4.50001" rot="0.0 0.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="307775840" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="951247552" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1013182848" open_="true" pos="14.4 0.0 30.2" rot="0.0 -90.0 0.0" size="3 55 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1556181760" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 50 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="172632352" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 60 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1660521472" open_="true" pos="8.2 0.0 30.2" rot="0.0 -90.0 0.0" size="3 55 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1300051456" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 58 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="653761472" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 50 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="727952768" pos="25.5 0.0 29.0" rot="0.0 180.0 0.0" size="2 44 336" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="397893344" pos="-4.1 0.0 29.1" rot="0.0 90.0 0.0" size="2 49 295" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxagon id_="1425429504" pos="10.5 5.2 28.9" rot="0.0 -270.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.9 -3.7"/>
+							<vertex pos="-0.2 -3.7"/>
+							<vertex pos="1.4 0.2"/>
+							<vertex pos="-0.2 4.4"/>
+							<vertex pos="-0.9 4.4"/>
+						</voxagon>
+					</group>
+				</group>
+				<group id_="560104832" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+					<vox id_="639342720" pos="0.4 0.3 0.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
+					<vox id_="1236739840" pos="0.4 0.3 2.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
+					<vox id_="1153897216" pos="0.2 0.2 9.0" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
+					<vox id_="1885651328" pos="2.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
+					<vox id_="1809100672" pos="4.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
+					<vox id_="1083966080" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+						<vox id_="1730911360" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
+					</vox>
+					<vox id_="1446795520" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+						<vox id_="746304000" pos="0.1 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
+					</vox>
+					<vox id_="475296064" open_="true" pos="-4.0 1.1 5.9" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
+						<vox id_="506427584" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					</vox>
+					<vox id_="1759224704" open_="true" pos="-3.9 0.3 12.8" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2 brown">
+						<vox id_="181545792" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2 brown"/>
+					</vox>
+					<vox id_="116399040" pos="5.1 1.1 -4.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
+						<vox id_="1958335232" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					</vox>
+					<vox id_="745058688" pos="-1.9 1.1 -4.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="1274228736" pos="20.3 0.9 -4.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window2"/>
+					<vox id_="2087842304" pos="25.3 0.9 -0.3" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window2"/>
+					<vox id_="1423201152" pos="-2.0 1.1 28.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="143073824" pos="1.2 1.1 28.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="126230040" pos="4.5 1.1 28.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="170469536" pos="25.3 1.1 25.7" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="1502701056" pos="25.3 1.1 22.4" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="584616832" pos="25.3 1.1 19.2" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="674734272" pos="12.4 0.2 15.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
+				</group>
+				<group id_="174926256" open_="true" name="roof">
+					<voxbox id_="639342720" pos="25.0 4.9 15.3" rot="0.0 -90.0 0.0" size="72 50 290" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
+					<voxbox id_="437807200" pos="-4.0 4.9 15.2" rot="0.0 -90.0 0.0" size="71 32 20" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="130686760" pos="-5.9 4.9 29.3" rot="0.0 90.0 0.0" size="71 32 21" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="209859072" pos="25.0 4.9 29.4" rot="0.0 90.0 0.0" size="71 32 26" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="722906176" pos="27.3 4.9 15.3" rot="0.0 -90.0 0.0" size="70 32 23" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="231814976" pos="15.6 4.9 30.8" rot="0.0 180.0 0.0" size="48 32 66" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="611684800" pos="5.79999 4.9 24.29999" rot="0.0 0.0 0.0" size="50 32 65" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="491418912" pos="-3.8 4.9 29.4" rot="0.0 90.0 0.0" size="69 50 288" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
+					<voxagon id_="678142400" pos="-4.0 5.2 22.0" rot="0.0 360.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+						<vertex pos="-1.0 -6.5"/>
+						<vertex pos="-0.2 -6.5"/>
+						<vertex pos="2.6 0.1"/>
+						<vertex pos="-0.2 6.9"/>
+						<vertex pos="-0.9 6.9"/>
+					</voxagon>
+					<voxbox id_="2088563200" pos="-4.10001 8.8 -4.80001" rot="0.0 -90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="463761024" pos="-6.50002 8.8 5.00001" rot="0.0 90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxagon id_="698656384" pos="15.0 5.2 22.0" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="3">
+						<vertex pos="-1.0 -6.7"/>
+						<vertex pos="-0.3 -6.7"/>
+						<vertex pos="2.0 -0.2"/>
+						<vertex pos="-0.3 6.3"/>
+						<vertex pos="-1.0 6.4"/>
+					</voxagon>
+					<voxagon id_="1759945600" pos="-3.8 5.2 22.4" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="2">
+						<vertex pos="-1.0 -6.7"/>
+						<vertex pos="-0.4 -6.7"/>
+						<vertex pos="2.3 -0.2"/>
+						<vertex pos="-0.4 6.4"/>
+						<vertex pos="-1.0 6.4"/>
+					</voxagon>
+					<voxbox id_="480801440" pos="9.49999 8.7 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1400000000" pos="-0.30004 8.7 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="939581440" pos="15.59996 8.7 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1422807808" pos="25.39999 8.7 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1481138432" pos="27.89996 8.7 -5.20002" rot="0.0 -90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="2036786560" pos="25.49995 8.7 4.60002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1440831360" pos="-4.60002 8.8 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="903403392" pos="-3.60001 8.8 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+				</group>
+			</group>
+			<group id_="493450656" open_="true" name="2nd floor">
+				<group id_="85464160" open_="true" name="Walls" pos="0.0 4.4 0.0" rot="0.0 0.0 0.0">
+					<group id_="589008000" name="Interior"/>
+					<group id_="586255296" open_="true" name="Exterior">
+						<voxbox id_="126754360" pos="-4.2 0.0 -4.6" rot="0.0 0.0 0.0" size="2 44 120" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="571967552" open_="true" pos="-5.3 1.2 -2.2" rot="0.0 -180.0 0.0" size="3 38 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="940367936" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 43 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1232020864" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 35 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="821216192" open_="true" pos="-5.3 1.2 4.0" rot="0.0 -180.0 0.0" size="3 38 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="111876784" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 34 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1481138432" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 40 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1473208064" pos="25.4 0.0 -4.8" rot="0.0 -90.0 0.0" size="2 44 295" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="1566799232" pos="0.1 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1799662848" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="83104720" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1347568000" pos="7.5 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1033893504" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="2104948224" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="81662840" pos="23.4 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1062600000" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1838134784" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="452291552" pos="16.0 0.0 -5.9" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="935124736" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1256663936" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="194850416" pos="26.7 0.0 2.5" rot="0.0 0.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="1992678144" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="429418080" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="2142699264" pos="26.7 0.0 -4.50001" rot="0.0 0.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="793230592" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+							<voxbox id_="1372014336" pos="0.2 0.0 1.2" rot="0.0 -90.0 0.0" size="3 44 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxbox id_="1845147648" pos="25.5 0.0 15.8" rot="0.0 -180.0 0.0" size="2 44 204" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="971630528" pos="-4.1 0.6 15.9" rot="0.0 90.0 0.0" size="4 38 294" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxagon id_="286540864" pos="-4.0 5.2 0.3" rot="0.0 360.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.8 -4.4"/>
+							<vertex pos="1.1 -0.2"/>
+							<vertex pos="-0.9 4.3"/>
+						</voxagon>
+						<voxagon id_="1842526080" pos="4.4 5.2 -4.7" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.8 -4.4"/>
+							<vertex pos="1.1 -0.2"/>
+							<vertex pos="-0.9 4.3"/>
+						</voxagon>
+						<voxagon id_="1771415168" pos="20.3 5.2 -4.7" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.8 -4.4"/>
+							<vertex pos="1.1 -0.2"/>
+							<vertex pos="-0.9 4.3"/>
+						</voxagon>
+						<voxagon id_="1541042048" pos="25.4 5.2 -0.5" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.8 -4.4"/>
+							<vertex pos="1.1 -0.2"/>
+							<vertex pos="-0.9 4.3"/>
+						</voxagon>
+						<voxbox id_="429680256" pos="-3.7 0.2 7.0" rot="0.0 0.0 0.0" size="2 42 88" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="920312704" pos="-4.2 0.0 7.0" rot="0.0 0.0 0.0" size="2 11 88" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="1437357696" pos="-4.2 1.2 7.0" rot="0.0 0.0 -90.0" size="2 5 88" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="1804185088" pos="-4.1 1.2 7.5" rot="0.0 90.0 0.0" size="2 32 4" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						<voxbox id_="2134506752" open_="true" pos="-3.8 1.2 14.8" rot="0.0 -90.0 0.0" size="2 32 3" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
+							<voxbox id_="562857536" pos="0.1 0.0 0.4" rot="0.0 90.0 0.0" size="2 32 8" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
+						</voxbox>
+						<voxagon id_="1757455104" pos="-3.5 5.0 11.5" rot="0.0 360.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+							<vertex pos="-0.7 4.1"/>
+							<vertex pos="-0.7 -4.6"/>
+							<vertex pos="-0.3 -4.2"/>
+							<vertex pos="1.3 -0.3"/>
+							<vertex pos="-0.2 3.3"/>
+							<vertex pos="-0.6 3.9"/>
+						</voxagon>
+					</group>
+					<group id_="1825354496" open_="true" name="Grey blocks" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+						<voxbox id_="432236288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1528065152" pos="25.1 0.3 -4.5" rot="0.0 0.0 0.0" size="2 39 199" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="28182200" pos="25.3 0.3 15.2" rot="0.0 -90.0 0.0" size="2 39 288" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1152258688" pos="-3.8 0.3 7.0" rot="0.0 -180.0 0.0" size="2 39 115" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="871485376" pos="14.4 0.3 9.0" rot="0.0 90.0 0.0" size="3 39 109" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1733401856" pos="14.3 0.3 -4.5" rot="0.0 0.0 0.0" size="3 39 134" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="199372672" pos="2.4 0.3 -4.5" rot="0.0 0.0 0.0" size="3 39 112" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1536126464" pos="2.5 0.3 3.1" rot="0.0 90.0 0.0" size="2 39 86" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="135667808" pos="10.9 0.3 -4.5" rot="0.0 0.0 0.0" size="3 39 75" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1959383808" pos="6.2 0.3 12.0" rot="0.0 180.0 0.0" size="3 39 53" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1224942592" pos="10.3 0.3 6.6" rot="0.0 -90.0 0.0" size="3 39 142" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1775609728" pos="10.4 0.3 12.0" rot="0.0 180.0 0.0" size="3 39 53" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="697411136" pos="12.5 0.3 11.8" rot="0.0 -90.0 0.0" size="3 39 65" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="1404129024" pos="12.6 0.3 15.4" rot="0.0 180.0 0.0" size="3 39 35" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+						<voxbox id_="37619960" pos="-3.3 0.3 15.3" rot="0.0 180.0 0.0" size="2 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
+					</group>
+					<group id_="65867700" open_="true" name="Deco" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+						<voxbox id_="443771328" pos="10.4 0.3 -4.4" rot="0.0 0.0 0.0" size="5 39 72" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1060109504" pos="3.3 0.3 2.8" rot="0.0 -180.0 0.0" size="5 39 72" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1772529280" pos="10.6 0.3 2.6" rot="0.0 -90.0 0.0" size="3 39 80" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1130237312" pos="3.0 0.3 -4.1" rot="0.0 90.0 0.0" size="3 39 77" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="897045952" pos="-3.8 0.0 -4.1" size="62 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="127475296" pos="2.4 0.0 -4.2" rot="0.0 -90.0 0.0" size="109 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="170469536" pos="-3.6 0.0 -4.2" rot="0.0 -90.0 0.0" size="108 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1602584064" pos="-3.8 0.0 6.6" size="62 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="693544256" pos="-3.4 0.3 6.5" rot="0.0 180.0 0.0" size="2 39 104" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="234108880" pos="-3.6 0.3 -3.7" rot="0.0 90.0 0.0" size="2 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="245447296" pos="2.1 0.3 -3.9" rot="0.0 0.0 0.0" size="2 39 104" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="409297312" pos="2.3 0.3 6.4" rot="0.0 -90.0 0.0" size="2 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1390103424" pos="10.1 0.0 6.8" rot="0.0 -90.0 0.0" size="51 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1044904192" pos="10.1 0.0 7.0" rot="0.0 -180.0 0.0" size="39 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1320303360" pos="6.2 0.0 11.7" rot="0.0 0.0 0.0" size="39 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1981405312" pos="6.2 0.0 11.8" rot="0.0 90.0 0.0" size="51 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="122232096" pos="-3.3 0.0 15.1" rot="0.0 0.0 0.0" size="156 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1566930304" pos="12.3 0.3 14.9" rot="0.0 -90.0 0.0" size="2 39 156" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1063058816" pos="12.3 0.0 11.9" rot="0.0 -90.0 0.0" size="33 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="482112256" pos="5.9 0.0 12.1" rot="0.0 0.0 0.0" size="64 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1320041088" pos="-3.3 0.3 7.2" rot="0.0 90.0 0.0" size="2 39 92" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="520387584" pos="6.0 0.0 6.99999" rot="0.0 -180.0 0.0" size="93 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="766031488" pos="5.9 0.0 6.9" rot="0.0 -90.0 0.0" size="53 42 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="313543360" pos="5.6 0.3 7.0" rot="0.0 0.0 0.0" size="2 39 53" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1850784000" pos="5.7 0.3 12.4" rot="0.0 90.0 0.0" size="2 39 65" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="2007162496" pos="12.0 0.3 12.2" rot="0.0 0.0 0.0" size="2 39 29" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1781836032" pos="-3.3 0.3 15.2" rot="0.0 90.0 0.0" size="83 39 1" material="wood" color="0.53 0.59 0.51"/>
+						<voxbox id_="1825026816" pos="-3.0 0.3 15.1" rot="0.0 180.0 0.0" size="2 39 80" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall1"/>
+						<voxbox id_="1376143360" pos="18.0 0.3 8.6" rot="0.0 0.0 0.0" size="71 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="1162089728" pos="25.1 0.3 -4.3" rot="0.0 -180.0 0.0" size="106 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="934403776" pos="25.00001 0.3 8.70003" rot="0.0 90.0 0.0" size="131 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="584813440" pos="14.5 0.3 2.8" rot="0.0 0.0 0.0" size="106 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="1417171456" pos="18.0 0.3 5.8" rot="0.0 0.0 0.0" size="71 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="2074472064" pos="18.0 0.3 8.7" rot="0.0 90.0 0.0" size="59 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="1516202368" pos="21.8 0.3 8.7" rot="0.0 90.0 0.0" size="29 39 1" material="wood" color="0.4 0.62 0.69"/>
+						<voxbox id_="245447296" pos="17.7 0.3 2.9" rot="0.0 0.0 0.0" size="3 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+						<voxbox id_="1993530240" pos="18.0 0.3 8.4" rot="0.0 -90.0 0.0" size="3 39 33" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+						<voxbox id_="981330432" pos="14.6 0.3 3.2" rot="0.0 90.0 0.0" size="3 39 33" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+						<voxbox id_="1605598976" pos="14.9 0.3 8.7" rot="0.0 -180.0 0.0" size="3 39 59" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+						<voxbox id_="325078400" pos="18.0 0.3 5.6" rot="0.0 -90.0 0.0" size="3 39 33" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+						<voxbox id_="822199296" pos="14.6 0.3 6.1" rot="0.0 90.0 0.0" size="3 39 33" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
+					</group>
+				</group>
+				<group id_="1126567040" name="Windows and doors" pos="0.0 4.4 0.0" rot="0.0 0.0 0.0">
+					<vox id_="473264352" pos="4.6 0.4 -4.5" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
+					<vox id_="2022498816" pos="-1.9 1.1 -4.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
+					<vox id_="655858752" open_="true" pos="-3.8 0.4 -0.5" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
+						<vox id_="1499686272" pos="0.0 0.0 -1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
+					</vox>
+					<vox id_="1997724800" open_="true" pos="-3.4 0.4 8.7" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
+						<vox id_="1428509824" pos="0.0 0.0 -1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
+						<vox id_="971696064" pos="0.0 0.0 -3.6" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
+						<vox id_="875679936" pos="0.0 0.0 -4.8" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
+					</vox>
+				</group>
+				<group id_="1998642304" open_="true" name="floor">
+					<voxagon id_="2073423488" pos="0.0 4.2 0.0" rot="0.0 0.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles 4 up" extrude="5">
+						<vertex pos="-4.1 -4.6"/>
+						<vertex pos="2.6 -4.6"/>
+						<vertex pos="2.6 2.9"/>
+						<vertex pos="10.9 2.9"/>
+						<vertex pos="11.0 -4.6"/>
+						<vertex pos="14.5 -4.6"/>
+						<vertex pos="14.5 8.7"/>
+						<vertex pos="25.3 8.7"/>
+						<vertex pos="25.0 15.9"/>
+						<vertex pos="22.0 16.0"/>
+						<vertex pos="21.9 11.8"/>
+						<vertex pos="10.2 11.8"/>
+						<vertex pos="10.2 6.7"/>
+						<vertex pos="-3.9 6.7"/>
+					</voxagon>
+					<voxagon id_="798604928" pos="20.0 4.2 2.8" rot="0.0 45.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles 5 up" extrude="5">
+						<vertex pos="1.3 -9.2"/>
+						<vertex pos="8.9 -1.6"/>
+						<vertex pos="-0.6 8.0"/>
+						<vertex pos="-8.3 0.4"/>
+					</voxagon>
+					<voxagon id_="1708037888" pos="-2.9 4.2 10.6" rot="0.0 0.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Wood 2nd floor" extrude="5">
+						<vertex pos="-1.0 -3.9"/>
+						<vertex pos="13.3 -3.9"/>
+						<vertex pos="13.2 1.3"/>
+						<vertex pos="15.4 1.3"/>
+						<vertex pos="15.4 4.9"/>
+						<vertex pos="-1.0 4.8"/>
+					</voxagon>
+					<voxagon id_="1332231552" pos="4.6 4.2 -0.8" rot="0.0 45.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Wood 2nd floor" extrude="5">
+						<vertex pos="-4.2 1.3"/>
+						<vertex pos="1.2 -4.2"/>
+						<vertex pos="7.1 1.7"/>
+						<vertex pos="1.9 7.2"/>
+					</voxagon>
+				</group>
+			</group>
+		</group>
+	</group>
+	<layers/>
+</scene>
+
