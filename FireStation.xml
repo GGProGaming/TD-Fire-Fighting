@@ -259,8 +259,8 @@
 						<vertex pos="-0.2 6.9"/>
 						<vertex pos="-0.9 6.9"/>
 					</voxagon>
-					<voxbox id_="2088563200" pos="-4.10001 8.8 -4.80001" rot="0.0 -90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="463761024" pos="-6.50002 8.8 5.00001" rot="0.0 90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="2088563200" pos="-4.10001 8.7 -4.80001" rot="0.0 -90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="463761024" pos="-6.50002 8.7 5.00001" rot="0.0 90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
 					<voxagon id_="698656384" pos="15.0 5.2 22.0" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="3">
 						<vertex pos="-1.0 -6.7"/>
 						<vertex pos="-0.3 -6.7"/>
@@ -275,18 +275,18 @@
 						<vertex pos="-0.4 6.4"/>
 						<vertex pos="-1.0 6.4"/>
 					</voxagon>
-					<voxbox id_="480801440" pos="9.49999 8.7 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="1400000000" pos="-0.30004 8.7 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="939581440" pos="15.59996 8.7 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="1422807808" pos="25.39999 8.7 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="1481138432" pos="27.89996 8.7 -5.20002" rot="0.0 -90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="2036786560" pos="25.49995 8.7 4.60002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="1440831360" pos="-4.60002 8.8 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="903403392" pos="-3.60001 8.8 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="1102579456" pos="25.4 8.7 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-					<voxbox id_="875221184" pos="15.6 8.7 -4.8" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-					<voxbox id_="2012864512" pos="25.39999 8.7 16.89999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-					<voxbox id_="432498464" pos="15.59996 8.7 14.49998" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="480801440" pos="9.49999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1400000000" pos="-0.30004 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="939581440" pos="15.59996 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1422807808" pos="25.39999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1481138432" pos="27.89996 8.6 -5.20002" rot="0.0 -90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="2036786560" pos="25.49995 8.6 4.60002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1440831360" pos="-4.60002 8.7 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="903403392" pos="-3.60001 8.7 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="1102579456" pos="25.4 8.6 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+					<voxbox id_="875221184" pos="15.6 8.6 -4.8" rot="0.0 0.0 0.0" size="48 32 202" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+					<voxbox id_="2012864512" pos="25.39999 8.6 16.99999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+					<voxbox id_="432498464" pos="15.59996 8.6 15.49998" rot="0.0 0.0 0.0" size="48 32 15" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
 				</group>
 			</group>
 			<group id_="493450656" open_="true" name="2nd floor">
