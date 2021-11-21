@@ -1,0 +1,15 @@
+<scene id_="331829024" version="0.8.0" shadowVolume="200 100 200">
+	<environment id_="802471744" template="sunny" skyboxrot="-45"/>
+	<voxbox id_="1359954944" pos="-100.0 -0.1 -100.0" size="2000 1 2000"/>
+	<vox id_="1802349952" pos="0.0 0.0 0.0" file="LEVEL/basic.vox"/>
+	<boundary id_="1201806976">
+		<vertex pos="-100.0 -100.0"/>
+		<vertex pos="100.0 -100.0"/>
+		<vertex pos="100.0 100.0"/>
+		<vertex pos="-100.0 100.0"/>
+	</boundary>
+	<script id_="12714760" file="main.lua"/>
+	<script id_="1024652352" file="sandbox.lua"/>
+	<layers/>
+</scene>
+
