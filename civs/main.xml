@@ -1,0 +1,16 @@
+<scene id_="488731776" open_="true" version="0.8.0" shadowVolume="200 50 200">
+	<environment id_="538738816" template="sunset"/>
+	<script id_="639146112" file="main.lua"/>
+	<script id_="437151808" file="sandbox.lua"/>
+	<voxbox id_="1415598464" pos="-25 0 -25" size="500 1 500"/>
+	<voxbox id_="721464320" pos="-1 0.1 -5" size="20 20 2" material="wood" color="0.7 0.5 0.3"/>
+	<spawnpoint id_="2111108992" pos="0 1 0" rot="0 180 0"/>
+	<script id_="182791056" file="heist.lua"/>
+	<script id_="1979635712" file="MOD/test.lua"/>
+	<body id_="32245680" open_="true" name="target" tags="target unbreakable" dynamic="true">
+		<vox id_="1615626496" pos="1.2 -0.4 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/civ.vox"/>
+		<vox id_="1416384896" pos="-1.6 -0.4 -3.3" rot="0.0 0.0 0.0" prop="false" file="MOD/civ.vox"/>
+	</body>
+	<layers/>
+</scene>
+
