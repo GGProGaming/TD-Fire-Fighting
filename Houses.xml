@@ -1,0 +1,647 @@
+<scene id_="331829024" open_="true" version="0.8.0" shadowVolume="200 100 200">
+	<group id_="414016192" open_="true" name="Basic">
+		<script id_="508328256" file="sandbox.lua"/>
+		<environment id_="1735761408" template="sunny" skyboxrot="-45"/>
+		<voxbox id_="1729600640" pos="-100.0 -0.1 -100.0" size="2000 1 2000"/>
+		<boundary id_="1800449280">
+			<vertex pos="-100.0 -100.0"/>
+			<vertex pos="100.0 -100.0"/>
+			<vertex pos="100.0 100.0"/>
+			<vertex pos="-100.0 100.0"/>
+		</boundary>
+		<script id_="1475502080" file="main.lua"/>
+	</group>
+	<group id_="1578465408" open_="true" name="Houses">
+		<group id_="2143616768" open_="true" name="Model 1" pos="0.0 0.0 -57.4">
+			<group id_="1977669504" name="Structure">
+				<group id_="75960864" open_="true" name="Roof">
+					<voxbox id_="1445419136" pos="2.1 4.3 -6.6" rot="0.0 -90.0 0.0" texture="1" size="35 17 65" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
+					<voxbox id_="43846260" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
+					<voxbox id_="1372145408" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
+					<voxbox id_="1935986048" pos="-4.4 4.3 0.6" rot="0.0 90.0 0.0" texture="1 " size="37 24 63" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
+					<voxbox id_="620598272" pos="0.0 4.4 1.2" rot="0.0 0.0 0.0" size="81 1 25" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="639014976" pos="-0.1 4.2 -5.5" rot="0.0 0.0 0.0" size="83 2 68" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="2144731008" pos="-4.1 4.2 -5.5" rot="0.0 0.0 0.0" size="40 1 49" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxagon id_="1169036928" pos="-3.9 5.3 -3.5" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1" extrude="2">
+						<vertex pos="-1.0 -2.0"/>
+						<vertex pos="-0.8 -2.0"/>
+						<vertex pos="0.4 0.5"/>
+						<vertex pos="-0.8 3.0"/>
+						<vertex pos="-1.0 3.0"/>
+					</voxagon>
+					<voxagon id_="2033509632" pos="3.9 5.3 3.7" rot="0.0 90.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+					<voxagon id_="711567808" pos="4.4 5.3 -5.4" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+				</group>
+				<group id_="573868224" name="Walls">
+					<voxbox id_="807321728" pos="0.0 0.0 -0.6" rot="0.0 -90.0 0.0" size="2 42 41" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<voxbox id_="1546088576" pos="-4.0 0.0 -0.5" rot="0.0 180.0 0.0" size="2 42 50" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<voxbox id_="1807200000" pos="-4.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 123" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<voxbox id_="1255418752" pos="8.1 0.0 -5.5" rot="0.0 0.0 0.0" size="2 42 68" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<voxbox id_="1188371328" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<voxbox id_="213529312" pos="-0.0 0.0 1.3" rot="0.0 180.0 0.0" size="2 42 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
+					<group id_="1267412480" name="White thing">
+						<voxbox id_="151659552" pos="2.3 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="2037769728" pos="0.4 0.3 3.9" rot="0.0 180.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="928374080" pos="0.3 0.3 3.4" rot="0.0 -180.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="822264832" pos="0.4 3.8 3.3" rot="0.0 -180.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1207967744" pos="7.9 3.8 3.3" rot="0.0 -90.0 0.0" prop="false" size="6 7 75" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<vox id_="1563194496" pos="2.5 0.3 3.6" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<vox id_="480932512" pos="5.8 0.3 3.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<voxbox id_="2027414400" pos="7.9 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="222704928" pos="8.5 0.3 3.3" rot="0.0 -90.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="709536064" pos="7.8 3.8 1.3" rot="0.0 0.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="78582464" pos="7.8 0.3 1.3" rot="0.0 0.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="957539392" pos="-3.9 0.3 -0.7" rot="0.0 90.0 0.0" size="1 39 40" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="1797368960" pos="0.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="979954048" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="1423790976" pos="8.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+					</group>
+					<voxbox id_="704227328" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 121" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
+					<voxbox id_="54529280" pos="-3.9 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 48" brush="MOD/main/Structure" material="wood"/>
+					<voxbox id_="860474688" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
+				</group>
+				<group id_="1265577344" name="Lights">
+					<vox id_="1344487552" pos="6.7 3.3 -0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3">
+						<light id_="1966789888" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1594850304" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="2117335296" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="319376416" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="623678656" pos="2.0 2.5 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3">
+						<light id_="1182865920" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1044314368" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="1526885376" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="1932971264" pos="0.0 1.2 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="1130433920" pos="7.4 0.3 -2.1" rot="0.0 -40.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_1">
+						<light id_="1421890304" pos="0.1 1.5 0.25" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+					</vox>
+					<voxbox id_="1148785152" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1832563968" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="650877760" pos="6.5 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="118561856" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="858967232" pos="4.5 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1856420480" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1384139264" pos="3.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1216356864" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1521576704" pos="6.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="538804352" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1742184320" pos="-0.7 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1310603392" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="197668640" pos="-3.3 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="196620000" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="825476288" pos="-1.9 4.2 -4.3" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="2007883392" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+				</group>
+				<group id_="699377344" name="Floor">
+					<voxbox id_="521108544" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood1"/>
+					<voxbox id_="1176115328" pos="-4.0 0.0 -5.4" rot="0.0 0.0 0.0" size="40 3 48" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood1"/>
+					<voxbox id_="1828434944" pos="0.0 0.0 3.7" rot="0.0 -180.0 0.0" size="2 3 24" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="1171593088" pos="8.1 0.0 3.7" rot="0.0 -90.0 0.0" size="2 3 81" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="1367885312" pos="8.1 0.0 1.3" rot="0.0 0.0 0.0" size="2 3 25" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+				</group>
+				<group id_="966190656" open_="true" name="Doors">
+					<vox id_="168896576" pos="-2.1 0.9 -0.7" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+					<vox id_="1542680576" open_="true" pos="4.2 0.3 1.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Windoor">
+						<vox id_="1863564416" open_="true" pos="-0.1 0.1 0.5" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door R">
+							<joint id_="222901536" pos="0.0 1.7 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1162876160" pos="0.0 0.4 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+						<vox id_="1492280320" pos="-0.1 0.1 -0.6" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L">
+							<joint id_="1339965312" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1725143936" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<vox id_="1489068800" open_="true" pos="0.1 0.3 -3.0" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door 2 R">
+						<vox id_="1379223808" pos="0.1 0.1 0.0" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L 2">
+							<joint id_="1686737408" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1215701504" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+				</group>
+			</group>
+			<group id_="1539141376" open_="true" name="Decoration">
+				<vox id_="1872150144" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen wood">
+					<vox id_="1235494528" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge wood">
+						<vox id_="1730845824" pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge door wood">
+							<joint id_="2050484480" pos="0.4 0.7 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<vox id_="1919732096" pos="0.0 1.5 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge 2 door wood">
+							<joint id_="765113984" pos="0.4 0.4 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<light id_="1594850304" pos="0.0 0.8 0.0" scale="0.1"/>
+					</vox>
+					<vox id_="2088628736" open_="true" pos="-1.3 1.9 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="2049370240" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.1 0.9"/>
+					</vox>
+				</vox>
+				<vox id_="1998118016" pos="6.8 0.3 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table">
+					<vox id_="1951322368" pos="0.2 0.0 -1.4" rot="0.0 160.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+					<vox id_="953279296" pos="-1.0 0.0 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+				</vox>
+				<vox id_="1476878336" pos="0.8 0.3 -0.6" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="couch white"/>
+				<vox id_="487945312" pos="2.1 0.3 -0.6" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table_2 white"/>
+				<vox id_="450259808" open_="true" pos="-2.1 0.3 -3.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="bed">
+					<vox id_="435251136" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="mattress"/>
+					<vox id_="1050933888" pos="-0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+					<vox id_="387341408" pos="0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+				</vox>
+			</group>
+		</group>
+		<group id_="1959973760" name="Model 2" pos="16.5 0.0 -57.4">
+			<group id_="150807536" open_="true" name="Structure">
+				<group id_="1801629056" name="Roof">
+					<voxbox id_="1529572480" pos="2.1 4.3 -6.6" rot="0.0 -90.0 0.0" texture="1" size="35 17 65" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="736276352" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="1790225152" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="667393792" pos="-4.4 4.3 0.6" rot="0.0 90.0 0.0" texture="1 " size="37 24 63" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="514226848" pos="0.0 4.4 1.2" rot="0.0 0.0 0.0" size="81 1 25" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="531005088" pos="-0.1 4.2 -5.5" rot="0.0 0.0 0.0" size="83 2 68" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="1543270400" pos="-4.1 4.2 -5.5" rot="0.0 0.0 0.0" size="40 1 49" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxagon id_="1483694464" pos="-3.9 5.3 -3.5" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2" extrude="2">
+						<vertex pos="-1.0 -2.0"/>
+						<vertex pos="-0.8 -2.0"/>
+						<vertex pos="0.4 0.5"/>
+						<vertex pos="-0.8 3.0"/>
+						<vertex pos="-1.0 3.0"/>
+					</voxagon>
+					<voxagon id_="1081278976" pos="3.9 5.3 3.7" rot="0.0 90.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+					<voxagon id_="1530817792" pos="4.4 5.3 -5.4" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+				</group>
+				<group id_="294274592" name="Walls">
+					<voxbox id_="487093280" pos="0.0 0.0 -0.6" rot="0.0 -90.0 0.0" size="2 42 41" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<voxbox id_="1745723392" pos="-4.0 0.0 -0.5" rot="0.0 180.0 0.0" size="2 42 50" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<voxbox id_="343429600" pos="-4.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 123" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<voxbox id_="620204992" pos="8.1 0.0 -5.5" rot="0.0 0.0 0.0" size="2 42 68" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<voxbox id_="933486208" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<voxbox id_="1658293120" pos="0.0 0.0 1.3" rot="0.0 180.0 0.0" size="2 42 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 2"/>
+					<group id_="1753719296" name="White thing">
+						<voxbox id_="1858845440" pos="2.3 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1316239872" pos="0.4 0.3 3.9" rot="0.0 180.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="1858648832" pos="0.3 0.3 3.4" rot="0.0 -180.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1272000256" pos="0.4 3.8 3.3" rot="0.0 -180.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1188567936" pos="7.9 3.8 3.3" rot="0.0 -90.0 0.0" prop="false" size="6 7 75" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<vox id_="2060708736" pos="2.5 0.3 3.6" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<vox id_="492926336" pos="5.8 0.3 3.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<voxbox id_="824296576" pos="7.9 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="516586272" pos="8.5 0.3 3.3" rot="0.0 -90.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="1233528320" pos="7.8 3.8 1.3" rot="0.0 0.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1659145088" pos="7.8 0.3 1.3" rot="0.0 0.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="738897984" pos="-3.9 0.3 -0.7" rot="0.0 90.0 0.0" size="1 39 40" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="721595392" pos="0.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="272711936" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="633313024" pos="8.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+					</group>
+					<voxbox id_="310725152" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 121" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+					<voxbox id_="228800144" pos="-3.9 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 48" brush="MOD/main/Structure" material="wood"/>
+					<voxbox id_="1013838272" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+				</group>
+				<group id_="1649379584" name="Lights">
+					<vox id_="1641645952" pos="5.8 3.3 -0.7" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3 matcha">
+						<light id_="937877376" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="2133589120" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="918805248" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="1790814976" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="1974851328" pos="1.8 2.5 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3 matcha">
+						<light id_="2056448640" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1801432448" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="146744064" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="1467309568" pos="0.0 1.2 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="1413239040" pos="7.4 0.3 -0.7" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_1">
+						<light id_="1256401792" pos="0.1 1.5 0.25" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+					</vox>
+					<voxbox id_="1760076672" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1847769216" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1359496192" pos="6.5 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1598651648" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="597200512" pos="4.5 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="228537984" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1578662016" pos="3.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1723243264" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="767014592" pos="6.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="156181824" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="723299456" pos="-0.7 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="346706592" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1695650816" open_="true" pos="-3.3 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="518093696" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="970254144" pos="-1.9 4.2 -4.3" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1937493504" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+				</group>
+				<group id_="1005973440" name="Floor">
+					<voxbox id_="57216420" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<voxbox id_="114367296" pos="-4.0 0.0 -5.4" rot="0.0 0.0 0.0" size="40 3 48" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<voxbox id_="2047076352" pos="0.0 0.0 3.7" rot="0.0 -180.0 0.0" size="2 3 24" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="1210654848" pos="8.1 0.0 3.7" rot="0.0 -90.0 0.0" size="2 3 81" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="1186339584" pos="8.1 0.0 1.3" rot="0.0 0.0 0.0" size="2 3 25" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+				</group>
+				<group id_="796638720" name="Doors">
+					<vox id_="697607744" pos="-2.1 0.9 -0.7" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+					<vox id_="956097536" open_="true" pos="4.2 0.3 1.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Windoor">
+						<vox id_="14549880" open_="true" pos="-0.1 0.1 0.5" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door R">
+							<joint id_="962127232" pos="0.0 1.7 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1211441408" pos="0.0 0.4 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+						<vox id_="2025317120" pos="-0.1 0.1 -0.6" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L">
+							<joint id_="2116024448" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1586264576" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<vox id_="185019424" open_="true" pos="0.1 0.3 -3.0" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door 2 R">
+						<vox id_="2101015808" pos="0.1 0.1 0.0" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L 2">
+							<joint id_="1558344576" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="60493420" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+				</group>
+			</group>
+			<group id_="1158222848" name="Decoration">
+				<vox id_="199438224" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen 3">
+					<vox id_="1377847424" open_="true" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge matcha">
+						<vox id_="980871616" pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge door matcha">
+							<joint id_="1845409792" pos="0.4 0.7 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<vox id_="1957942016" pos="0.0 1.5 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge 2 door matcha">
+							<joint id_="132652960" pos="0.4 0.4 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<light id_="1991760640" pos="0.0 0.8 0.0" scale="0.1"/>
+					</vox>
+					<vox id_="363484832" open_="true" pos="-1.3 1.9 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="145433264" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.1 0.9"/>
+					</vox>
+				</vox>
+				<vox id_="1245849856" open_="true" pos="1.8 0.3 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table matcha">
+					<vox id_="1461935232" pos="0.0 0.0 -1.1" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="390356224" pos="-1.0 0.0 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="2047535104" pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="120331440" pos="1.0 0.0 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+				</vox>
+				<vox id_="1333607936" pos="7.5 0.3 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 matcha"/>
+				<vox id_="1982847104" pos="6.0 0.3 -0.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table_2 matcha"/>
+				<vox id_="678994432" open_="true" pos="-2.1 0.3 -3.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="bed">
+					<vox id_="556303488" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="mattress"/>
+					<vox id_="1080099200" pos="-0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+					<vox id_="1594981376" pos="0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+				</vox>
+				<vox id_="464875232" pos="7.5 0.3 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 matcha"/>
+			</group>
+		</group>
+		<group id_="2026365696" open_="true" name="Model 3" pos="33.8 0.0 -57.4">
+			<group id_="943579392" open_="true" name="Structure">
+				<group id_="564758208" open_="true" name="Roof">
+					<voxbox id_="1039923200" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="1683722624" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="102439024" pos="0.0 4.4 1.2" rot="0.0 0.0 0.0" size="81 1 25" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="368269248" pos="-0.1 4.2 -5.5" rot="0.0 0.0 0.0" size="83 2 68" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxagon id_="726183168" pos="3.9 5.3 3.7" rot="0.0 90.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+					<voxagon id_="781302336" pos="4.4 5.3 -5.4" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.8 0.3"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+				</group>
+				<group id_="653237184" name="Walls">
+					<voxbox id_="1215963648" pos="8.1 0.0 -5.6" rot="0.0 0.0 0.0" size="2 42 69" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<voxbox id_="1468685824" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<voxbox id_="465465088" pos="0.0 0.0 1.3" rot="0.0 180.0 0.0" size="2 42 67" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<group id_="1281503616" name="White thing">
+						<voxbox id_="241842592" pos="2.3 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="694592896" pos="0.4 0.3 3.9" rot="0.0 180.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="1582922112" pos="0.3 0.3 3.4" rot="0.0 -180.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1916848384" pos="0.4 3.8 3.3" rot="0.0 -180.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="285361152" pos="7.9 3.8 3.3" rot="0.0 -90.0 0.0" prop="false" size="6 7 75" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<vox id_="222180608" pos="2.5 0.3 3.6" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<vox id_="388914368" pos="5.8 0.3 3.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<voxbox id_="619025280" pos="7.9 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1121848192" pos="8.5 0.3 3.3" rot="0.0 -90.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="1989335680" pos="7.8 3.8 1.3" rot="0.0 0.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1238378240" pos="7.8 0.3 1.3" rot="0.0 0.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="555844736" pos="0.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="1110903040" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="583699264" pos="8.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+					</group>
+					<voxbox id_="1930218496" pos="0.0 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+					<voxbox id_="83432416" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+				</group>
+				<group id_="465792768" open_="true" name="Lights">
+					<vox id_="714320448" pos="5.8 3.3 -0.7" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3 matcha">
+						<light id_="1934609664" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="763999808" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="633706240" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="1538748160" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="1671663232" open_="true" pos="1.8 2.5 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3 matcha">
+						<light id_="2106848896" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1306212224" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="690791616" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="2137324928" pos="0.0 1.2 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="505837728" pos="7.4 0.3 -0.7" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_1">
+						<light id_="265895776" pos="0.1 1.5 0.25" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+					</vox>
+					<voxbox id_="2050877696" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1078853888" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1398951296" pos="6.5 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1266757120" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1803595264" pos="4.5 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1562539136" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="323833152" pos="3.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="264388352" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1021768576" pos="6.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="261963376" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+				</group>
+				<group id_="292767168" name="Floor">
+					<voxbox id_="1759159168" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<voxbox id_="385178592" pos="0.0 0.0 3.7" rot="0.0 -180.0 0.0" size="2 3 24" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="215233360" pos="8.1 0.0 3.7" rot="0.0 -90.0 0.0" size="2 3 81" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="1258957824" pos="8.1 0.0 1.3" rot="0.0 0.0 0.0" size="2 3 25" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+				</group>
+				<group id_="1021506432" name="Doors">
+					<vox id_="1637254784" open_="true" pos="4.2 0.3 1.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Windoor">
+						<vox id_="1063910848" open_="true" pos="-0.1 0.1 0.5" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door R">
+							<joint id_="1410289664" pos="0.0 1.7 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1995365248" pos="0.0 0.4 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+						<vox id_="1784392064" pos="-0.1 0.1 -0.6" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L">
+							<joint id_="1084686976" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="502757344" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<vox id_="781433408" pos="0.1 0.9 -2.3" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+				</group>
+				<group id_="668442432" open_="true" name="xtra" pos="-0.6 0.0 -5.4" rot="0.0 -90.0 0.0">
+					<voxbox id_="600149760" pos="-4.4 4.3 0.2" rot="0.0 90.0 0.0" texture="1 " size="33 24 63" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="345854592" pos="2.1 4.3 -6.6" rot="0.0 -90.0 0.0" texture="1" size="35 17 65" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
+					<voxbox id_="697017920" pos="-4.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 40" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<voxagon id_="1410814080" pos="-3.9 5.3 -3.5" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3" extrude="2">
+						<vertex pos="-1.0 -2.0"/>
+						<vertex pos="0.2 0.3"/>
+						<vertex pos="-1.0 3.0"/>
+					</voxagon>
+					<voxbox id_="1622377216" pos="-4.1 4.2 -5.5" rot="0.0 0.0 0.0" size="40 1 49" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="61935300" pos="-1.9 4.2 -4.3" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="183577536" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="877252928" pos="-0.7 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="78451376" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1361921152" pos="-3.3 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="165422960" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1381714304" pos="-4.0 0.0 -0.5" rot="0.0 180.0 0.0" size="2 42 50" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<voxbox id_="592940352" pos="0.0 0.0 -0.6" rot="0.0 -90.0 0.0" size="2 42 41" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+					<voxbox id_="1050737280" pos="-3.9 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 48" brush="MOD/main/Structure" material="wood"/>
+					<voxbox id_="577276288" pos="-0.0 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 47" brush="MOD/main/Structure" material="wood"/>
+					<vox id_="370235456" pos="-2.1 0.9 -0.7" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+					<vox id_="1477140480" pos="-2.1 0.3 -3.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="bed">
+						<vox id_="1631945984" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="mattress"/>
+						<vox id_="45550300" pos="-0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+						<vox id_="1118177920" pos="0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+					</vox>
+					<voxbox id_="2023678592" pos="-4.0 0.0 -5.4" rot="0.0 0.0 0.0" size="40 3 48" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<vox id_="573802688" pos="0.0 0.3 -3.0" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door 2 R">
+						<vox id_="143598144" pos="0.1 0.1 0.0" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L 2">
+							<joint id_="941809792" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1788979840" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<voxbox id_="193998400" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 39" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+					<voxbox id_="1803726336" pos="-0.1 0.0 -5.4" rot="0.0 180.0 0.0" size="2 42 34" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
+				</group>
+			</group>
+			<group id_="331763488" name="Decoration">
+				<vox id_="564299392" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen 3">
+					<vox id_="131276624" open_="true" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge matcha">
+						<vox id_="1038284672" pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge door matcha">
+							<joint id_="1510172672" pos="0.4 0.7 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<vox id_="572885120" pos="0.0 1.5 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge 2 door matcha">
+							<joint id_="770029440" pos="0.4 0.4 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<light id_="1897776256" pos="0.0 0.8 0.0" scale="0.1"/>
+					</vox>
+					<vox id_="2067852544" open_="true" pos="-1.3 1.9 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="200290240" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.1 0.9"/>
+					</vox>
+				</vox>
+				<vox id_="222442752" open_="true" pos="1.8 0.3 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table matcha">
+					<vox id_="1829483520" pos="0.0 0.0 -1.1" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="1756340864" pos="-1.0 0.0 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="305875168" pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+					<vox id_="936894272" pos="1.0 0.0 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair matcha"/>
+				</vox>
+				<vox id_="959308992" pos="7.5 0.3 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 matcha"/>
+				<vox id_="333008736" pos="6.0 0.3 -0.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table_2 matcha"/>
+				<vox id_="641112256" pos="7.5 0.3 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 matcha"/>
+			</group>
+		</group>
+		<group id_="1615495424" open_="true" name="Model 3" pos="48.4 0.0 -57.4">
+			<group id_="151987264" open_="true" name="Structure">
+				<group id_="900257408" open_="true" name="Roof">
+					<voxbox id_="655334464" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
+					<voxbox id_="1769383424" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
+					<voxbox id_="702523264" pos="0.0 4.4 1.2" rot="0.0 0.0 0.0" size="81 1 25" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="796900864" pos="-0.1 4.2 -5.5" rot="0.0 0.0 0.0" size="83 2 68" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxagon id_="1895416832" pos="3.9 5.3 3.7" rot="0.0 90.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.9 0.5"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+					<voxagon id_="11535040" pos="4.4 5.3 -5.4" rot="0.0 270.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4" extrude="2">
+						<vertex pos="-0.9 -3.6"/>
+						<vertex pos="0.8 0.3"/>
+						<vertex pos="-0.9 4.3"/>
+					</voxagon>
+				</group>
+				<group id_="864734784" open_="true" name="Walls">
+					<voxbox id_="430466720" pos="8.1 0.0 -5.6" rot="0.0 0.0 0.0" size="2 42 69" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<voxbox id_="1027339520" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<voxbox id_="451767232" pos="0.0 0.0 1.3" rot="0.0 180.0 0.0" size="2 42 67" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<group id_="168372256" name="White thing">
+						<voxbox id_="1070268224" pos="2.3 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="36964560" pos="0.4 0.3 3.9" rot="0.0 180.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="153232512" pos="0.3 0.3 3.4" rot="0.0 -180.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1581938944" pos="0.4 3.8 3.3" rot="0.0 -180.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1672711936" pos="7.9 3.8 3.3" rot="0.0 -90.0 0.0" prop="false" size="6 7 75" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<vox id_="1020261184" pos="2.5 0.3 3.6" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<vox id_="1302279808" pos="5.8 0.3 3.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 1"/>
+						<voxbox id_="2116876416" pos="7.9 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1564898560" pos="8.5 0.3 3.3" rot="0.0 -90.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
+						<voxbox id_="1621721728" pos="7.8 3.8 1.3" rot="0.0 0.0 0.0" prop="false" size="6 6 20" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="up thing"/>
+						<voxbox id_="1537109632" pos="7.8 0.3 1.3" rot="0.0 0.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
+						<voxbox id_="1708168960" pos="0.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="1991891712" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+						<voxbox id_="326192576" pos="8.0 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
+					</group>
+					<voxbox id_="1964758144" pos="0.0 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+					<voxbox id_="1981012096" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+				</group>
+				<group id_="1493459968" open_="true" name="Lights">
+					<vox id_="932568640" pos="5.8 3.3 -0.7" rot="0.0 -60.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3">
+						<light id_="451177344" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1951846784" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="479359552" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="169486432" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<vox id_="1123355648" pos="1.8 2.5 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="lamp_3">
+						<light id_="931257856" pos="0.1 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.2 0.2"/>
+						<rope id_="1379879168" open_="true" pos="0.05 0.4 -0.05">
+							<location id_="1473076992" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+							<location id_="1224680448" pos="0.0 1.2 0.0" rot="0.0 0.0 0.0"/>
+						</rope>
+					</vox>
+					<voxbox id_="228079200" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1296512256" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1789831808" pos="6.5 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="282411872" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" angle="60" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="674668736" pos="4.5 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1974916864" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="2127035136" pos="3.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1234708096" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1191975936" pos="6.0 4.2 -3.7" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1160582272" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+				</group>
+				<group id_="1992416000" name="Floor">
+					<voxbox id_="1875558144" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<voxbox id_="1716427008" pos="0.0 0.0 3.7" rot="0.0 -180.0 0.0" size="2 3 24" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="2098852992" pos="8.1 0.0 3.7" rot="0.0 -90.0 0.0" size="2 3 81" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+					<voxbox id_="740667520" pos="8.1 0.0 1.3" rot="0.0 0.0 0.0" size="2 3 25" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
+				</group>
+				<group id_="1566930304" name="Doors">
+					<vox id_="73929120" open_="true" pos="4.2 0.3 1.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Windoor">
+						<vox id_="1028125952" open_="true" pos="-0.1 0.1 0.5" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door R">
+							<joint id_="777697664" pos="0.0 1.7 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="1472290560" pos="0.0 0.4 0.5" rot="90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+						<vox id_="916511360" pos="-0.1 0.1 -0.6" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L">
+							<joint id_="1442535424" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="476869056" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<vox id_="306989376" pos="0.1 0.9 -2.3" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+				</group>
+				<group id_="1895416832" open_="true" name="xtra" pos="-0.6 0.0 -5.4" rot="0.0 -90.0 0.0">
+					<voxbox id_="3866860" pos="-4.4 4.3 0.2" rot="0.0 90.0 0.0" texture="1 " size="33 24 63" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
+					<voxbox id_="1275867136" pos="2.1 4.3 -6.6" rot="0.0 -90.0 0.0" texture="1" size="35 17 65" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
+					<voxbox id_="1233331712" pos="-4.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 40" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<voxagon id_="89331024" pos="-3.9 5.3 -3.5" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4" extrude="2">
+						<vertex pos="-1.0 -2.0"/>
+						<vertex pos="0.2 0.3"/>
+						<vertex pos="-1.0 3.0"/>
+					</voxagon>
+					<voxbox id_="1886503424" pos="-4.1 4.2 -5.5" rot="0.0 0.0 0.0" size="40 1 49" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="roof plane"/>
+					<voxbox id_="1641580416" pos="-1.9 4.2 -4.3" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="169486432" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="500856672" pos="-0.7 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="1999822080" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="1054604160" pos="-3.3 4.2 -3.1" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="2021646848" pos="0.0 0.0 0.1" rot="90.0 0.0 0.0" type="cone" scale="2" size="0.1 0.1"/>
+					</voxbox>
+					<voxbox id_="916314752" pos="-4.0 0.0 -0.5" rot="0.0 180.0 0.0" size="2 42 50" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<voxbox id_="609718592" pos="0.0 0.0 -0.6" rot="0.0 -90.0 0.0" size="2 42 41" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+					<voxbox id_="1733860736" pos="-3.9 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 48" brush="MOD/main/Structure" material="wood"/>
+					<voxbox id_="746566144" pos="-0.0 0.3 -0.6" rot="0.0 180.0 0.0" size="1 39 47" brush="MOD/main/Structure" material="wood"/>
+					<vox id_="1518234112" pos="-2.1 0.9 -0.7" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="WINDOW"/>
+					<vox id_="542474560" pos="-2.1 0.3 -3.5" rot="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="bed">
+						<vox id_="1187257088" pos="0.0 0.5 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="mattress"/>
+						<vox id_="1967641856" pos="-0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+						<vox id_="659135808" pos="0.5 0.7 -1.0" rot="0.0 0.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/furniture/basic.vox" object="pilow"/>
+					</vox>
+					<voxbox id_="801947456" pos="-4.0 0.0 -5.4" rot="0.0 0.0 0.0" size="40 3 48" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood2"/>
+					<vox id_="1964102656" pos="0.0 0.3 -3.0" rot="0.0 0.0 0.0" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door 2 R">
+						<vox id_="428697152" pos="0.1 0.1 0.0" prop="true" file="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="W door L 2">
+							<joint id_="1562932352" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							<joint id_="358176096" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+						</vox>
+					</vox>
+					<voxbox id_="1630700800" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 39" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
+					<voxbox id_="1745920000" pos="-0.1 0.0 -5.4" rot="0.0 180.0 0.0" size="2 42 34" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
+				</group>
+			</group>
+			<group id_="2100819200" open_="true" name="Decoration">
+				<vox id_="1169364736" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen 2">
+					<vox id_="81400680" open_="true" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge white">
+						<vox id_="742174976" pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge door white">
+							<joint id_="997322176" pos="0.4 0.7 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<vox id_="569477056" pos="0.0 1.5 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge 2 door white">
+							<joint id_="92804640" pos="0.4 0.4 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
+						</vox>
+						<light id_="1530096896" pos="0.0 0.8 0.0" scale="0.1"/>
+					</vox>
+					<vox id_="1205346176" open_="true" pos="-1.3 1.9 1.2" rot="0.0 0.0 0.0" prop="false" file="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
+						<light id_="741322944" pos="0.0 0.0 -0.05" rot="90.0 0.0 0.0" type="area" size="0.1 0.9"/>
+					</vox>
+				</vox>
+				<vox id_="1724029696" open_="true" pos="1.8 0.3 -0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table">
+					<vox id_="216609696" pos="0.0 0.0 -1.1" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+					<vox id_="852085568" pos="-1.0 0.0 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+					<vox id_="1784064384" pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+					<vox id_="832423552" pos="1.0 0.0 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Chair"/>
+				</vox>
+				<vox id_="363681472" pos="7.5 0.3 -0.8" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="fireplace white"/>
+				<vox id_="1798352000" pos="5.9 0.3 -1.7" rot="0.0 70.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_1 white"/>
+				<vox id_="929553792" pos="5.9 0.3 0.3" rot="0.0 110.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_1 white"/>
+				<vox id_="407462176" pos="5.6 0.3 -0.7" rot="0.0 90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table_1"/>
+			</group>
+		</group>
+	</group>
+	<layers/>
+</scene>
+
