@@ -169,12 +169,12 @@ Upgrades = {
 
 Housings = {
 	{
-		name = "House Upgrade 1",
+		name = "Nice Chair",
 		userLevelNeeded = 2,
 		cost = 25,
 	},
 	{
-		name = "House Upgrade 2",
+		name = "Bettter Desk",
 		userLevelNeeded = 3,			
 		cost = 40,
 	},
