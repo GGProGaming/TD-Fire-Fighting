@@ -1,4 +1,4 @@
-<scene id_="331829024" version="0.8.0" shadowVolume="200 100 200">
+<scene id_="331829024" open_="true" version="0.8.0" shadowVolume="200 100 200">
 	<environment id_="802471744" template="sunny" skyboxrot="-45"/>
 	<voxbox id_="1359954944" pos="-100.0 -0.1 -100.0" size="2000 1 2000"/>
 	<vox id_="1802349952" pos="0.0 0.0 0.0" file="LEVEL/basic.vox"/>
@@ -10,6 +10,38 @@
 	</boundary>
 	<script id_="12714760" file="main.lua"/>
 	<script id_="1024652352" file="sandbox.lua"/>
+	<group id_="916118144" name="instance=MOD/main/assets tuxedolabs/vehicles/land/tractor.xml" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<vehicle id_="574130432" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" driven="false" sound="tractor" spring="2" topspeed="20" acceleration="2" strength="10" antispin="0" difflock="1" friction="2">
+			<body id_="1735826944" open_="true" pos="-0.05 0.6 -0.25" rot="0.0 0.0 0.0" dynamic="true">
+				<vox id_="1101989504" open_="true" pos="0.05 -0.3 0.45" rot="0 180 0" density="4" strength="5" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="body">
+					<light id_="300304288" pos="0.3 0.6 1.1" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="50" penumbra="15" size="0.1" unshadowed="0.2" glare="0.3"/>
+					<light id_="780712448" pos="-0.2 0.6 1.1" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="50" angle="50" penumbra="15" size="0.1" unshadowed="0.2" glare="0.3"/>
+					<light id_="1928580096" pos="-0.3 0.6 -1.4" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="1" size=".2 .1" unshadowed="0.2" glare="0.2"/>
+					<light id_="1345667328" pos="0.4 0.6 -1.4" rot="0.0 -180.0 0.0" type="area" color="1 .1 .1" scale="1" size=".2 .1" unshadowed="0.2" glare="0.2"/>
+					<light id_="211497584" pos="-0.3 0.8 -1.4" rot="0.0 -180.0 0.0" type="area" color="1 1 1" scale="2" size=".2 .1" unshadowed="0.2"/>
+					<light id_="533757760" pos="0.4 0.8 -1.4" rot="0.0 -180.0 0.0" type="area" color="1 1 1" scale="2" size=".2 .1" unshadowed="0.2"/>
+					<location id_="2116221056" tags="exhaust" pos="0.35 1.9 1.15" rot="-90.0 -180.0 0.0"/>
+					<location id_="130883376" tags="vital" pos="0.05186 0.7 0.86641"/>
+					<location id_="1052048064" tags="player" pos="0.05 1.65 -0.4" rot="0.0 0.0 0.0"/>
+					<vox id_="286344256" pos="0.0 1.0 0.1" prop="true" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="steering wheel">
+						<joint id_="239352080" pos="0.05 0.25 0.0" type="hinge" rotstrength="0.1"/>
+					</vox>
+				</vox>
+				<wheel id_="2006834816" name="bl" pos="-0.65 0.15 1.1" drive="1" travel="0.0 0.1">
+					<vox id_="1369982592" pos="-0.1 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="wheel_bl"/>
+				</wheel>
+				<wheel id_="391339328" name="br" pos="0.65 0.15 1.1" drive="1" travel="0.0 0.1">
+					<vox id_="441936224" pos="0.1 -0.75 -0.05" rot="0.0 180.0 0.0" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="wheel_br"/>
+				</wheel>
+				<wheel id_="1726126976" name="fl" pos="-0.55 -0.15 -0.6" rot="0.0 0.0 0.0" steer="1" travel="-0.0 0.1">
+					<vox id_="1265839616" pos="-0.1 -0.45 -0.05" rot="0.0 180.0 0.0" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="wheel_fl"/>
+				</wheel>
+				<wheel id_="509966752" name="fr" pos="0.65 -0.15 -0.6" steer="1" travel="-0.0 0.1">
+					<vox id_="1175066624" pos="0.2 -0.45 -0.05" rot="0.0 -180.0 0.0" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="wheel_fr"/>
+				</wheel>
+			</body>
+		</vehicle>
+	</group>
 	<layers/>
 </scene>
 
