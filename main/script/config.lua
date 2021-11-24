@@ -172,54 +172,45 @@ Housings = {
 		name = "House Upgrade 1",
 		userLevelNeeded = 2,
 		cost = 25,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 2",
 		userLevelNeeded = 3,			
 		cost = 40,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 3",
 		userLevelNeeded = 4,			
 		cost = 60,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 4",
 		userLevelNeeded = 5,
 		cost = 80,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 5",
 		userLevelNeeded = 6,
 		cost = 100,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 6",
 		userLevelNeeded = 7,
 		cost = 120,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 7",
 		userLevelNeeded = 8,
 		cost = 140,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 8",
 		userLevelNeeded = 8,
 		cost = 160,
-		image = "MOD/main/images/office_chair.PNG",
 	},
 	{
 		name = "House Upgrade 9",
 		userLevelNeeded = 8,
 		cost = 170,
-		image = "MOD/main/images/office_chair.PNG",
 	}
 }

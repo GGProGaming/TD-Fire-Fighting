@@ -105,7 +105,7 @@ function showMenu()
 	UiPop()
 end
 
-function showHousing(name,image, userLevelNeeded,cost,index)
+function showHousing(name, userLevelNeeded,cost,index)
 	UiPush()
 		
 		if Userlevel >= userLevelNeeded and not GetBool("savegame.mod.housings."..index..".bought") then
@@ -124,7 +124,7 @@ function showHousing(name,image, userLevelNeeded,cost,index)
 		UiPush()
 			UiTranslate(7,7)		
 			UiColor(1,1,1)
-			UiImageBox(image,50,50,0,0)
+			UiImageBox("MOD/images/upgrades/house_upgrade_"..index..".png",50,50,0,0)
 			UiTranslate(65,0)		
 			UiColor(0.8,0.8,0.8)
 			UiFont("bold.ttf",12)
@@ -318,7 +318,7 @@ function showHousings()
 		local Page = math.max(1,math.ceil((HousingsCurrentPageSlider /300) * math.max(1,(#Housings - 3))))
 		
 		for i=Page,  math.min(#Housings,Page+3) do
-			showHousing(Housings[i].name,Housings[i].image, Housings[i].userLevelNeeded,Housings[i].cost,i)	
+			showHousing(Housings[i].name, Housings[i].userLevelNeeded,Housings[i].cost,i)	
 		end					
 	UiPop()
 	if #Housings > 4 then
