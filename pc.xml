@@ -1,0 +1,12 @@
+<prefab version="0.8.0">
+	<group id_="123673984" open_="true" name="Computer" pos="-2.3 0.9 -4.5">
+		<body id_="968943360" open_="true" name="computer" pos="0.0 0.2 -0.1">
+			<vox id_="1715968256" open_="true" tags="unbreakable" pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="monitor">
+				<screen id_="1391020928" tags="terminal unbreakable" pos="0.4 0.5 -0.05" rot="0.0 90.0 0.0" size="0.5 0.4" bulge="0.01" script="MOD/main/script/terminal.lua" enabled="true" interactive="true"/>
+			</vox>
+			<vox id_="2063395840" tags="keyboard interact=Interact unbreakable" pos="0.0 0.0 0.5" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="keyboard"/>
+			<script id_="1944833920" file="MOD/main/script/use pc.lua"/>
+		</body>
+	</group>
+</prefab>
+

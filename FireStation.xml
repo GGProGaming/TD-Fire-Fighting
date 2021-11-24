@@ -91,7 +91,7 @@
 						</voxagon>
 					</group>
 					<group id_="1398492544" open_="true" name="Interior">
-						<group id_="247544576" name="Grey blocks">
+						<group id_="247544576" open_="true" name="Grey blocks">
 							<voxbox id_="1890239104" pos="15.0 0.3 15.7" rot="0.0 0.0 0.0" size="3 39 132" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							<voxbox id_="1468620288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							<voxbox id_="1649838464" pos="-3.8 0.3 28.9" rot="0.0 180.0 0.0" size="2 39 335" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
@@ -206,7 +206,7 @@
 						</group>
 					</group>
 				</group>
-				<group id_="560104832" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+				<group id_="560104832" open_="true" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 					<vox id_="639342720" pos="0.4 0.3 0.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1236739840" pos="0.4 0.3 2.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1153897216" pos="0.2 0.2 9.0" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
@@ -540,6 +540,25 @@
 			</group>
 		</group>
 	</group>
+	<group id_="367482784" open_="true" name="Upgrades" pos="1.5 -4.2 -0.1">
+		<group id_="1396985088" open_="true" name="Upgrade Objects" pos="-1.5 4.2 0.1">
+			<body id_="317148064" open_="true" tags="upgrade_1" pos="-0.9 -1.8 4.2" dynamic="true">
+				<vox id_="105978176" tags="upgrade_1" pos="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/office_murky.vox" object="chair"/>
+			</body>
+		</group>
+		<group id_="1803333120" open_="true" name="Upgrade Places" pos="-1.5 4.2 0.1">
+			<body id_="400514944" name="Upgrade 1 Location" tags="upgrade_1_location" pos="3.2 0.3 0.0" dynamic="true"/>
+		</group>
+	</group>
+	<body id_="968943360" open_="true" name="computer" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0">
+		<vox id_="1715968256" open_="true" tags="unbreakable" pos="0.0 0.0 0.0" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="monitor">
+			<screen id_="1391020928" tags="terminal unbreakable" pos="0.4 0.5 -0.05" rot="0.0 90.0 0.0" size="0.5 0.4" bulge="0.01" script="MOD/main/script/terminal.lua" enabled="true" interactive="true"/>
+		</vox>
+		<vox id_="2063395840" tags="keyboard interact=Interact unbreakable" pos="0.0 0.0 0.5" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="keyboard"/>
+	</body>
+	<script id_="1944833920" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0" file="MOD/main/script/use pc.lua"/>
+	<spawnpoint id_="501905312" pos="0.8 1.1 5.3"/>
+	<script id_="1866251520" file="MOD/main/script/upgrades.lua"/>
 	<layers/>
 </scene>
 
