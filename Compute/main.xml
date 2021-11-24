@@ -17,8 +17,11 @@
 	<group id_="959636672" name="doors" pos="0.4 0.1 0.4"/>
 	<script id_="333860768" pos="2.2 0.0 -5.1" file="MOD/use pc.lua"/>
 	<spawnpoint id_="549094144" pos="2.2 1.0 1.5" rot="0.0 -70.0 0.0"/>
-	<voxbox id_="881119744" pos="-10.5 0.0 -9.5" size="50 30 2" material="wood" color="0.77 0.39 0.1"/>
+	<voxbox id_="881119744" pos="-10.5 0.0 -9.6" size="50 30 5" material="wood" color="0.77 0.39 0.1"/>
 	<script id_="1582266624" file="MOD/fire.lua"/>
+	<script id_="753578944" file="MOD/tools.lua"/>
+	<script id_="476869056" file="sandbox.lua"/>
+	<script id_="1621656192" file="MOD/tools-2.lua"/>
 	<layers/>
 </scene>
 

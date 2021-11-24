@@ -12,11 +12,6 @@ fire_pos = {
 
 time_of_next_fire = 1
 
-function clearFires()
-	RemoveAabbFires(Vec(-10000, -10000, -10000), Vec(10000, 10000, 10000))
-end
-
-
 function tick()
 	DebugWatch("Next Fire", GetTime() - time_of_next_fire)
   if time_of_next_fire ~= nil and GetTime() > time_of_next_fire and #fire_pos > 0 then -- check here if there are fireposition left
@@ -29,26 +24,9 @@ function tick()
       SpawnFire(VecAdd(fire, Vec(math.random(-2,2), 0, math.random(-2,2))))
     end
   end
-  if InputDown("k") then
-    clearFires()
-  end  
 end
 
-function update(dt)
-  function Firefighter()
-    if Employees > 0 then
-      DebugWatch("DeleteFire", true)
-      spawn(function()
-        if Employees["stars"] then
-          if Employees[1] then
-            clearFires()
-            wait(5)
-          end
-        end
-      end)
-    end
-  end
-end
+
 
 
 
