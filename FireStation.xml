@@ -545,7 +545,6 @@
 		</vox>
 		<vox id_="2063395840" tags="keyboard interact=Interact unbreakable" pos="0.0 0.0 0.5" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="keyboard"/>
 	</body>
-	<script id_="1944833920" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0" file="MOD/main/script/use pc.lua"/>
 	<script id_="1866251520" file="MOD/main/script/upgrades.lua"/>
 	<layers/>
 </scene>

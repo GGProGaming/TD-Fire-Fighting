@@ -1,7 +1,7 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="290 100 200">
 	<group id_="752137024" open_="true" name="ground" pos="0.0 -0.1 0.0">
 		<voxscript id_="1630635264" pos="-145.20001 -3.5 -100.00001" texture="6" file="MOD/main/script/ground.lua">
-			<parameters file="MOD/main/script/1.png" scale="300"/>
+			<parameters file="MOD/main/script/heightmap.png" scale="300"/>
 		</voxscript>
 		<voxbox id_="1851177344" pos="-27.1 -20.8 -67.0" rot="0.0 0.0 0.0" size="37 140 20">
 			<voxbox id_="1416778240" pos="0.0 10.6 0.0" rot="0.0 0.0 0.0" size="144 34 20"/>
@@ -48,7 +48,7 @@
 		<script id_="1475502080" file="main.lua"/>
 		<spawnpoint id_="123149664" pos="31.6 0.5 -35.8" rot="0.0 0.0 0.0"/>
 	</group>
-	<group id_="1266363904" name="Gardens">
+	<group id_="1266363904" open_="true" name="Gardens">
 		<group id_="696755712" name="Houses">
 			<voxbox id_="1312569600" pos="108.7 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="890623040" pos="-25.7 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
@@ -499,7 +499,7 @@
 				<vox id_="249248624" pos="3.89999 0.4 -11.6" rot="0.0 60.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-large.vox"/>
 			</group>
 		</group>
-		<group id_="1835054464" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<group id_="1835054464" open_="true" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<voxbox id_="850578112" name="blocks" pos="-13.4 0.4 -62.1" rot="0.0 -90.0 0.0" texture="6" size="169 2 148" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1557754752" pos="14.3 0.2 4.1" rot="0.0 -90.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1370769152" pos="14.3 0.2 2.1" rot="0.0 0.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
@@ -3782,7 +3782,7 @@
 								<voxbox id_="2137587072" pos="22.2 0.3 15.5" rot="0.0 -90.0 0.0" size="3 47 118" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="212349600" pos="10.4 4.3 15.3" rot="0.0 -90.0 0.0" size="5 7 42" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							</group>
-							<group id_="779401664" name="Deco">
+							<group id_="779401664" open_="true" name="Deco">
 								<voxbox id_="1330789760" pos="0.5 0.3 -4.1" rot="0.0 90.0 0.0" size="3 39 85" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
 								<voxbox id_="1180506496" pos="8.4 0.3 -4.4" rot="0.0 0.0 0.0" size="5 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
 								<voxbox id_="1766565120" pos="0.5 0.3 4.3" rot="0.0 180.0 0.0" size="3 39 87" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
@@ -4281,7 +4281,7 @@
 		<group id_="367482784" open_="true" name="Upgrades" pos="1.5 -4.2 -0.1">
 			<group id_="1396985088" open_="true" name="Upgrade Objects" pos="-1.5 4.2 0.1">
 				<body id_="317148064" open_="true" tags="upgrade_1" pos="-0.9 -1.8 4.2" dynamic="true">
-					<vox id_="105978176" tags="upgrade_1" pos="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/office_murky.vox" object="chair"/>
+					<vox id_="105978176" tags="upgrade_1" pos="0.0 -0.5 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/office_murky.vox" object="chair"/>
 				</body>
 			</group>
 			<group id_="1803333120" open_="true" name="Upgrade Places" pos="-1.5 4.2 0.1">
@@ -4294,7 +4294,7 @@
 			</vox>
 			<vox id_="2063395840" tags="keyboard interact=Interact unbreakable" pos="0.0 0.0 0.5" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="keyboard"/>
 		</body>
-		<script id_="1944833920" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0" file="MOD/main/script/use pc.lua"/>
+		<script id_="1944833920" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0" file="MOD/main/script/usepc.lua"/>
 		<script id_="1866251520" file="MOD/main/script/upgrades.lua"/>
 	</group>
 	<group id_="1219764992" open_="true" name="scripts">
@@ -4311,10 +4311,14 @@
 				<trigger id_="2007424640" name="checkpoint" tags="checkpoint=5" pos="-42.6 0.5 -74.9" rot="0.0 0.0 0.0" type="box" size="3 3 3"/>
 			</group>
 		</group>
+		<group id_="1683394944" open_="true" name="script" layer="scripts">
+			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
+		</group>
 	</group>
 	<layers>
+		<layer name="scripts" visible="false"/>
 		<layer name="AI" visible="false"/>
-		<layer name="Furnishings" visible="true"/>
+		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
 

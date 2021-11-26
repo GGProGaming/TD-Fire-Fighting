@@ -1,6 +1,6 @@
 -- user configuration -
-UserStartLevel = 3
-UserStartMoney = 25
+UserStartLevel = SetInt("savegame.mod.userLevel", 1)
+UserStartMoney = SetInt("savegame.mod.userMoney", 25)
 
 -- website left menu --
 WebSiteMenuLinkName_Mail = "Mail Account"
