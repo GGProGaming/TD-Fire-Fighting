@@ -1,0 +1,11 @@
+<prefab version="0.5.3">
+	<group id_="910022912" open_="true" name="fridge" pos="-3.0 0.3 -3.6">
+		<vox id_="401629120" name="fridge" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" file="MOD/vox/interior/kitchen/light cyan kitchen furniture.vox" object="fridge_body">
+			<vox id_="1160713344" open_="true" pos="0.0 0.3 0.62" prop="true" file="MOD/vox/interior/kitchen/light cyan kitchen furniture.vox" object="fridge_door">
+				<joint id_="334254016" pos="0.4 0.4 -0.1" collide="true"/>
+				<joint id_="1129844096" pos="0.4 1.2 -0.1" collide="true"/>
+			</vox>
+		</vox>
+	</group>
+</prefab>
+

@@ -1,0 +1,8 @@
+<prefab version="0.5.3">
+	<group id_="1520003712" open_="true" name="instance=MOD/prefab/normal window.xml" pos="4.6 1.4 4.9" rot="0.0 0.0 0.0">
+		<voxbox id_="1889780352" open_="true" pos="-0.1 0.0 -1.1" rot="0.0 0.0 0.0" size="4 19 15" brush="hole">
+			<vox id_="1276391552" name="small window" pos="0.1 0.0 0.8" rot="0.0 90.0 0.0" prop="true" file="MOD/vox/interior/normal window.vox"/>
+		</voxbox>
+	</group>
+</prefab>
+

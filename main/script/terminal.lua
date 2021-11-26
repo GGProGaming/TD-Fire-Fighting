@@ -14,6 +14,7 @@
 
 
 #include "config.lua"
+#include "upgrades.lua"
 
 function init()
 	currentTab = "welcome"
@@ -536,6 +537,9 @@ function cheats()
 		UiTranslate(0,30)
 		if UiTextButton("Clear all bought House upgrades") then 
 			for i=1, #Housings do
+				local body = FindBody("upgrade_"..i,true)
+				SetBodyTransform(body,bodyLocation)
+				SetBodyTransform(FindBody("upgrade_"..i.."_location",true),newPosition)
 				SetBool("savegame.mod.housings."..i..".bought",false)
 			end
 		end

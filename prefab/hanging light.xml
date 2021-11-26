@@ -1,0 +1,16 @@
+<prefab version="0.5.3">
+	<group id_="1243752576" open_="true" name="instance=MOD/prefab/hanging light.xml" pos="-59.39999 7.4 17.5" rot="0.0 0.0 0.0">
+		<voxbox id_="725462272" open_="true" pos="-0.7 0.1 0.0" prop="true" size="16 1 1" brush="MOD/brush/light pixel.vox">
+			<rope id_="1569420800" pos="0.3 0.0 0.0">
+				<location id_="831768128" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0"/>
+				<location id_="2065624192" pos="0.0 0.7 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+			<rope id_="321539232" pos="1.4 0.0 0.0">
+				<location id_="1461738624" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0"/>
+				<location id_="23201160" pos="0.0 0.7 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+			<light id_="2113140736" pos="0.9 0.0 0.0" scale="5"/>
+		</voxbox>
+	</group>
+</prefab>
+

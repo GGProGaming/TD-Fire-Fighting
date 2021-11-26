@@ -1,0 +1,8 @@
+<prefab version="0.5.3">
+	<group id_="1044248832" open_="true" name="standing floor lamp" pos="-1.3 0.7 0.6">
+		<vox id_="1466916224" pos="0.1 0.0 0.0" rot="0.0 90.0 0.0" prop="true" file="MOD/vox/interior/standing floor lamp.vox">
+			<light id_="982968896" pos="0.0 1.6 0.0" color="0.93 0.92 0.69"/>
+		</vox>
+	</group>
+</prefab>
+
