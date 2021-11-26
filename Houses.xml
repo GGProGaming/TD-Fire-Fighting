@@ -1,5 +1,5 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="290 100 200">
-	<group id_="752137024" name="ground" pos="0.0 -0.1 0.0">
+	<group id_="752137024" open_="true" name="ground" pos="0.0 -0.1 0.0">
 		<voxscript id_="1630635264" pos="-145.20001 -3.5 -100.00001" texture="6" file="MOD/main/script/ground.lua">
 			<parameters file="MOD/main/script/1.png" scale="300"/>
 		</voxscript>
@@ -47,7 +47,7 @@
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
 	</group>
-	<group id_="1266363904" name="Gardens">
+	<group id_="1266363904" open_="true" name="Gardens">
 		<group id_="696755712" name="Houses">
 			<voxbox id_="1312569600" pos="108.7 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="890623040" pos="-25.7 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
@@ -275,7 +275,7 @@
 				<vox id_="514161312" pos="107.8 0.3 3.7" rot="0.0 0.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 			</group>
 		</group>
-		<group id_="1835054464" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<group id_="1835054464" open_="true" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<voxbox id_="850578112" name="blocks" pos="-13.4 0.4 -62.1" rot="0.0 -90.0 0.0" texture="6" size="169 2 148" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1557754752" pos="14.3 0.2 4.1" rot="0.0 -90.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1370769152" pos="14.3 0.2 2.1" rot="0.0 0.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
@@ -558,6 +558,7 @@
 					</group>
 				</group>
 			</group>
+			<voxbox id_="1168512640" name="blocks" pos="114.99998 -0.1 13.4" rot="0.0 -90.0 0.0" texture="6" size="324 6 434" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 		</group>
 		<group id_="420701248" name="Grey" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<voxbox id_="577669568" pos="-39.40002 -0.2 -45.20002" rot="0.0 0.0 0.0" texture="6" size="35 7 53" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
@@ -619,7 +620,7 @@
 			</voxbox>
 		</group>
 	</group>
-	<group id_="1578465408" name="Houses">
+	<group id_="1578465408" open_="true" name="Houses">
 		<group id_="2143616768" name="Model 1" pos="-0.5 0.6 -52.3" rot="0.0 0.0 0.0">
 			<group id_="1977669504" open_="true" name="Structure">
 				<group id_="75960864" name="Roof">
@@ -1131,8 +1132,8 @@
 				<light id_="166864832" pos="0.1 0.0 -0.0" rot="90.0 0.0 0.0" color="0.97 0.85 0.72" angle="60" size="0.1 0.1"/>
 			</voxbox>
 		</group>
-		<group id_="1184963200" open_="true" name="Model 3" pos="29.3 0.0 32.5" rot="0.0 0.0 0.0">
-			<group id_="1275867136" open_="true" name="Structure">
+		<group id_="1184963200" name="Model 3" pos="29.3 0.0 32.5" rot="0.0 0.0 0.0">
+			<group id_="1275867136" name="Structure">
 				<group id_="1801760128" name="Roof" pos="-15.6 0.0 0.0">
 					<voxbox id_="667131648" pos="11.4 4.2 0.0" rot="0.0 0.0 0.0" size="49 31 41" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
 					<voxbox id_="1742774144" pos="21.4 4.2 4.1" rot="0.0 180.0 0.0" size="51 31 41" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -1492,7 +1493,7 @@
 				<vox id_="172108032" pos="4.8 0.3 -6.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="couch matcha"/>
 			</group>
 		</group>
-		<group id_="719956928" open_="true" name="Decoraton">
+		<group id_="719956928" name="Decoraton">
 			<group id_="1883750656" name="Decoration1" pos="-20.3 0.0 -82.10001" rot="0.0 0.0 0.0">
 				<vox id_="849660544" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen wood">
 					<vox id_="320293984" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge wood">
@@ -1727,7 +1728,7 @@
 				<vox id_="1153438464" pos="7.5 0.3 -1.4" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 blue"/>
 				<vox id_="1037760384" pos="6.0 0.3 -0.6" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="table_2 blue"/>
 				<vox id_="1773840128" pos="7.5 0.3 0.0" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="chair_2 blue"/>
-				<vox id_="2043012864" open_="true" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen 4">
+				<vox id_="2043012864" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen 4">
 					<vox id_="2004868608" open_="true" pos="0.8 0.0 -1.9" rot="0.0 0.0 0.0" density="7" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge blue">
 						<vox id_="840353856" pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="Fridge door blue">
 							<joint id_="1072365504" pos="0.4 0.7 -0.1" rot="90.0 90.0 0.0" type="hinge" collide="false" limits="-90 0"/>
@@ -2104,8 +2105,8 @@
 				</group>
 			</group>
 		</group>
-		<group id_="1709086592" open_="true" name="Model 1" pos="17.4 0.6 -5.3" rot="0.0 0.0 0.0">
-			<group id_="310462976" open_="true" name="Structure">
+		<group id_="1709086592" name="Model 1" pos="17.4 0.6 -5.3" rot="0.0 0.0 0.0">
+			<group id_="310462976" name="Structure">
 				<group id_="1010561280" open_="true" name="Roof">
 					<voxbox id_="374364480" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
 					<voxbox id_="263405264" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -2312,7 +2313,7 @@
 				</group>
 			</group>
 		</group>
-		<group id_="2061167488" open_="true" name="Model 1" pos="52.8 0.6 -5.3" rot="0.0 0.0 0.0">
+		<group id_="2061167488" name="Model 1" pos="52.8 0.6 -5.3" rot="0.0 0.0 0.0">
 			<group id_="590974208" name="Structure">
 				<group id_="687121344" name="Roof">
 					<voxbox id_="1239426944" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -2958,7 +2959,7 @@
 				</group>
 			</group>
 		</group>
-		<group id_="549159680" open_="true" name="Model 3" pos="23.50002 0.6 -19.7" rot="0.0 180.0 0.0">
+		<group id_="549159680" name="Model 3" pos="23.50002 0.6 -19.7" rot="0.0 180.0 0.0">
 			<group id_="597855872" open_="true" name="Structure">
 				<group id_="1434015232" name="Roof">
 					<voxbox id_="1866841344" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -3109,7 +3110,7 @@
 			</body>
 		</vehicle>
 	</group>
-	<group id_="1931398272" name="Firestation" pos="85.3 0.0 17.0" rot="0.0 0.0 0.0">
+	<group id_="1931398272" name="Firestation" pos="85.3 0.5 16.8" rot="0.0 0.0 0.0">
 		<group id_="2091512448" name="Firestation" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<group id_="1333476864" open_="true" name="Structure">
 				<group id_="1853012480" open_="true" name="1st floor">
