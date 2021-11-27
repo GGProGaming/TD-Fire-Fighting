@@ -424,8 +424,8 @@
 				<vox id_="1020064576" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 			</vox>
 		</group>
-		<group id_="1835316608" name="trees">
-			<group id_="1773381376">
+		<group id_="1835316608" open_="true" name="trees">
+			<group id_="1773381376" open_="true">
 				<vox id_="1816178944" pos="-40.5 0.3 -40.5" rot="0.0 0.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 				<vox id_="1714395264" pos="106.10001 0.3 -40.5" rot="0.0 0.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 				<vox id_="1022292928" pos="-40.5 0.3 -30.0" rot="0.0 0.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
@@ -1410,8 +1410,8 @@
 				<light id_="166864832" pos="0.1 0.0 -0.0" rot="90.0 0.0 0.0" color="0.97 0.85 0.72" angle="60" size="0.1 0.1"/>
 			</voxbox>
 		</group>
-		<group id_="1184963200" name="Model 3" pos="-10.0 0.5 32.40001" rot="0.0 90.0 0.0">
-			<group id_="1275867136" name="Structure">
+		<group id_="1184963200" open_="true" name="Model 3" pos="-10.0 0.5 32.40001" rot="0.0 90.0 0.0">
+			<group id_="1275867136" open_="true" name="Structure">
 				<group id_="1801760128" open_="true" name="Roof" pos="-15.6 0.0 0.0">
 					<voxbox id_="667131648" pos="11.4 4.2 0.0" rot="0.0 0.0 0.0" size="49 31 41" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
 					<voxbox id_="1742774144" pos="21.4 4.2 4.1" rot="0.0 180.0 0.0" size="51 31 41" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -1656,7 +1656,7 @@
 					<voxbox id_="583633728" open_="true" pos="3.15 4.19 -5.9" rot="0.0 -90.0 0.0" size="67 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
 						<light id_="1078132992" pos="3.3 0.0 0.05" rot="90.0 90.0 0.0" type="area" color="0.92 0.8 0.58" scale="2" size="0.1 6.7"/>
 					</voxbox>
-					<voxbox id_="1832367360" pos="5.1 3.7 -6.0" rot="0.0 -90.0 0.0" size="1 5 40" brush="MOD/main/Structure/Houses" object="Wall2" material="wood">
+					<voxbox id_="1832367360" open_="true" pos="5.1 3.7 -6.0" rot="0.0 -90.0 0.0" size="1 5 40" brush="MOD/main/Structure/Houses" object="Wall2" material="wood">
 						<light id_="1832498432" pos="-0.1 0.2 1.85" rot="90.0 0.0 -20.0" type="area" color="0.92 0.8 0.58" size="0.1 4"/>
 						<voxbox id_="894620992" pos="-0.1 0.2 -0.2" rot="0.0 -90.0 0.0" size="42 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light"/>
 					</voxbox>
@@ -1771,7 +1771,7 @@
 				<vox id_="172108032" pos="4.8 0.3 -6.9" rot="0.0 0.0 0.0" prop="true" file="MOD/main/Furniture/Kitchen/basic.vox" object="couch matcha"/>
 			</group>
 		</group>
-		<group id_="226440704" name="Model 3" pos="93.6 0.5 25.90001" rot="0.0 -90.0 0.0">
+		<group id_="226440704" open_="true" name="Model 3" pos="93.6 0.5 25.90001" rot="0.0 -90.0 0.0">
 			<group id_="428893760" open_="true" name="Structure">
 				<group id_="1178933504" name="Roof" pos="-15.6 0.0 0.0">
 					<voxbox id_="258030976" pos="11.4 4.2 0.0" rot="0.0 0.0 0.0" size="49 31 41" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -3533,7 +3533,7 @@
 				</group>
 			</group>
 		</group>
-		<group id_="549159680" name="Model 3" pos="23.50002 0.6 -19.7" rot="0.0 180.0 0.0">
+		<group id_="549159680" open_="true" name="Model 3" pos="23.50002 0.6 -19.7" rot="0.0 180.0 0.0">
 			<group id_="597855872" open_="true" name="Structure">
 				<group id_="1434015232" name="Roof">
 					<voxbox id_="1866841344" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -3631,14 +3631,14 @@
 					<voxbox id_="860146944" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 39" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
 					<voxbox id_="180169456" pos="-0.1 0.0 -5.4" rot="0.0 180.0 0.0" size="2 42 34" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 4"/>
 				</group>
-				<group id_="1655081600" name="Decoration emply" rot="0.0 0.0 0.0">
+				<group id_="1655081600" open_="true" name="Decoration emply" rot="0.0 0.0 0.0">
 					<vox id_="685745024" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen wood"/>
 					<vox id_="1158681600" pos="7.5 0.3 -2.5" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="30607180" pos="7.5 1.0 -2.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="1035728640" pos="1.3 1.2 -0.2" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="14091100" pos="1.5 0.3 -0.3" rot="0.0 -90.0 0.0" texture="5" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="medium"/>
 					<vox id_="717007616" pos="0.9 0.3 -4.6" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
-					<vox id_="206582080" pos="-0.7 0.3 -4.8" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
+					<vox id_="206582080" pos="-0.7 0.0 -4.8" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="1593408512" pos="7.4 0.3 0.3" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<group id_="21038340" name="Lights">
 						<voxbox id_="173549920" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
@@ -3652,7 +3652,7 @@
 			</group>
 		</group>
 	</group>
-	<group id_="614240896" name="instance=MOD/main/assets tuxedolabs/vehicles/land/tractor.xml" pos="1.6 0.4 -19.8" rot="0.0 40.0 0.0">
+	<group id_="614240896" open_="true" name="instance=MOD/main/assets tuxedolabs/vehicles/land/tractor.xml" pos="1.6 0.4 -19.8" rot="0.0 40.0 0.0">
 		<vehicle id_="818594624" open_="true" pos="0.1 0.0 -0.1" rot="0.0 0.0 0.0" driven="false" sound="tractor" spring="2" topspeed="20" acceleration="2" strength="10" antispin="0" difflock="1" friction="2">
 			<body id_="1643022208" open_="true" pos="-0.05 0.6 -0.25" rot="0.0 0.0 0.0" dynamic="true" desc="Don't ask...">
 				<vox id_="1932381312" open_="true" pos="0.05 -0.3 0.45" rot="0 180 0" texture="Don't ask..." density="4" strength="5" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="body">
@@ -3665,7 +3665,7 @@
 					<location id_="1650166144" tags="exhaust" pos="0.35 1.9 1.15" rot="-90.0 -180.0 0.0"/>
 					<location id_="1155535744" tags="vital" pos="0.05186 0.7 0.86641"/>
 					<location id_="1189092224" tags="player" pos="0.05 1.65 -0.4" rot="0.0 0.0 0.0"/>
-					<vox id_="1164318080" pos="0.0 1.0 0.1" prop="true" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="steering wheel">
+					<vox id_="1164318080" open_="true" pos="0.0 1.0 0.1" prop="true" file="MOD/main/assets tuxedolabs/vehicles/land/tractor - Copy.vox" object="steering wheel">
 						<joint id_="2025186048" pos="0.05 0.25 0.0" type="hinge" rotstrength="0.1"/>
 					</vox>
 				</vox>
@@ -3765,7 +3765,7 @@
 							</voxagon>
 						</group>
 						<group id_="1398492544" open_="true" name="Interior">
-							<group id_="247544576" name="Grey blocks">
+							<group id_="247544576" open_="true" name="Grey blocks">
 								<voxbox id_="1890239104" pos="15.0 0.3 15.7" rot="0.0 0.0 0.0" size="3 39 132" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="1468620288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="1649838464" pos="-3.8 0.3 28.9" rot="0.0 180.0 0.0" size="2 39 335" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
@@ -4301,15 +4301,18 @@
 		<script id_="2126904064" file="MOD/main/script/tools.lua"/>
 		<script id_="1534422528" file="MOD/main/script/tools-2.lua"/>
 		<group id_="747876928" open_="true" name="AI Stuff" layer="AI">
-			<instance id_="791133312" pos="-88.5 0.5 -35.5" rot="0.0 -90.0 0.0" file="MOD/technicals/avf_aiTechnical.xml"/>
+			<instance id_="791133312" pos="-45.9 0.5 -93.6" rot="0.0 -180.0 0.0" file="MOD/technicals/stationwagon.xml"/>
 			<script id_="1597537536" pos="0.0 0.0 -36.1" file="MOD/technicals/AVF_AI.lua"/>
-			<group id_="666672896" name="triggers" tags="checkpoints">
-				<trigger id_="1509976064" name="checkpoint" tags="checkpoint=1" pos="-47.0 0.5 -34.8" rot="0.0 0.0 0.0" type="box" size="3 3 3"/>
-				<trigger id_="1903609344" name="checkpoint" tags="checkpoint=2" pos="108.3 0.5 -34.7" rot="0.0 0.0 0.0" type="box " size="3 3 3"/>
-				<trigger id_="1495098496" name="checkpoint" tags="checkpoint=3" pos="110.3 0.5 -74.9" rot="0.0 0.0 0.0" type="box" size="3 3 3"/>
-				<trigger id_="2060643200" name="checkpoint" tags="checkpoint=4" pos="102.9 0.5 -75.5" rot="0.0 0.0 0.0" type="box" size="3 3 3"/>
-				<trigger id_="2007424640" name="checkpoint" tags="checkpoint=5" pos="-42.6 0.5 -74.9" rot="0.0 0.0 0.0" type="box" size="3 3 3"/>
+			<group id_="666672896" open_="true" name="triggers" tags="checkpoints">
+				<trigger id_="1509976064" name="checkpoint" tags="checkpoint=1" pos="-47.0 0.5 -34.8" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
+				<trigger id_="1903609344" name="checkpoint" tags="checkpoint=2" pos="113.1 0.5 -35.4" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
+				<trigger id_="1495098496" name="checkpoint" tags="checkpoint=3" pos="112.4 0.5 -68.6" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
+				<trigger id_="2060643200" name="checkpoint" tags="checkpoint=4" pos="-39.5 0.5 -75.3" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
+				<trigger id_="2007424640" name="checkpoint" tags="checkpoint=5" pos="-45.3 0.5 14.7" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
 			</group>
+			<instance id_="352670752" pos="87.2 0.5 7.5" rot="0.0 90.0 0.0" file="MOD/technicals/taskmaster-4wd.xml"/>
+			<instance id_="1301493376" pos="-11.89999 0.5 -75.5" rot="0.0 -90.0 0.0" file="MOD/technicals/van.xml"/>
+			<instance id_="396844704" pos="112.4 0.5 -47.2" rot="0.0 180.0 0.0" file="MOD/technicals/salooncar.xml"/>
 		</group>
 		<group id_="1683394944" open_="true" name="script" layer="scripts">
 			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
@@ -4317,7 +4320,7 @@
 	</group>
 	<layers>
 		<layer name="scripts" visible="false"/>
-		<layer name="AI" visible="false"/>
+		<layer name="AI" visible="true"/>
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>

@@ -243,7 +243,7 @@ function markLoc()
 		end
 		-- DebugWatch("checkpoint: ",raceCheckpoint)
 		-- DebugWatch("goalpos",VecLength(goalPos))
-		SpawnParticle("fire", goalPos, Vec(0,5,0), 0.5, 1)
+		--SpawnParticle("fire", goalPos, Vec(0,5,0), 0.5, 1)
 	end
 
 	if(VEHICLE_ACTIVE and (GetVehicleHealth(vehicle.id)<0.1 or  IsPointInWater(GetVehicleTransform(vehicle.id).pos))) then

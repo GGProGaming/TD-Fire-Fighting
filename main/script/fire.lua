@@ -10,14 +10,23 @@ fire_pos = {
   --Vec(another),
   --etc.
 }
-f = GetFireCount()
-
 time_of_next_fire = 1
-time_stuff = 1
 
 Taskss = {}
 
+fireSpread = 0.4
+maxFires = 300
+
+function init()
+  SetInt("game.fire.maxcount", 300)
+	SetFloat("game.fire.spread", 0.4)
+end
+
 function tick()
+
+  f = QueryAabbFireCount(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
+  time_stuff = 1
+
   for i=1, #StartMails do
     if GetString("savegame.mod.task." ..i.. ".status","Accepted") then
       DebugWatch("Next Fire", GetTime() - time_of_next_fire)
@@ -30,19 +39,15 @@ function tick()
           SpawnFire(VecAdd(fire, Vec(math.random(-2,2), 0, math.random(-2,2))))
         end
       end
-      if f > 0 then
-        if time_stuff ~= nil and GetTime() > time_stuff then
-          time_stuff = GetTime() + 10
-          RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
-        end
+    end
+  end
+  if f > 0 then
+    DebugWatch("Delete Fire", GetTime() - time_stuff)
+    if time_stuff ~= nil and GetTime() > time_stuff then
+      time_stuff = GetTime() + 200
+      for i=1,10 do
+        RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
       end
     end
   end
 end
-
-
-
-
-
-
-

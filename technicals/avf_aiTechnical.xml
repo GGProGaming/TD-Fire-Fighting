@@ -1,28 +1,30 @@
 <prefab version="0.8.0">
-	<group id_="1989663360" pos="13.6 2.2 3.1" rot="0.0 90.0 0.0">
+	<group id_="735555392" open_="true" pos="-12.6 0.1 -1.0">
 		<script id_="493516192" open_="true" pos="0.0 0.0 0.0" file="MOD/technicals/AVF_AI.lua">
-			<vehicle id_="633378560" open_="true" name="MGTechnical" tags="cfg=ai technicalVehicle" pos="0.1 0.0 0.0" rot="0.0 0.0 0.0" driven="false" sound="suv2" spring="0.8" damping="0.8" topspeed="35" acceleration="2" strength="5" antispin="0" antiroll="0.2" difflock="0.5" steerassist="0.0">
-				<body id_="509376896" open_="true" name="Technicalbody" tags="component=body" pos="-0.05 0.6 -0.25" rot="0.0 0.0 0.0" dynamic="true">
-					<vox id_="1481793920" open_="true" tags="component=chassis" pos="0.05 -0.2 0.25" rot="0 180 0" density="2" strength="3" file="MOD/technicals/technical.vox" object="bodyturret">
-						<light id_="1552445952" pos="0.75 0.55 -2.1" rot="0.0 180.0 0.0" type="area" size="0.1 0.1" unshadowed="0.3"/>
-						<light id_="559056192" pos="-0.65 0.55 -2.1" rot="0.0 180.0 0.0" type="area" size="0.1 0.1" unshadowed="0.3"/>
-						<light id_="1738186368" pos="0.65 0.65 2.1" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="30" angle="90" penumbra="30" size="0.1" unshadowed="0.2" glare="0.35"/>
-						<light id_="2080436224" pos="-0.55 0.65 2.1" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="30" angle="90" penumbra="30" size="0.1" unshadowed="0.2" glare="0.35"/>
-						<location id_="1502701056" tags="exhaust" pos="0.5 0.05 -2.1" rot="-180.0 360.0 -180.0"/>
-						<location id_="1061223680" tags="vital" pos="0.05 0.55 1.4" rot="-180.0 360.0 -180.0"/>
-						<location id_="1727372288" tags="player" pos="0.35 1.25 0.25" rot="0.0 0.0 0.0"/>
+			<vehicle id_="924900480" open_="true" name="MGTechnical" tags="cfg=ai technicalVehicle" pos="0.1 0.0 0.2" rot="0.0 0.0 0.0" sound="musclecar" spring="0.6" damping="0.7" topspeed="40" acceleration="4" strength="8" antiroll="0.2" difflock="0.3" steerassist="0.0" braking="0.6">
+				<body id_="1807396608" open_="true" pos="-0.1 0.45 -0.75" rot="0.0 0.0 0.0" dynamic="true">
+					<vox id_="751153920" open_="true" pos="0.05 -0.15 0.55" rot="0.0 180.0 0.0" density="2" strength="3" file="MOD/technicals/muscle_car.vox" object="body">
+						<location id_="1720424960" tags="exhaust" pos="0.5 0.1 -2.5" rot="0.0 180.0 0.0"/>
+						<light id_="909105344" pos="0.5 0.55 -2.5" rot="180.0 0.0 180.0" type="area" color="1 .1 .1" size="0.6 0.1" unshadowed="0.3" glare=".2"/>
+						<light id_="894752064" pos="-0.4 0.55 -2.5" rot="180.0 0.0 180.0" type="area" color="1 .1 .1" size="0.6 0.1" unshadowed="0.3" glare=".2"/>
+						<light id_="2128477056" pos="0.85 0.5 -2.5" rot="180.0 0.0 180.0" type="area" size="0.1 0.2" unshadowed="0.3"/>
+						<light id_="1506502400" pos="-0.75 0.5 -2.5" rot="180.0 0.0 180.0" type="area" size="0.1 0.2" unshadowed="0.3"/>
+						<light id_="1025373312" pos="-0.75 0.5 2.3" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" unshadowed="0.3" glare=".3"/>
+						<light id_="650287872" pos="0.85 0.5 2.3" rot="0.0 0.0 0.0" type="cone" color="1 .9 .8" scale="20" angle="90" penumbra="30" size="0.1" unshadowed="0.3" glare=".3"/>
+						<location id_="522615968" tags="vital" pos="0.05 0.5 1.7"/>
+						<location id_="90903984" tags="player" pos="0.45 1.0 -0.05" rot="0.0 0.0 0.0"/>
 					</vox>
-					<wheel id_="945545600" name="bl" pos="-0.65 -0.15 1.9" drive="1" travel="-0.1 0.2">
-						<vox id_="197078784" pos="-0.1 -0.45 -0.05" rot="0.0 -180.0 0.0" file="MOD/technicals/technical.vox" object="wheel_bl"/>
+					<wheel id_="1442600960" open_="true" name="bl" pos="-0.75 -0.1 1.9" drive="1" travel="-0.1 0.2">
+						<vox id_="1159992448" pos="-0.1 -0.35 -0.05" rot="0.0 180.0 0.0" file="MOD/technicals/muscle_car.vox" object="wheel_bl"/>
 					</wheel>
-					<wheel id_="92739104" name="br" pos="0.65 -0.15 1.9" drive="1" travel="-0.1 0.2">
-						<vox id_="1170544384" pos="0.1 -0.45 -0.05" rot="0 180 0" file="MOD/technicals/technical.vox" object="wheel_br"/>
+					<wheel id_="1415139712" open_="true" name="br" pos="0.7 -0.1 1.9" drive="1" travel="-0.1 0.2">
+						<vox id_="1394625664" pos="0.2 -0.35 -0.05" rot="0.0 -180.0 0.0" file="MOD/technicals/muscle_car.vox" object="wheel_br"/>
 					</wheel>
-					<wheel id_="536772608" name="fl" pos="-0.75 -0.15 -1.4" drive="1" steer="1" travel="-0.1 0.2">
-						<vox id_="359486912" pos="0.0 -0.45 -0.05" rot="0 180 0" file="MOD/technicals/technical.vox" object="wheel_fl"/>
+					<wheel id_="1246243072" open_="true" name="fl" pos="-0.75 -0.1 -1.1" steer="1" travel="-0.1 0.2">
+						<vox id_="1615429888" pos="-0.1 -0.35 -0.05" rot="0.0 180.0 0.0" file="MOD/technicals/muscle_car.vox" object="wheel_fl"/>
 					</wheel>
-					<wheel id_="1777772544" name="fr" pos="0.65 -0.15 -1.4" drive="1" steer="1" travel="-0.1 0.2">
-						<vox id_="1246964096" pos="0.1 -0.45 -0.05" rot="0 180 0" file="MOD/technicals/technical.vox" object="wheel_fr"/>
+					<wheel id_="1778952192" open_="true" name="fr" pos="0.75 -0.1 -1.1" steer="1" travel="-0.1 0.2">
+						<vox id_="1861598208" pos="0.1 -0.35 -0.05" rot="0.0 -180.0 0.0" file="MOD/technicals/muscle_car.vox" object="wheel_fr"/>
 					</wheel>
 				</body>
 			</vehicle>
