@@ -1,16 +1,4 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="200 100 200">
-	<group id_="1986582912" open_="true" name="Basic">
-		<script id_="1732549888" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="sandbox.lua"/>
-		<environment id_="626890112" template="sunny" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" skyboxrot="-45"/>
-		<voxbox id_="366696288" pos="-100.0 -0.1 -100.0" rot="0.0 0.0 0.0" size="2000 1 2000"/>
-		<boundary id_="1286812416" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
-			<vertex pos="-100.0 -100.0"/>
-			<vertex pos="100.0 -100.0"/>
-			<vertex pos="100.0 100.0"/>
-			<vertex pos="-100.0 100.0"/>
-		</boundary>
-		<script id_="892064960" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="main.lua"/>
-	</group>
 	<group id_="586517440" open_="true" name="Firestation">
 		<group id_="962979200" open_="true" name="Structure">
 			<group id_="1847441536" open_="true" name="1st floor">
@@ -201,7 +189,7 @@
 							</voxbox>
 							<voxbox id_="1622835968" pos="-4.2 0.0 -4.6" rot="0.0 0.0 0.0" size="2 44 335" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
 							<voxbox id_="1224877056" open_="true" pos="-5.0 0.0 16.9" rot="0.0 0.0 0.0" texture="1 0.5" size="14 3 105" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete">
-								<voxbox id_="483488576" pos="0.1 0.0 10.4" rot="0.0 -180.0 -20.0" texture="1 0.5" size="12 3 105" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete"/>
+								<voxbox id_="483488576" pos="0.1 0.0 10.4" rot="0.0 -180.0 12.0" texture="1 0.5" size="12 3 105" brush="MOD/main/Structure/Structure/Floors.vox" object="Concrete"/>
 							</voxbox>
 						</group>
 					</group>
@@ -212,16 +200,17 @@
 					<vox id_="1153897216" pos="0.2 0.2 9.0" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
 					<vox id_="1885651328" pos="2.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 					<vox id_="1809100672" pos="4.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
-					<vox id_="1083966080" open_="true" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+					<vox id_="1083966080" open_="true" pos="0.2 4.3 19.6" rot="0.0 0.0 90.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="1730911360" pos="0.2 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
 						<joint id_="30541640" pos="0.0 3.9 1.4" rot="180" type="hinge"/>
 						<joint id_="610046336" pos="0.0 3.9 -1.4" rot="180" type="hinge"/>
 					</vox>
-					<vox id_="1446795520" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
+					<vox id_="1446795520" open_="true" pos="-4.0 0.0 24.7" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame">
 						<vox id_="746304000" pos="0.2 0.3 -0.1" rot="0.0 180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage door"/>
 						<joint id_="601263936" pos="0.0 3.9 1.4" rot="180" type="hinge"/>
 						<joint id_="224998816" pos="0.0 3.9 -1.4" rot="180" type="hinge"/>
 					</vox>
+					<vox id_="1382500736" pos="-4.0 0.0 19.6" rot="0.0 -180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="Garage frame"/>
 					<vox id_="475296064" open_="true" pos="-4.0 1.1 5.9" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
 						<vox id_="506427584" open_="true" pos="0.0 0.0 1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window">
 							<voxbox id_="633509632" pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" size="3 24 1" brush="hole"/>
@@ -556,8 +545,6 @@
 		</vox>
 		<vox id_="2063395840" tags="keyboard interact=Interact unbreakable" pos="0.0 0.0 0.5" rot="0.0 -90.0 0.0" texture="1" file="MOD/main/assets tuxedolabs/interior/old pc.vox" object="keyboard"/>
 	</body>
-	<script id_="1944833920" pos="0.6 1.3 4.3" rot="0.0 0.0 0.0" file="MOD/main/script/use pc.lua"/>
-	<spawnpoint id_="501905312" pos="0.8 1.1 5.3"/>
 	<script id_="1866251520" file="MOD/main/script/upgrades.lua"/>
 	<layers/>
 </scene>

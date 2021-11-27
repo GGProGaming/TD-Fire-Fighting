@@ -1,0 +1,12 @@
+<prefab version="0.5.4">
+	<group id_="735358784" name="fishing rod" pos="7.2 0.5 0.5">
+		<vox id_="520518688" pos="0.1 0.0 1.2" rot="0.0 90.0 0.0" prop="true" file="MOD/vox/outdoor/fishing rod.vox" object="hook"/>
+		<vox id_="1702663680" pos="0.1 0.2 -0.5" rot="0.0 90.0 0.0" prop="true" file="MOD/vox/outdoor/fishing rod.vox" object="base">
+			<rope id_="878891392" open_="true" pos="-1.7 0.15 -0.05">
+				<location id_="577866176" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+				<location id_="608997696" pos="1.0 0.0 0.0" rot="0.0 0.0 0.0"/>
+			</rope>
+		</vox>
+	</group>
+</prefab>
+

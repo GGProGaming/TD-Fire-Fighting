@@ -1,0 +1,8 @@
+<prefab version="0.5.4">
+	<group id_="846318016" open_="true" name="instance=MOD/prefab/ceiling lamp.xml" pos="-2.0 -0.0 -1.0" rot="0.0 0.0 0.0">
+		<vox id_="495679008" open_="true" name="lamp" pos="0.0 0.1 -0.1" rot="0.0 180.0 0.0" file="MOD/vox/interior/hanging lamp.vox">
+			<light id_="86316176" pos="0.0 0.0 -0.1"/>
+		</vox>
+	</group>
+</prefab>
+

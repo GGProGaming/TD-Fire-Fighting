@@ -1,0 +1,12 @@
+<prefab version="0.5.4">
+	<group>
+		<!-- the default environment. we want it to be sunny, and mapped to some rando key so we can avoid common name collisions, resulting in multiple environments in the scene, leading to undefined behavior -->
+		<group layer="8675309">
+			<environment template="sunny" nightlight="false"/>
+		</group>
+		<group pos="0.0 0.0 0.0" layer="handle">
+			<script pos="0.0 0.2 0.0" file="MOD/env/real_init.lua"/>
+		</group>
+		<script pos="0.0 0.2 0.0" file="MOD/env/init.lua"/>
+	</group>
+</prefab>
