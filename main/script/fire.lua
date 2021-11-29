@@ -24,7 +24,26 @@ function init()
   end
 end
 
+function handleEmployeeMoney(dt)
+	for employee=4,1,-1 do
+		if GetInt('savegame.mod.employees.'..employee..'.hired') > 0 then 
+			DebugWatch("Employee "..employee, string.format("Waiting (%d s)",math.floor(GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime'))).." | Time for next payment: " .. math.floor(60*6-GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime')) .."s")				
+			if GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime') > 60*6 then			
+				local cost = Employees[employee].costPerHour
+			
+				DebugPrint("Employee "..employee.." charges you "..cost.."$")
+				SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') - cost)		
+				SetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime',0)				
+			else
+				SetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime',GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime') + dt)				
+			end							
+		end
+	end	
+end
+
 function tick(dt)
+  
+  handleEmployeeMoney(dt)
   
   for i=1, #StartMails do
     if GetString(string.format('savegame.mod.task.%d.status', i)) == 'Accepted' and not GetBool(string.format('savegame.mod.task.%d.spawned', i)) then
@@ -51,8 +70,7 @@ function tick(dt)
 	local employeeReady = 0
 	for employee=4,1,-1 do
 		if GetInt('savegame.mod.employees.4.hired') > 0 then 
-			if GetFloat('savegame.mod.employees.4.currentWaitingTime') > 0 then
-				DebugWatch("Employee "..employee, string.format("Waiting (%d s)",GetFloat('savegame.mod.employees.4.currentWaitingTime')))			
+			if GetFloat('savegame.mod.employees.4.currentWaitingTime') > 0 then				
 				SetFloat('savegame.mod.employees.4.currentWaitingTime', GetFloat('savegame.mod.employees.4.currentWaitingTime') - dt)
 			else
 				DebugWatch("Employee "..employee, "Ready")

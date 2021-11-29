@@ -249,6 +249,7 @@ function showEmployeeSelect(name,stars,userLevelNeeded,cost)
 		if UiBlankButton(350,50) and Userlevel >= userLevelNeeded and GetInt("savegame.mod.employees."..stars..".hired") < 2 and UserMoney >= cost then			
 			SetUserMoney(UserMoney - cost)			
 			SetInt("savegame.mod.employees."..stars..".hired",GetInt("savegame.mod.employees."..stars..".hired")+1)
+			GetFloat("savegame.mod.employees."..stars..".currentWorkingTime",0)
 		end		
 
 		UiPush()
