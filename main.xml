@@ -1,5 +1,9 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="290 100 200">
 	<group id_="752137024" open_="true" name="ground" pos="0.0 -0.1 0.0">
+		<voxbox id_="1338064640" name="blocks" pos="-97.99998 0.1 12.3" rot="0.0 90.0 0.0" texture="6" size="377 5 405" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+			<voxbox id_="764393024" name="blocks" pos="37.6 -0.4 29.4" rot="0.0 90.0 0.0" texture="6" size="294 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+			<voxbox id_="825738432" name="blocks" pos="0.0 -0.4 48.99999" rot="0.0 90.0 0.0" texture="6" size="85 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+		</voxbox>
 		<voxscript id_="1630635264" pos="-145.20001 -3.5 -100.00001" texture="6" file="MOD/main/script/ground.lua">
 			<parameters file="MOD/main/script/heightmap.png" scale="300"/>
 		</voxscript>
@@ -36,7 +40,7 @@
 			<voxbox id_="29165300" pos="131.5 9.7 0.0" rot="0.0 0.0 0.0" size="107 42 20"/>
 		</voxbox>
 	</group>
-	<group id_="414016192" open_="true" name="Basic">
+	<group id_="414016192" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
 		<environment id_="1735761408" template="sunny" skyboxrot="-45"/>
 		<boundary id_="1800449280" pos="35.0 0.0 0.0">
@@ -50,7 +54,7 @@
 		<trigger id_="327044608" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 	</group>
 	<group id_="1266363904" open_="true" name="Gardens">
-		<group id_="696755712" name="Houses">
+		<group id_="696755712" open_="true" name="Houses">
 			<voxbox id_="1312569600" pos="108.7 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="890623040" pos="-25.7 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1149178368" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
@@ -240,7 +244,7 @@
 				<vox id_="1115425280" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 			</voxbox>
 			<voxbox id_="280183488" open_="true" pos="103.2 0.5 -28.8" rot="0.0 -90.0 0.0" texture="6" size="2 1 113" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="2071850496" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="2071850496" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 114" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 				<voxbox id_="1763091584" pos="0.2 0.0 11.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 				<vox id_="1805758080" pos="-0.9 0.0 10.4" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
 					<vox id_="1114573184" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
@@ -252,19 +256,20 @@
 				</vox>
 				<vox id_="1471897344" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 			</voxbox>
-			<voxbox id_="2143813376" pos="-25.7 0.5 -28.8" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="1472945920" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="1437554304" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+			<voxbox id_="2143813376" open_="true" pos="-25.7 0.5 -28.8" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="1472945920" pos="-2.0 -0.0 -6.2" rot="0.0 0.0 0.0" texture="6" size="2 1 165" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="1437554304" pos="0.2 0.0 -6.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 				<voxbox id_="652581760" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<vox id_="2089546240" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+				<vox id_="2089546240" pos="-0.9 0.0 8.0" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
 					<vox id_="1642891136" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 					<vox id_="2018107648" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 				</vox>
-				<vox id_="895407488" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+				<vox id_="895407488" open_="true" pos="-0.9 0.0 -0.9" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
 					<vox id_="1116211712" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 					<vox id_="1056898048" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 				</vox>
-				<vox id_="1245128960" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="1245128960" pos="-0.6 -0.2 2.2" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<voxbox id_="203501696" pos="-0.0 0.0 -6.2" rot="0.0 0.0 0.0" texture="6" size="2 1 165" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
 			<voxbox id_="844810624" name="blocks" pos="88.3 -0.1 19.6" rot="0.0 0.0 0.0" texture="6" size="166 6 207" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			<voxagon id_="1426084864" pos="82.10001 0.2 33.9" rot="0.0 0.0 0.0" texture="6" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock" extrude="3">
@@ -424,6 +429,105 @@
 				<vox id_="656186496" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 				<vox id_="1020064576" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 			</vox>
+			<voxbox id_="2090398336" open_="true" pos="-13.3 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="781040192" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 188" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="1057684544" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="1677496320" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="572885120" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1295267072" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="169289824" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="221590736" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="984279744" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="558990656" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="467300192" pos="-0.9 0.0 18.6" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="546210368" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1178212608" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1330920832" pos="-0.6 -0.2 14.4" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="1164121472" open_="true" pos="-0.9 0.0 13.1" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1880277120" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+			</voxbox>
+			<voxbox id_="637179904" open_="true" pos="5.50001 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="487748672" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="1513974016" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="2078142336" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="432301824" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1776854912" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="626759040" open_="true" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="857263232" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1601601024" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+			</voxbox>
+			<voxbox id_="1717344640" open_="true" pos="41.30001 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="813416960" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="926866688" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="1283600896" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1162286336" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1371490048" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="648977088" open_="true" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1556443904" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1879031808" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+			</voxbox>
+			<voxbox id_="1498637696" open_="true" pos="22.5 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="704620544" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 188" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="1894433664" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="344871488" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="384064384" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="79500016" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1721145984" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1628865664" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1794026368" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="352932896" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="1689948928" pos="-0.9 0.0 18.6" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1557361536" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="192687600" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="357127456" pos="-0.6 -0.2 14.4" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="1718786560" open_="true" pos="-0.9 0.0 13.1" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1468030464" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+			</voxbox>
+			<voxbox id_="945021248" open_="true" pos="75.40001 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="1483956736" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="168175648" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="124067216" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1092879488" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="96999200" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="200028080" open_="true" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="1077346560" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1181424000" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+			</voxbox>
+			<voxbox id_="620991488" open_="true" pos="56.6 0.5 -30.7" rot="0.0 90.0 0.0" texture="6" size="2 1 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+				<voxbox id_="1716361472" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 188" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="958915712" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<vox id_="849398400" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="227161632" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="242956784" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1603173888" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="366040896" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1191910400" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="100800520" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="622761088" pos="-0.9 0.0 18.6" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="2012340224" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+					<vox id_="1652197888" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+				<vox id_="1603632768" pos="-0.6 -0.2 14.4" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
+				<vox id_="1091568640" open_="true" pos="-0.9 0.0 13.1" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
+					<vox id_="627938752" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
+				</vox>
+			</voxbox>
 		</group>
 		<group id_="1835316608" name="trees">
 			<group id_="1773381376">
@@ -500,7 +604,7 @@
 				<vox id_="249248624" pos="3.89999 0.4 -11.6" rot="0.0 60.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-large.vox"/>
 			</group>
 		</group>
-		<group id_="1835054464" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<group id_="1835054464" open_="true" name="Grey houses" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<voxbox id_="850578112" name="blocks" pos="-13.4 0.4 -62.1" rot="0.0 -90.0 0.0" texture="6" size="169 2 148" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1557754752" pos="14.3 0.2 4.1" rot="0.0 -90.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1370769152" pos="14.3 0.2 2.1" rot="0.0 0.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
@@ -638,9 +742,9 @@
 				<voxbox id_="582191808" pos="12.3 0.9 13.6" rot="0.0 -180.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="161949344" pos="12.1 0.9 11.5" rot="0.0 90.0 0.0" texture="6" size="2 12 24" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1048640" pos="12.3 1.3 11.5" rot="0.0 0.0 0.0" texture="6" size="20 16 20" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 2"/>
-				<voxbox id_="942989504" pos="20.3 0.6 5.8" rot="0.0 0.0 0.0" texture="6" size="21 2 63" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
+				<voxbox id_="942989504" pos="20.3 0.6 5.8" rot="0.0 0.0 0.0" texture="6" size="21 2 49" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
-			<group id_="1224877056" name="Model 1" pos="-18.0 0.6 -5.3" rot="0.0 0.0 0.0">
+			<group id_="1224877056" open_="true" name="Model 1" pos="-18.0 0.6 -5.3" rot="0.0 0.0 0.0">
 				<group id_="739946624" open_="true" name="Structure">
 					<group id_="1218716288" name="Roof">
 						<voxbox id_="2126052096" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="red"/>
@@ -658,11 +762,11 @@
 							<vertex pos="-0.9 4.3"/>
 						</voxagon>
 					</group>
-					<group id_="1182407168" name="Walls">
+					<group id_="1182407168" open_="true" name="Walls">
 						<voxbox id_="1147343232" pos="-0.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
 						<voxbox id_="493647296" pos="8.1 0.0 0.2" rot="0.0 0.0 0.0" size="2 42 11" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
 						<voxbox id_="2020598144" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 3"/>
-						<group id_="1504995072" name="White thing">
+						<group id_="1504995072" open_="true" name="White thing">
 							<voxbox id_="821150656" pos="2.3 0.3 3.4" rot="0.0 -90.0 0.0" prop="false" size="4 11 19" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
 							<voxbox id_="71373056" pos="0.4 0.3 3.9" rot="0.0 180.0 0.0" size="6 41 6" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="column"/>
 							<voxbox id_="1621590656" pos="0.3 0.3 3.4" rot="0.0 -180.0 0.0" prop="false" size="4 11 21" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Fence 2"/>
@@ -783,13 +887,9 @@
 					</group>
 				</group>
 			</group>
-			<voxbox id_="83366880" open_="true" name="blocks" pos="-97.99998 -0.4 12.3" rot="0.0 90.0 0.0" texture="6" size="377 9 405" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="91559376" name="blocks" pos="37.6 0.0 29.4" rot="0.0 90.0 0.0" texture="6" size="294 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="2055662080" name="blocks" pos="-0.0 0.0 48.99999" rot="0.0 90.0 0.0" texture="6" size="85 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-			</voxbox>
 			<voxbox id_="1752277504" name="blocks" pos="-20.79999 -0.1 18.0" rot="0.0 0.0 0.0" texture="6" size="166 6 207" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 		</group>
-		<group id_="420701248" name="Grey" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+		<group id_="420701248" open_="true" name="Grey" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 			<voxbox id_="577669568" pos="-39.40002 -0.2 -45.20002" rot="0.0 0.0 0.0" texture="6" size="35 7 53" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			<voxbox id_="723037312" pos="108.7 -0.01 -30.80001" rot="0.0 -90.0 0.0" texture="1 0.5" size="353 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="1541369728" open_="true" pos="108.69999 -0.2 -45.2" rot="0.0 -90.0 0.0" texture="6" size="35 7 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
@@ -4164,11 +4264,11 @@
 			</body>
 		</vehicle>
 	</group>
-	<group id_="1003089728" name="instance=MOD/FireStation.xml" pos="-65.9 0.5 -17.6" rot="0.0 -90.0 0.0">
+	<group id_="1003089728" open_="true" name="instance=MOD/FireStation.xml" pos="-65.9 0.5 -17.6" rot="0.0 -90.0 0.0">
 		<group id_="586517440" open_="true" name="Firestation">
 			<group id_="962979200" open_="true" name="Structure">
 				<group id_="1847441536" open_="true" name="1st floor">
-					<group id_="1694209024" open_="true" name="Walls" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+					<group id_="1694209024" name="Walls" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 						<group id_="143270432" name="Exterior">
 							<voxbox id_="1992547072" open_="true" pos="-5.3 0.0 -2.2" rot="0.0 -180.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
 								<voxbox id_="1901970816" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 62 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
@@ -4244,8 +4344,8 @@
 								<vertex pos="-0.9 4.4"/>
 							</voxagon>
 						</group>
-						<group id_="1398492544" open_="true" name="Interior">
-							<group id_="247544576" open_="true" name="Grey blocks">
+						<group id_="1398492544" name="Interior">
+							<group id_="247544576" name="Grey blocks">
 								<voxbox id_="1890239104" pos="15.0 0.3 15.7" rot="0.0 0.0 0.0" size="3 39 132" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="1468620288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="1649838464" pos="-3.8 0.3 28.9" rot="0.0 180.0 0.0" size="2 39 335" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
@@ -4262,7 +4362,7 @@
 								<voxbox id_="2137587072" pos="22.2 0.3 15.5" rot="0.0 -90.0 0.0" size="3 47 118" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 								<voxbox id_="212349600" pos="10.4 4.3 15.3" rot="0.0 -90.0 0.0" size="5 7 42" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							</group>
-							<group id_="779401664" open_="true" name="Deco">
+							<group id_="779401664" name="Deco">
 								<voxbox id_="1330789760" pos="0.5 0.3 -4.1" rot="0.0 90.0 0.0" size="3 39 85" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
 								<voxbox id_="1180506496" pos="8.4 0.3 -4.4" rot="0.0 0.0 0.0" size="5 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
 								<voxbox id_="1766565120" pos="0.5 0.3 4.3" rot="0.0 180.0 0.0" size="3 39 87" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall2"/>
@@ -4370,7 +4470,7 @@
 							</group>
 						</group>
 					</group>
-					<group id_="560104832" open_="true" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+					<group id_="560104832" name="Windows and doors" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 						<vox id_="639342720" pos="0.4 0.3 0.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 						<vox id_="1236739840" pos="0.4 0.3 2.8" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
 						<vox id_="1885651328" pos="2.1 0.3 4.2" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Interior walls.vox" object="window"/>
@@ -4451,7 +4551,7 @@
 								<joint id_="1654360704" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
 							</vox>
 						</vox>
-						<vox id_="1589345024" open_="true" pos="15.1 0.3 7.5" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+						<vox id_="1589345024" pos="15.1 0.3 7.5" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
 							<vox id_="1677103104" pos="0.1 0.1 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
 								<joint id_="1222517632" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
 								<joint id_="1309489152" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
@@ -4460,98 +4560,98 @@
 						<voxbox id_="573737152" pos="-0.4 0.2 8.4" rot="0.0 -90.0 0.0" size="10 34 25" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
 						<voxbox id_="1753457152" pos="14.1 0.2 15.1" rot="0.0 -90.0 0.0" size="10 34 25" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Door"/>
 					</group>
-					<group id_="174926256" name="roof">
-						<voxbox id_="639342720" pos="25.0 4.9 15.3" rot="0.0 -90.0 0.0" size="72 50 290" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
-						<voxbox id_="437807200" pos="-4.0 4.9 15.2" rot="0.0 -90.0 0.0" size="71 32 20" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="130686760" pos="-5.9 4.9 29.3" rot="0.0 90.0 0.0" size="71 32 21" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="209859072" pos="25.0 4.9 29.4" rot="0.0 90.0 0.0" size="71 32 26" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="722906176" pos="27.3 4.9 15.3" rot="0.0 -90.0 0.0" size="70 32 23" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="231814976" pos="15.6 4.9 30.8" rot="0.0 180.0 0.0" size="48 32 66" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="611684800" pos="5.79999 4.9 24.29999" rot="0.0 0.0 0.0" size="50 32 65" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="491418912" pos="-3.8 4.9 29.4" rot="0.0 90.0 0.0" size="71 50 288" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
-						<voxagon id_="678142400" pos="-4.0 5.2 22.0" rot="0.0 360.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
+					<group id_="174926256" hidden_="true" name="roof">
+						<voxbox id_="639342720" hidden_="true" pos="25.0 4.9 15.3" rot="0.0 -90.0 0.0" size="72 50 290" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
+						<voxbox id_="437807200" hidden_="true" pos="-4.0 4.9 15.2" rot="0.0 -90.0 0.0" size="71 32 20" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="130686760" hidden_="true" pos="-5.9 4.9 29.3" rot="0.0 90.0 0.0" size="71 32 21" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="209859072" hidden_="true" pos="25.0 4.9 29.4" rot="0.0 90.0 0.0" size="71 32 26" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="722906176" hidden_="true" pos="27.3 4.9 15.3" rot="0.0 -90.0 0.0" size="70 32 23" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="231814976" hidden_="true" pos="15.6 4.9 30.8" rot="0.0 180.0 0.0" size="48 32 66" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="611684800" hidden_="true" pos="5.79999 4.9 24.29999" rot="0.0 0.0 0.0" size="50 32 65" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="491418912" hidden_="true" pos="-3.8 4.9 29.4" rot="0.0 90.0 0.0" size="71 50 288" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-medium"/>
+						<voxagon id_="678142400" hidden_="true" pos="-4.0 5.2 22.0" rot="0.0 360.0 90.0" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall 2" extrude="2">
 							<vertex pos="-1.0 -6.5"/>
 							<vertex pos="-0.2 -6.5"/>
 							<vertex pos="2.6 0.1"/>
 							<vertex pos="-0.2 6.9"/>
 							<vertex pos="-0.9 6.9"/>
 						</voxagon>
-						<voxbox id_="2088563200" pos="-4.10001 8.6 -4.80001" rot="0.0 -90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="463761024" pos="-6.50002 8.6 5.00001" rot="0.0 90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxagon id_="698656384" pos="15.0 5.2 22.0" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="3">
+						<voxbox id_="2088563200" hidden_="true" pos="-4.10001 8.6 -4.80001" rot="0.0 -90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="463761024" hidden_="true" pos="-6.50002 8.6 5.00001" rot="0.0 90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxagon id_="698656384" hidden_="true" pos="15.0 5.2 22.0" rot="0.0 180.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="3">
 							<vertex pos="-1.0 -6.7"/>
 							<vertex pos="-0.3 -6.7"/>
 							<vertex pos="2.0 -0.2"/>
 							<vertex pos="-0.3 6.3"/>
 							<vertex pos="-1.0 6.4"/>
 						</voxagon>
-						<voxagon id_="1759945600" pos="-3.8 5.2 22.4" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="2">
+						<voxagon id_="1759945600" hidden_="true" pos="-3.8 5.2 22.4" rot="0.0 0.0 90.0" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick 2.1" extrude="2">
 							<vertex pos="-1.0 -6.7"/>
 							<vertex pos="-0.4 -6.7"/>
 							<vertex pos="2.3 -0.2"/>
 							<vertex pos="-0.4 6.4"/>
 							<vertex pos="-1.0 6.4"/>
 						</voxagon>
-						<voxbox id_="480801440" pos="9.49999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1400000000" pos="-0.30004 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="939581440" pos="15.59996 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1422807808" pos="25.39999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1481138432" pos="27.89996 8.6 -4.90002" rot="0.0 -90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="2036786560" pos="25.49995 8.6 4.90002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1440831360" pos="-4.60002 8.6 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="903403392" pos="-3.60001 8.6 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1102579456" pos="25.4 8.6 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-						<voxbox id_="875221184" pos="15.6 8.6 -4.8" rot="0.0 0.0 0.0" size="48 32 204" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-						<voxbox id_="2012864512" pos="25.39999 8.6 16.99999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="432498464" pos="15.59996 8.6 15.49998" rot="0.0 0.0 0.0" size="48 32 15" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1670876800" open_="true" pos="-3.5 8.6 16.1" rot="0.0 90.0 0.0" size="50 32 241" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
-							<voxbox id_="690791616" size="2 2 248" brush="hole"/>
+						<voxbox id_="480801440" hidden_="true" pos="9.49999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1400000000" hidden_="true" pos="-0.30004 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="939581440" hidden_="true" pos="15.59996 8.6 -7.20002" rot="0.0 0.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1422807808" hidden_="true" pos="25.39999 8.6 -4.80001" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1481138432" hidden_="true" pos="27.89996 8.6 -4.90002" rot="0.0 -90.0 0.0" size="48 32 25" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="2036786560" hidden_="true" pos="25.49995 8.6 4.90002" rot="0.0 90.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1440831360" hidden_="true" pos="-4.60002 8.6 16.10001" rot="0.0 90.0 0.0" size="48 32 11" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="903403392" hidden_="true" pos="-3.60001 8.6 6.29999" rot="0.0 -90.0 0.0" size="50 32 10" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1102579456" hidden_="true" pos="25.4 8.6 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+						<voxbox id_="875221184" hidden_="true" pos="15.6 8.6 -4.8" rot="0.0 0.0 0.0" size="48 32 204" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+						<voxbox id_="2012864512" hidden_="true" pos="25.39999 8.6 16.99999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="432498464" hidden_="true" pos="15.59996 8.6 15.49998" rot="0.0 0.0 0.0" size="48 32 15" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1670876800" open_="true" hidden_="true" pos="-3.5 8.6 16.1" rot="0.0 90.0 0.0" size="50 32 241" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
+							<voxbox id_="690791616" hidden_="true" size="2 2 248" brush="hole"/>
 						</voxbox>
-						<voxbox id_="1087243008" pos="20.70002 8.6 6.29999" rot="0.0 -90.0 0.0" size="48 32 244" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-						<voxbox id_="877318464" pos="-0.3 8.6 -4.8" rot="0.0 0.0 0.0" size="48 32 204" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-						<voxbox id_="1098778112" pos="9.5 8.6 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
-						<voxbox id_="1403801216" pos="-0.30004 8.6 15.49998" rot="0.0 0.0 0.0" size="48 32 15" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="1228678400" pos="9.49999 8.6 16.99999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
-						<voxbox id_="953279296" open_="true" pos="25.40002 8.6 -4.80001" rot="0.0 -90.0 0.0" size="48 32 295" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
-							<voxbox id_="1856223872" pos="-0.0 0.0 1.4" rot="0.0 0.0 0.0" size="1 1 281" brush="hole"/>
+						<voxbox id_="1087243008" hidden_="true" pos="20.70002 8.6 6.29999" rot="0.0 -90.0 0.0" size="48 32 244" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+						<voxbox id_="877318464" hidden_="true" pos="-0.3 8.6 -4.8" rot="0.0 0.0 0.0" size="48 32 204" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+						<voxbox id_="1098778112" hidden_="true" pos="9.5 8.6 15.7" rot="0.0 180.0 0.0" size="50 32 205" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED"/>
+						<voxbox id_="1403801216" hidden_="true" pos="-0.30004 8.6 15.49998" rot="0.0 0.0 0.0" size="48 32 15" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="1228678400" hidden_="true" pos="9.49999 8.6 16.99999" rot="0.0 -180.0 0.0" size="50 32 24" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR"/>
+						<voxbox id_="953279296" open_="true" hidden_="true" pos="25.40002 8.6 -4.80001" rot="0.0 -90.0 0.0" size="48 32 295" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
+							<voxbox id_="1856223872" hidden_="true" pos="-0.0 0.0 1.4" rot="0.0 0.0 0.0" size="1 1 281" brush="hole"/>
 						</voxbox>
-						<voxbox id_="1453480576" open_="true" pos="-4.1 8.6 5.0" rot="0.0 90.0 0.0" size="50 32 296" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
-							<voxbox id_="1999363200" size="2 2 248" brush="hole"/>
+						<voxbox id_="1453480576" open_="true" hidden_="true" pos="-4.1 8.6 5.0" rot="0.0 90.0 0.0" size="50 32 296" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof04-EXTERIOR RED">
+							<voxbox id_="1999363200" hidden_="true" size="2 2 248" brush="hole"/>
 						</voxbox>
-						<voxbox id_="709601600" pos="16.6 8.6 4.4" rot="0.0 -90.0 0.0" size="28 2 209" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane"/>
-						<voxbox id_="1778952192" open_="true" pos="-0.4 8.4 -5.5" rot="0.0 -90.0 0.0" size="9 3 61" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2">
-							<voxbox id_="1764533376" pos="-1.8 -0.0 -0.3" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="536510432" pos="-0.0 -0.0 -16.2" rot="0.0 0.0 0.0" size="9 3 64" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="1676316544" pos="-1.8 0.0 -10.0" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="544702912" pos="-1.8 0.0 -16.3" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="1337999104" pos="-1.8 0.0 -25.9" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="126033424" pos="-0.0 -0.0 -28.3" rot="0.0 0.0 0.0" size="9 3 30" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="2119170304" pos="9.5 0.0 -28.3" rot="0.0 0.0 0.0" size="9 3 30" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="516586272" pos="22.49999 -0.0 -26.7" rot="0.0 -90.0 0.0" size="9 3 125" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="440232192" pos="22.49999 0.0 -9.7" rot="0.0 -180.0 0.0" size="9 3 65" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="1336295040" pos="22.49999 0.0 4.2" rot="0.0 180.0 0.0" size="9 3 46" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="1326922880" pos="12.3 0.0 4.3" rot="0.0 180.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
-							<voxbox id_="494761472" pos="10.2 0.0 6.0" rot="0.0 90.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+						<voxbox id_="709601600" hidden_="true" pos="16.6 8.6 4.4" rot="0.0 -90.0 0.0" size="28 2 209" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane"/>
+						<voxbox id_="1778952192" open_="true" hidden_="true" pos="-0.4 8.4 -5.5" rot="0.0 -90.0 0.0" size="9 3 61" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2">
+							<voxbox id_="1764533376" hidden_="true" pos="-1.8 -0.0 -0.3" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="536510432" hidden_="true" pos="-0.0 -0.0 -16.2" rot="0.0 0.0 0.0" size="9 3 64" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="1676316544" hidden_="true" pos="-1.8 0.0 -10.0" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="544702912" hidden_="true" pos="-1.8 0.0 -16.3" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="1337999104" hidden_="true" pos="-1.8 0.0 -25.9" rot="0.0 0.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="126033424" hidden_="true" pos="-0.0 -0.0 -28.3" rot="0.0 0.0 0.0" size="9 3 30" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="2119170304" hidden_="true" pos="9.5 0.0 -28.3" rot="0.0 0.0 0.0" size="9 3 30" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="516586272" hidden_="true" pos="22.49999 -0.0 -26.7" rot="0.0 -90.0 0.0" size="9 3 125" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="440232192" hidden_="true" pos="22.49999 0.0 -9.7" rot="0.0 -180.0 0.0" size="9 3 65" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="1336295040" hidden_="true" pos="22.49999 0.0 4.2" rot="0.0 180.0 0.0" size="9 3 46" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="1326922880" hidden_="true" pos="12.3 0.0 4.3" rot="0.0 180.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
+							<voxbox id_="494761472" hidden_="true" pos="10.2 0.0 6.0" rot="0.0 90.0 0.0" size="27 3 6" brush="MOD/main/assets tuxedolabs/industrial/roofs.vox" object="roof plane 2"/>
 						</voxbox>
 					</group>
 				</group>
-				<group id_="493450656" name="2nd floor">
+				<group id_="493450656" open_="true" name="2nd floor">
 					<group id_="85464160" open_="true" name="Walls" pos="0.0 4.4 0.0" rot="0.0 0.0 0.0">
-						<group id_="589008000" open_="true" name="Interior">
-							<voxbox id_="1804381696" pos="2.9 0.3 6.6" rot="0.0 180.0 0.0" size="2 39 35" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
+						<group id_="589008000" name="Interior">
+							<voxbox id_="1804381696" pos="2.9 0.3 6.6" rot="0.0 180.0 0.0" size="2 39 35" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
 							<voxbox id_="224998816" pos="2.8 0.3 3.3" rot="0.0 90.0 0.0" size="2 39 84" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
 							<voxbox id_="1887486464" pos="11.4 0.3 3.2" rot="0.0 180.0 0.0" size="2 39 76" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
 							<voxbox id_="93722200" pos="10.5 0.3 6.4" rot="0.0 -90.0 0.0" size="2 39 78" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
 							<voxbox id_="1912588288" pos="10.6 0.3 11.8" rot="0.0 -180.0 0.0" size="2 39 53" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
-							<voxbox id_="1858648832" pos="11.2 0.3 -4.2" rot="0.0 90.0 0.0" size="2 39 32" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
+							<voxbox id_="1858648832" pos="11.2 0.3 -4.2" rot="0.0 90.0 0.0" size="2 39 32" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
 							<voxbox id_="910416128" pos="14.1 0.3 -4.2" rot="0.0 0.0 0.0" size="2 39 132" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
 							<voxbox id_="2092036864" pos="14.1 0.3 9.2" rot="0.0 90.0 0.0" size="2 39 110" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
 							<voxbox id_="1477599360" pos="24.9 0.3 9.0" rot="0.0 0.0 0.0" size="2 39 62" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
-							<voxbox id_="2013126656" pos="25.0 0.3 15.0" rot="0.0 -90.0 0.0" size="2 39 124" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
-							<voxbox id_="1147539840" pos="12.7 0.3 11.6" rot="0.0 -90.0 0.0" size="2 39 23" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
-							<voxbox id_="1589869312" pos="12.8 0.3 15.1" rot="0.0 -180.0 0.0" size="2 39 34" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall5"/>
+							<voxbox id_="2013126656" pos="25.0 0.3 15.1" rot="0.0 -90.0 0.0" size="1 39 124" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1147539840" pos="12.7 0.3 11.7" rot="0.0 -90.0 0.0" size="1 39 23" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
+							<voxbox id_="1589869312" pos="12.7 0.3 15.1" rot="0.0 180.0 0.0" size="1 39 34" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3"/>
 						</group>
-						<group id_="586255296" open_="true" name="Exterior">
+						<group id_="586255296" name="Exterior">
 							<voxbox id_="126754360" pos="-4.2 0.0 -4.6" rot="0.0 0.0 0.0" size="2 44 120" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
 							<voxbox id_="571967552" open_="true" pos="-5.3 1.2 -2.2" rot="0.0 -180.0 0.0" size="3 35 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall">
 								<voxbox id_="940367936" pos="-1.2 0.0 0.2" rot="0.0 90.0 0.0" size="3 40 14" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="Bricks wall"/>
@@ -4638,7 +4738,7 @@
 								<vertex pos="-0.4 3.8"/>
 							</voxagon>
 						</group>
-						<group id_="1825354496" open_="true" name="Grey blocks" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+						<group id_="1825354496" name="Grey blocks" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
 							<voxbox id_="432236288" pos="-4.0 0.3 -4.4" rot="0.0 90.0 0.0" size="2 39 293" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							<voxbox id_="1528065152" pos="25.1 0.3 -4.5" rot="0.0 0.0 0.0" size="2 39 199" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
 							<voxbox id_="28182200" pos="25.3 0.3 15.2" rot="0.0 -90.0 0.0" size="2 39 288" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Brick"/>
@@ -4699,13 +4799,13 @@
 							<voxbox id_="822199296" pos="14.6 0.3 6.1" rot="0.0 90.0 0.0" size="3 39 33" brush="MOD/main/Structure/Structure/Interior walls.vox" object="Wall3B"/>
 						</group>
 					</group>
-					<group id_="1126567040" name="Windows and doors" pos="0.0 4.4 0.0" rot="0.0 0.0 0.0">
+					<group id_="1126567040" open_="true" name="Windows and doors" pos="0.0 4.4 0.0" rot="0.0 0.0 0.0">
 						<vox id_="473264352" pos="4.6 0.4 -4.5" rot="0.0 90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
 						<vox id_="2022498816" pos="-1.9 1.1 -4.6" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window"/>
 						<vox id_="655858752" open_="true" pos="-3.8 0.4 -0.5" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
 							<vox id_="1499686272" pos="0.0 0.0 -1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2"/>
 						</vox>
-						<vox id_="1997724800" open_="true" pos="-3.4 0.4 8.7" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
+						<vox id_="1997724800" pos="-3.4 0.4 8.7" rot="0.0 180.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
 							<vox id_="1428509824" open_="true" pos="0.0 0.0 -1.2" rot="0.0 0.0 0.0" file="MOD/main/Structure/Structure/Exterior walls.vox" object="window 2">
 								<voxbox id_="1687392896" pos="-0.1 1.0 0.9" rot="0.0 -180.0 0.0" size="3 24 1" brush="hole"/>
 								<voxbox id_="2004409856" pos="0.4 1.0 0.9" rot="0.0 180.0 0.0" size="2 24 1" brush="hole"/>
@@ -4716,8 +4816,50 @@
 								<voxbox id_="819970944" pos="0.4 1.0 0.9" rot="0.0 -180.0 0.0" size="2 24 1" brush="hole"/>
 							</vox>
 						</vox>
+						<voxbox id_="1263414528" pos="14.1 0.3 6.9" rot="0.0 0.0 0.0" size="8 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="1959056128" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="2094265216" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="2041702144" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="58658300" pos="14.1 0.3 3.6" rot="0.0 0.0 0.0" size="8 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="342643136" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="221787360" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="696886848" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="1451514368" pos="14.1 0.3 -2.5" rot="0.0 0.0 0.0" size="6 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="1280258304" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="1584036224" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="681157248" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="71373056" pos="21.5 0.3 2.7" rot="0.0 -90.0 0.0" size="3 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="One frame wood">
+							<vox id_="757576832" open_="true" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="one door wood">
+								<joint id_="1783015680" pos="0.0 0.4 0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="871092160" pos="0.0 1.7 0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="1158550528" pos="3.0 0.3 5.4" rot="0.0 -180.0 0.0" size="9 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="1857600256" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="1072365504" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="829408704" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="2030363648" pos="0.3 0.3 6.4" rot="0.0 -90.0 0.0" size="9 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="754824192" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="465792768" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="1786948096" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
+						<voxbox id_="1332428160" pos="10.7 0.3 9.8" rot="0.0 -180.0 0.0" size="8 26 12" brush="MOD/main/Structure/Structure/Exterior walls.vox" object="W door 2 R">
+							<vox id_="2046748672" pos="0.2 0.1 0.6" rot="0.0 -180.0 0.0" prop="true" file="MOD/main/Structure/Structure/Exterior walls.vox" object="W door L 2">
+								<joint id_="955179968" pos="0.0 0.4 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+								<joint id_="1745920000" pos="0.0 1.7 -0.5" rot="-90.0 -90.0 0.0" type="hinge" limits="-90 0"/>
+							</vox>
+						</voxbox>
 					</group>
-					<group id_="1998642304" name="floor">
+					<group id_="1998642304" open_="true" name="floor">
 						<voxagon id_="2073423488" pos="0.0 4.2 0.0" rot="0.0 0.0 0.0" brush="MOD/main/Structure/Structure/Floors.vox" object="Tiles 4 up" extrude="5">
 							<vertex pos="-4.1 -4.6"/>
 							<vertex pos="2.6 -4.6"/>
@@ -4805,7 +4947,7 @@
 		<location id_="2100229248" tags="firestarter" pos="-15.8 1.6 -17.8"/>
 	</group>
 	<layers>
-		<layer name="scripts" visible="true"/>
+		<layer name="scripts" visible="false"/>
 		<layer name="AI" visible="false"/>
 		<layer name="Furnishings" visible="true"/>
 	</layers>
