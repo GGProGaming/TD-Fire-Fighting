@@ -1,0 +1,13 @@
+<prefab version="0.5.3">
+	<group id_="1586002432" open_="true" name="instance=MOD/prefab/indoor door.xml" pos="-58.3 4.9 17.6" rot="0.0 0.0 0.0">
+		<voxbox id_="1802022272" open_="true" pos="-1.0 0.0 -0.2" rot="0.0 0.0 0.0" size="14 25 5" brush="hole">
+			<vox id_="1361396864" open_="true" pos="0.7 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/vox/mdsville/indoor door.vox" object="frame">
+				<vox id_="1582397696" open_="true" pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" prop="true" file="MOD/vox/mdsville/indoor door.vox" object="door">
+					<joint id_="852544320" pos="0.6 0.2 0.0" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.005" rotspring="0" limits="-85"/>
+					<joint id_="1538748160" pos="0.6 2.1 0.0" rot="-90.0 0.0 0.0" type="hinge" rotstrength="0.005" rotspring="0" limits="-85"/>
+				</vox>
+			</vox>
+		</voxbox>
+	</group>
+</prefab>
+

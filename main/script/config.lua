@@ -1,6 +1,6 @@
 -- user configuration -
-UserStartLevel = 3
-UserStartMoney = 25
+UserStartLevel = SetInt("savegame.mod.userLevel", 1)
+UserStartMoney = SetInt("savegame.mod.userMoney", 25)
 
 -- website left menu --
 WebSiteMenuLinkName_Mail = "Mail Account"
@@ -135,27 +135,27 @@ Upgrades = {
 	},
 	{
 		name = "Upgrade 4",
-		userLevelNeeded = 5,
+		userLevelNeeded = 4,
 		cost = 80,
 	},
 	{
 		name = "Upgrade 5",
-		userLevelNeeded = 6,
+		userLevelNeeded = 5,
 		cost = 100,
 	},
 	{
 		name = "Upgrade 6",
-		userLevelNeeded = 7,
+		userLevelNeeded = 6,
 		cost = 120,
 	},
 	{
 		name = "Upgrade 7",
-		userLevelNeeded = 8,
+		userLevelNeeded = 7,
 		cost = 140,
 	},
 	{
 		name = "Upgrade 8",
-		userLevelNeeded = 8,
+		userLevelNeeded = 7,
 		cost = 160,
 	},
 	{
@@ -185,32 +185,52 @@ Housings = {
 	},
 	{
 		name = "House Upgrade 4",
-		userLevelNeeded = 5,
+		userLevelNeeded = 4,
 		cost = 80,
 	},
 	{
 		name = "House Upgrade 5",
-		userLevelNeeded = 6,
+		userLevelNeeded = 5,
 		cost = 100,
 	},
 	{
 		name = "House Upgrade 6",
-		userLevelNeeded = 7,
+		userLevelNeeded = 6,
 		cost = 120,
 	},
 	{
 		name = "House Upgrade 7",
-		userLevelNeeded = 8,
+		userLevelNeeded = 7,
 		cost = 140,
 	},
 	{
 		name = "House Upgrade 8",
-		userLevelNeeded = 8,
+		userLevelNeeded = 7,
 		cost = 160,
 	},
 	{
 		name = "House Upgrade 9",
 		userLevelNeeded = 8,
 		cost = 170,
-	}
+	},
+	{
+		name = "House Upgrade 10",
+		userLevelNeeded = 8,
+		cost = 180
+	},
+	{
+		name = "House Upgrade 11",
+		userLevelNeeded = 9,
+		cost = 185
+	},
+	{
+		name = "House Upgrade 12",
+		userLevelNeeded = 9,
+		cost = 200
+	},
+	{
+		name = "House Upgrade 13",
+		userLevelNeeded = 10,
+		cost = 220
+	},
 }

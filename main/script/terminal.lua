@@ -14,16 +14,16 @@
 
 
 #include "config.lua"
+#include "upgrades.lua"
+#include "fire.lua"
+
+Userlevel = GetInt("savegame.mod.userLevel")
+UserMoney = GetInt("savegame.mod.userMoney")
 
 function init()
 	currentTab = "welcome"
 	header = ""
 
-	sandboxIsOptimizedSelected = false
-
-	Userlevel = GetInt("savegame.mod.userLevel",UserStartLevel)
-	UserMoney = GetInt("savegame.mod.userMoney",UserStartMoney)	
-	
 	currentWebsite = "main"					
 	
 	HousingsCurrentPageSlider = 1
@@ -536,6 +536,9 @@ function cheats()
 		UiTranslate(0,30)
 		if UiTextButton("Clear all bought House upgrades") then 
 			for i=1, #Housings do
+				local body = FindBody("upgrade_"..i,true)
+				SetBodyTransform(body,bodyLocation)
+				SetBodyTransform(FindBody("upgrade_"..i.."_location",true),newPosition)
 				SetBool("savegame.mod.housings."..i..".bought",false)
 			end
 		end

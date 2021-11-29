@@ -6,8 +6,8 @@ hollow = GetInt("hollow", 0)
 function init()
 	matRock = CreateMaterial("rock", 0.3, 0.3, 0.3)
 	matDirt = CreateMaterial("dirt", 0.26, 0.23, 0.20, 1, 0, 0.1)
-	matGrass1 = CreateMaterial("unphysical", 0.17, 0.21, 0.15, 1, 0, 0.2)
-	matGrass2 = CreateMaterial("unphysical", 0.19, 0.24, 0.17, 1, 0, 0.2)
+	matGrass1 = CreateMaterial("unphysical", 0.25, 0.30, 0.047)
+	matGrass2 = CreateMaterial("unphysical", 0.19, 0.24, 0.17)
 	matTarmac = CreateMaterial("masonry", 0.35, 0.35, 0.35, 1, 0, 0.4)
 	matTarmacTrack = CreateMaterial("masonry", 0.2, 0.2, 0.2, 1, 0, 0.3)
 	matTarmacLine = CreateMaterial("masonry", 0.6, 0.6, 0.6, 1, 0, 0.6)
@@ -34,4 +34,3 @@ function init()
 		y0 = y1
 	end
 end
-
