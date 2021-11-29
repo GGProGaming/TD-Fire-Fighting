@@ -24,10 +24,14 @@ function init()
   end
 end
 
-function handleEmployeeMoney(dt)
+function handleEmployees(dt)
 	for employee=4,1,-1 do
 		if GetInt('savegame.mod.employees.'..employee..'.hired') > 0 then 
-			DebugWatch("Employee "..employee, string.format("Waiting (%d s)",math.floor(GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime'))).." | Time for next payment: " .. math.floor(60*6-GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime')) .."s")				
+			local waitingText = string.format("Waiting (%d s)",math.floor(GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime')));
+			if math.floor(GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime')) == 0 then
+				waitingText = "Ready"
+			end
+			DebugWatch("Employee "..employee, waitingText.." | Time for next payment: " .. math.floor(60*6-GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime')) .."s")				
 			if GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime') > 60*6 then			
 				local cost = Employees[employee].costPerHour
 			
@@ -36,6 +40,10 @@ function handleEmployeeMoney(dt)
 				SetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime',0)				
 			else
 				SetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime',GetFloat('savegame.mod.employees.'..employee..'.currentWorkingTime') + dt)				
+			end		
+
+			if GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime') > 0 then				
+				SetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime', GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime') - dt)
 			end							
 		end
 	end	
@@ -43,7 +51,7 @@ end
 
 function tick(dt)
   
-  handleEmployeeMoney(dt)
+  handleEmployees(dt)
   
   for i=1, #StartMails do
     if GetString(string.format('savegame.mod.task.%d.status', i)) == 'Accepted' and not GetBool(string.format('savegame.mod.task.%d.spawned', i)) then
@@ -69,12 +77,8 @@ function tick(dt)
   
 	local employeeReady = 0
 	for employee=4,1,-1 do
-		if GetInt('savegame.mod.employees.4.hired') > 0 then 
-			if GetFloat('savegame.mod.employees.4.currentWaitingTime') > 0 then				
-				SetFloat('savegame.mod.employees.4.currentWaitingTime', GetFloat('savegame.mod.employees.4.currentWaitingTime') - dt)
-			else
-				DebugWatch("Employee "..employee, "Ready")
-				SetBool('savegame.mod.employees.4.readyToFightAFire',true)			
+		if GetInt('savegame.mod.employees.'..employee..'.hired') > 0 then 
+			if GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime') <= 0 then				
 				employeeReady = employee
 			end				
 			break
@@ -84,12 +88,11 @@ function tick(dt)
 	if employeeReady > 0 then		
 		DebugPrint("Employee "..employeeReady.." deleted the fire.")
 		RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
-		SetBool('savegame.mod.employees.'..employeeReady..'.readyToFightAFire',false)		
 		SetFloat('savegame.mod.employees.'..employeeReady..'.currentWaitingTime', employeeSpeeds[employeeReady])		
 	end
   elseif GetInt('savegame.mod.tasks.running') > 0 then
 	for i=1, tasksRunning do
-		DebugPrint("Task complete! You received 100$.")		
+		DebugPrint("Task completed! You received 100$.")		
 		SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') + 100)
 	end		
 	tasksRunning = 0
