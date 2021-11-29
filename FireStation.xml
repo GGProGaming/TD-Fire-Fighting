@@ -1,4 +1,17 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="200 100 200">
+<<<<<<< HEAD
+	<group id_="1986582912" name="Basic">
+		<script id_="1732549888" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="sandbox.lua"/>
+		<environment id_="626890112" template="sunny" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" skyboxrot="-45"/>
+		<voxbox id_="366696288" pos="-100.0 -0.1 -100.0" rot="0.0 0.0 0.0" size="2000 1 2000"/>
+		<boundary id_="1286812416" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0">
+			<vertex pos="-100.0 -100.0"/>
+			<vertex pos="100.0 -100.0"/>
+			<vertex pos="100.0 100.0"/>
+			<vertex pos="-100.0 100.0"/>
+		</boundary>
+		<script id_="892064960" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="main.lua"/>
+	</group>
 	<group id_="586517440" open_="true" name="Firestation">
 		<group id_="962979200" open_="true" name="Structure">
 			<group id_="1847441536" open_="true" name="1st floor">
@@ -531,8 +544,8 @@
 	</group>
 	<group id_="367482784" open_="true" name="Upgrades" pos="1.5 -4.2 -0.1">
 		<group id_="1396985088" open_="true" name="Upgrade Objects" pos="-1.5 4.2 0.1">
-			<body id_="317148064" open_="true" tags="upgrade_1" pos="-0.9 -1.8 4.2" dynamic="true">
-				<vox id_="105978176" tags="upgrade_1" pos="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/office_murky.vox" object="chair"/>
+			<body id_="317148064" open_="true" tags="upgrade_1" pos="-0.9 -1.9 4.2" dynamic="true">
+				<vox id_="105978176" tags="upgrade_1" pos="0.0 0.0 0.0" prop="false" file="MOD/main/assets tuxedolabs/furniture/office_murky.vox" object="chair_boss"/>
 			</body>
 		</group>
 		<group id_="1803333120" open_="true" name="Upgrade Places" pos="-1.5 4.2 0.1">
