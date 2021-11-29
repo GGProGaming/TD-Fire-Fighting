@@ -46,7 +46,7 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
-		<spawnpoint id_="123149664" pos="31.6 0.5 -35.8" rot="0.0 0.0 0.0"/>
+		<spawnpoint id_="123149664" pos="-72.7 1.8 -16.0" rot="0.0 0.0 0.0"/>
 		<trigger id_="327044608" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 	</group>
 	<group id_="1266363904" open_="true" name="Gardens">
@@ -850,7 +850,7 @@
 			<voxbox id_="1728945152" pos="-49.6 -0.01 -31.3" rot="0.0 -90.0 0.0" texture="1 0.5" size="371 5 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 		</group>
 	</group>
-	<group id_="1578465408" open_="true" name="Houses">
+	<group id_="1578465408" name="Houses">
 		<group id_="2143616768" name="Model 1" pos="-0.5 0.6 -52.3" rot="0.0 0.0 0.0">
 			<group id_="1977669504" open_="true" name="Structure">
 				<group id_="75960864" name="Roof">
@@ -1007,7 +1007,7 @@
 				<voxbox id_="1552642560" pos="-8.2 0.0 -5.9" rot="0.0 0.0 0.0" texture="1" size="49 1 58" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="rock"/>
 			</group>
 		</group>
-		<group id_="2026365696" open_="true" name="Model 3" pos="-27.2 0.6 -53.1">
+		<group id_="2026365696" name="Model 3" pos="-27.2 0.6 -53.1">
 			<group id_="943579392" open_="true" name="Structure">
 				<group id_="564758208" open_="true" name="Roof" pos="0.0 0.0 0.1">
 					<voxbox id_="1039923200" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Blue"/>
@@ -1467,10 +1467,10 @@
 			</group>
 		</group>
 		<group id_="2044192640" name="Treehouse" pos="-0.1 0.0 0.0">
-			<vox id_="645175744" pos="-32.3 0.2 -49.0" rot="0.0 -30.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-mediumlarge.vox">
+			<vox id_="645175744" open_="true" pos="-32.3 0.2 -49.0" rot="0.0 -30.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-mediumlarge.vox">
 				<voxbox id_="1506699008" pos="-1.8 4.7 -1.4" rot="0.0 0.0 0.0" size="47 29 56" brush="hole"/>
 			</vox>
-			<group id_="988081024" pos="-32.3 0.2 -49.0" rot="0.0 -30.0 0.0">
+			<group id_="988081024" open_="true" pos="-32.3 0.2 -49.0" rot="0.0 -30.0 0.0">
 				<voxbox id_="1783867776" pos="-1.8 5.0 3.1" rot="0.0 0.0 0.0" size="47 33 2" brush="MOD/main/assets tuxedolabs/industrial/innerwalls.vox" object="framework-wood-plain">
 					<voxbox id_="1470848640" pos="3.6 0.0 0.0" rot="0.0 -90.0 0.0" size="2 30 22" brush="hole"/>
 				</voxbox>
@@ -4798,6 +4798,11 @@
 			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
 		</group>
 		<script id_="1243293824" file="MOD/main/script/bgMusic.lua"/>
+	</group>
+	<group id_="395271744" open_="true" name="firestarters">
+		<location id_="539328640" tags="firestarter" pos="-31.6 6.6 -47.5"/>
+		<location id_="1908852480" tags="firestarter" pos="-22.8 1.6 -53.5"/>
+		<location id_="2100229248" tags="firestarter" pos="-15.8 1.6 -17.8"/>
 	</group>
 	<layers>
 		<layer name="scripts" visible="true"/>

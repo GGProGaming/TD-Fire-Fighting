@@ -17,8 +17,7 @@
 #include "upgrades.lua"
 #include "fire.lua"
 
-Userlevel = GetInt("savegame.mod.userLevel")
-UserMoney = GetInt("savegame.mod.userMoney")
+Mails = StartMails	
 
 function init()
 	currentTab = "welcome"
@@ -32,9 +31,7 @@ function init()
 	UpgradesCurrentPageSlider = 1
 	BoughtUpgrades = {}
 
-	BoughtEmployees = {}
-	
-	Mails = StartMails	
+	BoughtEmployees = {}	
 	
 	for i=1, #Mails do
 		if Mails[i].task and GetString("savegame.mod.task."..Mails[i].task.id..".status") ~= "" then
@@ -48,9 +45,16 @@ function init()
 	showCheats = false
 	
 	tasks = {}
+	
+	Userlevel = GetInt("savegame.mod.userLevel")
+	UserMoney = GetInt("savegame.mod.userMoney")
 end
 
 function tick()
+
+	Userlevel = GetInt("savegame.mod.userLevel")
+	UserMoney = GetInt("savegame.mod.userMoney")
+
 	if InputPressed("f1") then
 		showCheats = not showCheats
 	end
@@ -420,6 +424,7 @@ function showMail(mail, indexOfMail)
 						table.insert(tasks,mail.task)
 						mail.task.status = "[ Accepted ]"
 						SetString("savegame.mod.task."..mail.task.id..".status","Accepted")
+						SetFloat("savegame.mod.task."..mail.task.id..".accepted.timestamp", GetTime())						
 					elseif GetString("savegame.mod.task."..mail.task.id..".status") == "Accepted" then
 						mail.task.status = "[ Accepted ]"
 					end
@@ -555,6 +560,8 @@ function cheats()
 				if Mails[i].task then
 					Mails[i].task.status = nil
 					SetString("savegame.mod.task."..Mails[i].task.id..".status","")
+					SetBool("savegame.mod.task."..Mails[i].task.id..".spawned",false)
+					SetFloat("savegame.mod.task."..Mails[i].task.id..".accepted.timestamp",nil)
 				end
 			end
 		end	
