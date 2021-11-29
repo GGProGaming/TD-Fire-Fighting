@@ -28,8 +28,8 @@ function tick()
   time_stuff = 1
 
   for i=1, #StartMails do
-    if GetString(string.format('savegame.mod.task.%d.status.Accepted', i) ~= '') then
-      DebugWatch("Next Fire", GetTime() - time_of_next_fire)
+    if GetString(string.format('savegame.mod.task.%d.status', i)) == 'Accepted' then
+      DebugWatch("Next Fire", (GetTime() - time_of_next_fire))
       if time_of_next_fire ~= nil and GetTime() > time_of_next_fire and #fire_pos > 0 then -- check here if there are fireposition left
 
         -- get a point from the list, remove it from the list, and summon fires around that point.
@@ -42,7 +42,7 @@ function tick()
     end
   end
   if f > 0 then
-    if GetInt('savegame.mod.employees.1.hired') then
+    if GetInt('savegame.mod.employees.1.hired') > 0 then
       DebugWatch("Delete Fire", GetTime() - time_stuff)
       if time_stuff ~= nil and GetTime() > time_stuff then
         time_stuff = GetTime() + 250
@@ -50,7 +50,7 @@ function tick()
           RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
         end
       end
-    elseif GetInt('savegame.mod.employees.2.hired') then
+    elseif GetInt('savegame.mod.employees.2.hired') > 0 then
       DebugWatch("Delete Fire", GetTime() - time_stuff)
       if time_stuff ~= nil and GetTime() > time_stuff then
         time_stuff = GetTime() + 220
@@ -58,7 +58,7 @@ function tick()
           RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
         end
       end
-    elseif GetInt('savegame.mod.employees.3.hired') then
+    elseif GetInt('savegame.mod.employees.3.hired') > 0 then
       DebugWatch("Delete Fire", GetTime() - time_stuff)
       if time_stuff ~= nil and GetTime() > time_stuff then
         time_stuff = GetTime() + 180
@@ -66,7 +66,7 @@ function tick()
           RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
         end
       end
-    elseif GetInt('savegame.mod.employees.4.hired') then
+    elseif GetInt('savegame.mod.employees.4.hired') > 0 then
       DebugWatch("Delete Fire", GetTime() - time_stuff)
       if time_stuff ~= nil and GetTime() > time_stuff then
         time_stuff = GetTime() + 150
