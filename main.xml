@@ -38,7 +38,7 @@
 	</group>
 	<group id_="414016192" open_="true" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
-		<environment id_="1735761408" template="night" skyboxrot="-45"/>
+		<environment id_="1735761408" template="sunset" skyboxrot="-45"/>
 		<boundary id_="1800449280" pos="35.0 0.0 0.0">
 			<vertex pos="-157.10001 -81.2"/>
 			<vertex pos="102.5 -81.0"/>
@@ -46,12 +46,10 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
-		<spawnpoint id_="123149664" pos="-72.7 1.8 -16.0" rot="0.0 0.0 0.0"/>
-		<trigger id_="327044608" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 	</group>
 	<group id_="1266363904" open_="true" name="Gardens">
 		<group id_="696755712" open_="true" name="Houses">
-			<voxbox id_="1312569600" pos="108.7 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
+			<voxbox id_="1312569600" pos="47.5 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 889" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="890623040" pos="-25.7 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1149178368" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 				<voxbox id_="983034432" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
@@ -267,48 +265,6 @@
 				<vox id_="1245128960" pos="-0.6 -0.2 2.2" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
 				<voxbox id_="203501696" pos="-0.0 0.0 -6.2" rot="0.0 0.0 0.0" texture="6" size="2 1 165" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
-			<voxbox id_="1220027136" open_="true" pos="60.8 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 115" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="1353663104" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 115" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="285295616" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="529563200" pos="0.2 0.0 11.5" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<vox id_="1019081472" open_="true" pos="-0.9 0.0 10.7" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="609653056" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="589008000" pos="3.6 -0.1 -0.6" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="103618736" pos="5.3 -0.1 -0.7" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
-				</vox>
-				<vox id_="1833874688" open_="true" pos="-0.9 0.0 3.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="1168643712" pos="0.8 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="947511808" pos="2.1 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-				</vox>
-			</voxbox>
-			<voxbox id_="374102336" pos="83.2 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="975300736" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="770815936" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="1296512256" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<vox id_="1961612160" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="1263086848" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="96343800" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-				</vox>
-				<vox id_="1834792320" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="1115163136" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="1820242432" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-				</vox>
-				<vox id_="1254828800" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
-			</voxbox>
-			<voxbox id_="1367033344" pos="92.39999 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-				<voxbox id_="1956106880" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="1374373760" pos="0.2 0.0 -0.2" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<voxbox id_="1634108800" pos="0.2 0.0 10.3" rot="0.0 -90.0 0.0" texture="6" size="2 1 22" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-				<vox id_="171780336" pos="-0.9 0.0 9.3" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="1623950080" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="622236736" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-				</vox>
-				<vox id_="248396608" pos="-0.9 0.0 3.8" rot="0.0 80.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
-					<vox id_="1115556352" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-					<vox id_="1457281920" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
-				</vox>
-				<vox id_="1169626880" pos="-0.6 -0.2 5.1" rot="0.0 50.0 0.0" file="MOD/main/assets tuxedolabs/nature/tree-small.vox"/>
-			</voxbox>
 			<vox id_="1856486016" open_="true" pos="107.3 0.0 -5.4" rot="0.0 -100.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1">
 				<vox id_="842123456" pos="1.5 -0.1 -0.3" rot="0.0 20.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
 				<vox id_="1199054336" pos="2.8 -0.1 -0.5" rot="0.0 10.0 0.0" file="MOD/main/assets tuxedolabs/nature/bushes.vox" object="small-1"/>
@@ -480,7 +436,7 @@
 				<voxbox id_="2048387200" pos="12.3 1.3 2.1" rot="0.0 0.0 0.0" texture="6" size="20 16 20" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 2"/>
 				<voxbox id_="919264064" pos="20.4 0.6 5.8" rot="0.0 0.0 0.0" texture="6" size="18 2 63" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
-			<voxbox id_="829605312" name="blocks" pos="84.1 0.0 -62.3" rot="0.0 -90.0 0.0" texture="6" size="171 6 233" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+			<voxbox id_="829605312" open_="true" name="blocks" pos="84.1 0.0 -62.3" rot="0.0 -90.0 0.0" texture="6" size="171 6 233" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1609334656" pos="13.8 0.6 12.7" rot="0.0 -90.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1975899904" pos="13.8 0.6 10.7" rot="0.0 0.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1838855808" pos="11.8 0.6 12.8" rot="0.0 -180.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
@@ -811,18 +767,18 @@
 					<light id_="358831488" pos="-0.02 0.1 0.14" rot="-90.0 0.0 0.0" type="area" size="1 0.1"/>
 					<vox id_="1370048128" pos="-0.05 0.65 0.01" file="MOD/ob/signs.vox" object="day"/>
 				</vox>
-				<vox id_="747221568" open_="true" tags="car=3" pos="-0.8 0.9 -10.5" rot="0.0 0.0 0.0" desc="MUSIC:if the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
+				<vox id_="747221568" open_="true" tags="car=3" pos="-0.8 0.9 -10.5" rot="0.0 0.0 0.0" desc="MUSIC:If the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
 					<vox id_="927456512" pos="-0.03 0.63 0.01" file="MOD/ob/signs.vox" object="music" scale="0.7"/>
 					<vox id_="630953600" tags="light1" pos="1.1 1.5 0.06" rot="0.0 89.8 0.0" file="MOD/ob/timer.vox" object="r"/>
 					<light id_="1290154880" pos="-0.05 0.1 0.14" rot="-90.0 0.0 0.0" type="area" size="1 0.1"/>
 					<light id_="1718393216" pos="-0.05 1.6 0.14" rot="90.0 0.0 0.0" type="area" size="1 0.1"/>
 				</vox>
-				<vox id_="2031805568" open_="true" tags="car=2" pos="2.9 0.9 -10.5" rot="0.0 0.0 0.0" desc="VEHICLE TRAFFIC:if the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
+				<vox id_="2031805568" open_="true" tags="car=2" pos="2.9 0.9 -10.5" rot="0.0 0.0 0.0" desc="VEHICLE TRAFFIC:If the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
 					<vox id_="989457408" tags="light2" pos="1.1 1.5 0.06" rot="0.0 89.8 0.0" file="MOD/ob/timer.vox" object="r"/>
 					<light id_="9306680" pos="-0.05 0.1 0.14" rot="-90.0 0.0 0.0" type="area" size="1 0.1"/>
 					<light id_="1667468672" pos="-0.05 1.6 0.14" rot="90.0 0.0 0.0" type="area" size="1 0.1"/>
 				</vox>
-				<vox id_="1620542080" open_="true" tags="car=4" pos="-4.4 0.9 -10.5" rot="0.0 0.0 0.0" desc="FPS PLUS:if the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
+				<vox id_="1620542080" open_="true" tags="car=4" pos="-4.4 0.9 -10.5" rot="0.0 0.0 0.0" desc="FPS PLUS:If the light is on it means it is activated." file="MOD/ob/signs.vox" object="sign">
 					<vox id_="1989991040" pos="0.09 0.73 0.01" file="MOD/ob/signs.vox" object="fps" scale="0.7"/>
 					<vox id_="1335836288" tags="fps" pos="1.1 1.5 0.06" rot="0.0 89.8 0.0" file="MOD/ob/timer.vox" object="r"/>
 					<light id_="1737989760" pos="-0.05 0.1 0.14" rot="-90.0 0.0 0.0" type="area" size="1 0.1"/>
