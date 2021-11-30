@@ -91,24 +91,28 @@ Employees = {
 		userLevelNeeded = 3,
 		stars = 1,
 		costPerHour = 25,
+		speed = 250
 	},
 	{
 		name = "Standard Firefighter",
 		userLevelNeeded = 4,
 		stars = 2,
 		costPerHour = 40,
+		speed = 220
 	},
 	{
 		name = "Experienced Firefighter",
 		userLevelNeeded = 4,
 		stars = 3,
 		costPerHour = 60,
+		speed = 180
 	},
 	{
 		name = "Heroic Firefighter",
 		userLevelNeeded = 5,
 		stars = 4,
 		costPerHour = 80,
+		speed = 150
 	}
 }
 

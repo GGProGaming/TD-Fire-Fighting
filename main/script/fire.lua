@@ -7,12 +7,10 @@ Taskss = {}
 fireSpread = 0.4
 maxFires = 300
 
-employeeSpeeds = {250,220,180,150}
-
 function init()
   SetInt("game.fire.maxcount", 300)
   SetFloat("game.fire.spread", 0.4)
-  for i=1,4 do SetFloat('savegame.mod.employees.4.currentWaitingTime', employeeSpeeds[i]) end
+  for i=1,4 do SetFloat('savegame.mod.employees.4.currentWaitingTime', Employees[i].speed) end
   
   tasksRunning = 0
   
@@ -86,9 +84,9 @@ function tick(dt)
 	end	
 	
 	if employeeReady > 0 then		
-		DebugPrint("Employee "..employeeReady.." deleted the fire.")
+		DebugPrint("Employee "..employeeReady.." deleted the fire." .. Employees[employeeReady].speed)
 		RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
-		SetFloat('savegame.mod.employees.'..employeeReady..'.currentWaitingTime', employeeSpeeds[employeeReady])		
+		SetFloat('savegame.mod.employees.'..employeeReady..'.currentWaitingTime', Employees[employeeReady].speed)		
 	end
   elseif GetInt('savegame.mod.tasks.running') > 0 then
 	for i=1, tasksRunning do

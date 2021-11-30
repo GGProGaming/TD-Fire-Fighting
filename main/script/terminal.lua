@@ -46,14 +46,12 @@ function init()
 	
 	tasks = {}
 	
-	Userlevel = GetInt("savegame.mod.userLevel")
-	UserMoney = GetInt("savegame.mod.userMoney")
+	Userlevel = GetInt("savegame.mod.userLevel")	
 end
 
 function tick()
 
-	Userlevel = GetInt("savegame.mod.userLevel")
-	UserMoney = GetInt("savegame.mod.userMoney")
+	Userlevel = GetInt("savegame.mod.userLevel")	
 
 	if InputPressed("f1") then
 		showCheats = not showCheats
@@ -72,7 +70,7 @@ function showMenu()
 			UiFont("regular.ttf",20)
 			UiText("LEVEL : " ..Userlevel)
 			UiTranslate(0,-22)
-			UiText("MONEY : $"..UserMoney)
+			UiText("MONEY : $"..GetInt("savegame.mod.userMoney"))
 		UiPop()		
 		UiTranslate(0,UiHeight()/4)
 		UiRect(UiWidth()/3-5, 3*UiHeight()/4-10)
@@ -120,8 +118,8 @@ function showHousing(name, userLevelNeeded,cost,index)
 			UiButtonImageBox("ui/common/box-solid-6.png",6,6,0.1,.1,.1)		
 		end
 		
-		if UiBlankButton(350,80) and Userlevel >= userLevelNeeded and UserMoney >= cost and not GetBool("savegame.mod.housings."..index..".bought") then
-			SetUserMoney(UserMoney - cost)			
+		if UiBlankButton(350,80) and Userlevel >= userLevelNeeded and GetInt("savegame.mod.userMoney") >= cost and not GetBool("savegame.mod.housings."..index..".bought") then
+			SetUserMoney(GetInt("savegame.mod.userMoney") - cost)			
 			SetBool("savegame.mod.housings."..index..".bought", true)
 		end		
 
@@ -140,10 +138,10 @@ function showHousing(name, userLevelNeeded,cost,index)
 		UiTranslate(10,1)	
 
 		notEnoughMoney = ""
-		if UserMoney < cost then notEnoughMoney = " - Not Enough Money" end
+		if GetInt("savegame.mod.userMoney") < cost then notEnoughMoney = " - Not Enough Money" end
 		
 		if Userlevel >= userLevelNeeded then
-			if UserMoney >= cost then
+			if GetInt("savegame.mod.userMoney") >= cost then
 				UiColor(0.2,0.8,0.2)
 			else
 				UiColor(0.8,0.2,0.2)
@@ -178,8 +176,8 @@ function showUpgrade(name,userLevelNeeded,cost,upgradeIndexInTable)
 			UiButtonImageBox("ui/common/box-solid-6.png",6,6,0.1,.1,.1)		
 		end
 		
-		if UiBlankButton(350,50) and Userlevel >= userLevelNeeded and UserMoney >= cost and not GetBool("savegame.mod.upgrades."..upgradeIndexInTable..".bought") then			
-			SetUserMoney(UserMoney - cost)
+		if UiBlankButton(350,50) and Userlevel >= userLevelNeeded and GetInt("savegame.mod.userMoney") >= cost and not GetBool("savegame.mod.upgrades."..upgradeIndexInTable..".bought") then			
+			SetUserMoney(GetInt("savegame.mod.userMoney") - cost)
 			SetBool("savegame.mod.upgrades."..upgradeIndexInTable..".bought", true)
 		end		
 
@@ -198,10 +196,10 @@ function showUpgrade(name,userLevelNeeded,cost,upgradeIndexInTable)
 		UiTranslate(10,1)	
 
 		notEnoughMoney = ""
-		if UserMoney < cost then notEnoughMoney = " - Not Enough Money" end
+		if GetInt("savegame.mod.userMoney") < cost then notEnoughMoney = " - Not Enough Money" end
 		
 		if Userlevel >= userLevelNeeded then
-			if UserMoney >= cost then
+			if GetInt("savegame.mod.userMoney") >= cost then
 				UiColor(0.2,0.8,0.2)
 			else
 				UiColor(0.8,0.2,0.2)
@@ -225,9 +223,8 @@ function showUpgrade(name,userLevelNeeded,cost,upgradeIndexInTable)
 	UiTranslate(0,55)
 end
 
-function SetUserMoney(money)
-	UserMoney = money
-	SetInt("savegame.mod.userMoney", UserMoney)
+function SetUserMoney(money)	
+	SetInt("savegame.mod.userMoney", money)
 end
 
 function SetUserLevel(level)
@@ -246,10 +243,10 @@ function showEmployeeSelect(name,stars,userLevelNeeded,cost)
 			UiButtonImageBox("ui/common/box-solid-6.png",6,6,0.1,.1,.1)		
 		end
 				
-		if UiBlankButton(350,50) and Userlevel >= userLevelNeeded and GetInt("savegame.mod.employees."..stars..".hired") < 2 and UserMoney >= cost then			
-			SetUserMoney(UserMoney - cost)			
+		if UiBlankButton(350,50) and Userlevel >= userLevelNeeded and GetInt("savegame.mod.employees."..stars..".hired") < 2 and GetInt("savegame.mod.userMoney") >= cost then			
+			SetUserMoney(GetInt("savegame.mod.userMoney") - cost)			
 			SetInt("savegame.mod.employees."..stars..".hired",GetInt("savegame.mod.employees."..stars..".hired")+1)
-			GetFloat("savegame.mod.employees."..stars..".currentWorkingTime",0)
+			GetFloat("savegame.mod.employees."..stars..".currentWorkingTime", Employees[stars].speed)
 		end		
 
 		UiPush()
@@ -280,7 +277,7 @@ function showEmployeeSelect(name,stars,userLevelNeeded,cost)
 		UiColor(0.05,0.05,0.05)		
 		UiImageBox("ui/common/box-solid-4.png",348,19,4,4)				
 		UiTranslate(10,1)		
-		if Userlevel >= userLevelNeeded and UserMoney >= cost then
+		if Userlevel >= userLevelNeeded and GetInt("savegame.mod.userMoney") >= cost then
 			UiColor(0.2,0.8,0.2)
 		else
 			UiColor(0.8,0.2,0.2)
@@ -301,6 +298,21 @@ function showEmployeeSelect(name,stars,userLevelNeeded,cost)
 			UiText("Bought "..GetInt("savegame.mod.employees."..stars..".hired").." of 2")	
 		end
 	UiPop()
+	if GetInt("savegame.mod.employees."..stars..".hired") > 0 then
+		UiPush()
+			UiButtonImageBox("ui/common/box-solid-6.png",6,6,0.5,.5,.5,.8)			
+			UiTranslate(220,5)
+			UiColor(0.5,0.5,0.5)
+			UiFont("bold.ttf",11)		
+			if UiTextButton("Kick") then
+				SetInt("savegame.mod.employees."..stars..".hired", GetInt("savegame.mod.employees."..stars..".hired") - 1)
+				if GetInt("savegame.mod.employees."..stars..".hired") == 0 then
+					SetFloat("savegame.mod.employees."..stars..".currentWaitingTime",0)
+					SetFloat("savegame.mod.employees."..stars..".currentWorkingTime",0)
+				end
+			end			
+		UiPop()
+	end
 	UiTranslate(0,55)
 end
 
@@ -364,6 +376,17 @@ function showUpgrades()
 			UpgradesCurrentPageSlider = UiSlider("ui/common/dot.png", "y", UpgradesCurrentPageSlider, 1, 300)
 		UiPop()
 	end
+	UiPush()
+		UiColor(0.2,0.2,0.2)
+		UiFont("bold.ttf",30)
+		UiAlign("middle center")
+		UiTranslate(UiWidth()/3+200, UiHeight()/4+100)	
+		UiRotate(15)
+		UiText("[ Work in progress! ]")
+		UiTranslate(3,-3)	
+		UiColor(.8,.8,.8)
+		UiText("[ Work in progress! ]")
+	UiPop()
 	
 end
 
@@ -432,7 +455,7 @@ function showMail(mail, indexOfMail)
 					UiTranslate(60,0)	
 					UiButtonImageBox("ui/common/box-solid-4.png",4,4,0.6,.2,.2)							
 					if UiTextButton("Decline") and GetString("savegame.mod.task."..mail.task.id..".status") == "" then
-						UserMoney = UserMoney + mail.task.declineFee
+						SetUserMoney(GetInt("savegame.mod.userMoney") + mail.task.declineFee)
 						mail.task.status = "[ Declined  (-$"..mail.task.declineFee..") ]"
 						SetString("savegame.mod.task."..mail.task.id..".status","Declined")
 					elseif GetString("savegame.mod.task."..mail.task.id..".status") == "Declined" then
@@ -527,11 +550,11 @@ function cheats()
 		UiPop()
 		UiTranslate(0,30)
 		UiPush()
-			UiText("Money: "..UserMoney)
+			UiText("Money: "..GetInt("savegame.mod.userMoney"))
 			UiTranslate(100,0)
-			if UiTextButton("+") then SetUserMoney(UserMoney + 50) end
+			if UiTextButton("+") then SetUserMoney(GetInt("savegame.mod.userMoney") + 50) end
 			UiTranslate(30,0)
-			if UiTextButton("-") then SetUserMoney(math.max(0,UserMoney - 50)) end
+			if UiTextButton("-") then SetUserMoney(math.max(0,GetInt("savegame.mod.userMoney") - 50)) end
 		UiPop()
 		UiTranslate(0,30)
 		if UiTextButton("Clear all bought Upgrades") then 
