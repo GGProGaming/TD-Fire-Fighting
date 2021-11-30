@@ -50,10 +50,8 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
-		<spawnpoint id_="123149664" pos="-84.7 0.5 -35.1" rot="0.0 0.0 0.0"/>
-		<group id_="524582144" open_="true" name="Music" layer="v1">
-			<trigger id_="1334656512" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
-		</group>
+		<spawnpoint id_="123149664" pos="-72.7 1.8 -16.0" rot="0.0 0.0 0.0"/>
+		<trigger id_="327044608" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 	</group>
 	<group id_="1266363904" open_="true" name="Gardens">
 		<group id_="696755712" open_="true" name="Houses">
@@ -630,7 +628,7 @@
 				<voxbox id_="2048387200" pos="12.3 1.3 2.1" rot="0.0 0.0 0.0" texture="6" size="20 16 20" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 2"/>
 				<voxbox id_="919264064" pos="20.4 0.6 5.8" rot="0.0 0.0 0.0" texture="6" size="18 2 63" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
-			<voxbox id_="829605312" open_="true" name="blocks" pos="84.1 0.0 -62.3" rot="0.0 -90.0 0.0" texture="6" size="171 6 233" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
+			<voxbox id_="829605312" name="blocks" pos="84.1 0.0 -62.3" rot="0.0 -90.0 0.0" texture="6" size="171 6 233" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1609334656" pos="13.8 0.6 12.7" rot="0.0 -90.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1975899904" pos="13.8 0.6 10.7" rot="0.0 0.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
 				<voxbox id_="1838855808" pos="11.8 0.6 12.8" rot="0.0 -180.0 0.0" texture="6" size="2 12 22" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="rock"/>
@@ -4905,7 +4903,7 @@
 	<group id_="1219764992" open_="true" name="scripts">
 		<script id_="2126904064" file="MOD/main/script/tools.lua"/>
 		<script id_="1534422528" file="MOD/main/script/tools-2.lua"/>
-		<group id_="747876928" open_="true" name="AI Stuff" layer="v2">
+		<group id_="747876928" open_="true" name="AI Stuff" layer="AI">
 			<instance id_="791133312" pos="-45.9 0.5 -85.4" rot="0.0 -180.0 0.0" file="MOD/technicals/stationwagon.xml"/>
 			<script id_="1597537536" pos="0.0 0.0 -36.1" file="MOD/technicals/AVF_AI.lua"/>
 			<group id_="666672896" open_="true" name="triggers" tags="checkpoints">
@@ -4925,6 +4923,7 @@
 		<group id_="1683394944" open_="true" name="script" layer="scripts">
 			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
 		</group>
+		<script id_="1243293824" file="MOD/main/script/bgMusic.lua"/>
 	</group>
 	<group id_="395271744" open_="true" name="firestarters">
 		<location id_="539328640" tags="firestarter" pos="-32.2 6.0 -47.5"/>
@@ -4949,9 +4948,8 @@
 		<location id_="1066794560" tags="firestarter" pos="99.4 5.3 -59.1" rot="0.0 -180.0 0.0"/>
 	</group>
 	<layers>
-		<layer name="scripts" visible="false"/>
-		<layer name="v1" visible="false"/>
-		<layer name="v2" visible="false"/>
+		<layer name="scripts" visible="true"/>
+		<layer name="AI" visible="true"/>
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
