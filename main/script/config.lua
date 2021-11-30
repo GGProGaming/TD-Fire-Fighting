@@ -60,8 +60,8 @@ Mail_SecondMission = {
 
 Mail_ThirdMission = {
 	sender = "Freddy 'Dima' Loupe",
-	subject = "My Cat Is Stuck!"		,
-	text = "Help Me! NOW!\n\nMy cat got stuck up in the tree again! It won't listento me and it won't come down either! Please save Mr. Wiggles!\n\nHe's going to suffocate up there! I need help NOW!",	
+	subject = "My Cat Is On Fire!!!"		,
+	text = "I need help!\n\nMy cat caught on fire and is running around the house setting everything alight... You gotta help me! Please save Mr. Wiggles!\n\nHe's going to suffocate right now! I need help NOW!",	
 	checked = false,
 	task = Tasks[3]
 }
@@ -73,6 +73,27 @@ Mail_FourthMission = {
 	checked = false,
 	task = Tasks[4]
 }
+Mail_FifthMission = {
+	sender = "Bob Killz",
+	subject = "My Bloody House!"		,
+	text = "Its BURNING\n\nMy Bloody HOUSE is BURNING. Ya hear me? Its BURNING!!! Get over here NOW!\n\nGet UP!",	
+	checked = false,
+	task = Tasks[5]
+}
+Mail_SixthMission = {
+	sender = "Amazon Web Services Middle East A.K.A. AWSME",
+	subject = "Company House"		,
+	text = "To whomever it concerns,\n\nWe were notified recently that a company property of AMAZON was on fire and burning to the ground. Please resolve this issue as soon as possible.\n\nThanks, AWSME",	
+	checked = false,
+	task = Tasks[6]
+}
+Mail_SeventhMission = {
+	sender = "Larry Walsh",
+	subject = "A Unfortunate Series of Events",
+	text = "Good day lad,\n\nSo, I woke up on this fine day and prepared myself to go to work... as well as preparing some very tasty breakfast of eggs and pickles. Then I went to work and arrived back home in the evening. While I made my late evening dinner however, I was struck by the overwelming smell of smoke. And what do you know? MY HOUSE IS ON FIRE!\n\nHelp ME or ELSE!",	
+	checked = false,
+	task = Tasks[7]
+}
 
 
 StartMails = { 
@@ -81,6 +102,9 @@ StartMails = {
 	Mail_SecondMission,
 	Mail_ThirdMission,
 	Mail_FourthMission,
+	Mail_FifthMission,
+	Mail_SixthMission,
+	Mail_SeventhMission,
 }
 
 

@@ -4,12 +4,13 @@ time_of_next_fire = 5
 
 Taskss = {}
 
-fireSpread = 0.4
+fireSpread = 0.6
 maxFires = 300
 
 function init()
   SetInt("game.fire.maxcount", 300)
-  SetFloat("game.fire.spread", 0.4)
+  SetFloat("game.fire.spread", 0.6)
+  SetPlayerHealth(0, 0.75)
   for i=1,4 do SetFloat('savegame.mod.employees.4.currentWaitingTime', Employees[i].speed) end
   
   tasksRunning = 0
@@ -68,12 +69,12 @@ function tick(dt)
       end
     end
   end
-  
+
   f = QueryAabbFireCount(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))  
   
   if f > 0 then	
   
-	local employeeReady = 0
+	employeeReady = 0
 	for employee=4,1,-1 do
 		if GetInt('savegame.mod.employees.'..employee..'.hired') > 0 then 
 			if GetFloat('savegame.mod.employees.'..employee..'.currentWaitingTime') <= 0 then				
@@ -94,5 +95,16 @@ function tick(dt)
 		SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') + 100)
 	end		
 	tasksRunning = 0
-  end
+	end
+	if f > 0 then
+		if employeeReady > 0 then
+			return
+		elseif GetInt('savegame.mod.tasks.running') > 0 then	
+			for i=1, tasksRunning do
+				DebugPrint("Task completed! You received 100$.")		
+				SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') + 100)
+			end		
+			tasksRunning = 0
+		end
+	end
 end
