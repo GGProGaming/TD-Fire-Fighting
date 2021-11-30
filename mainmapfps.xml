@@ -1,12 +1,5 @@
 <scene id_="331829024" open_="true" version="0.8.0" shadowVolume="290 100 200">
 	<group id_="752137024" open_="true" name="ground" pos="0.0 -0.1 0.0">
-<<<<<<< Updated upstream
-		<voxbox id_="1338064640" name="blocks" pos="-97.99998 0.1 12.3" rot="0.0 90.0 0.0" texture="6" size="377 5 405" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
-			<voxbox id_="764393024" name="blocks" pos="37.6 -0.4 29.4" rot="0.0 90.0 0.0" texture="6" size="294 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-			<voxbox id_="825738432" name="blocks" pos="0.0 -0.4 48.99999" rot="0.0 90.0 0.0" texture="6" size="85 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
-		</voxbox>
-=======
->>>>>>> Stashed changes
 		<voxscript id_="1630635264" pos="-145.20001 -3.5 -100.00001" texture="6" file="MOD/main/script/ground.lua">
 			<parameters file="MOD/main/script/heightmap.png" scale="300"/>
 		</voxscript>
@@ -42,8 +35,6 @@
 			<voxbox id_="1614774528" pos="138.49998 -0.3 0.0" rot="0.0 0.0 90.0" size="142 34 20"/>
 			<voxbox id_="29165300" pos="131.5 9.7 0.0" rot="0.0 0.0 0.0" size="107 42 20"/>
 		</voxbox>
-<<<<<<< Updated upstream
-=======
 		<voxbox id_="1302738560" open_="true" name="blocks" pos="-97.99998 0.1 12.3" rot="0.0 90.0 0.0" texture="6" size="377 5 405" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 			<voxbox id_="1231758720" name="blocks" pos="37.6 -0.4 29.4" rot="0.0 90.0 0.0" texture="6" size="294 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			<voxbox id_="1507682176" name="blocks" pos="52.2 0.0 47.6" rot="0.0 90.0 0.0" texture="6" size="468 1 2" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
@@ -53,7 +44,6 @@
 			<voxbox id_="1121717120" name="blocks" pos="-42.40002 0.0 99.79987" rot="0.0 -90.0 0.0" texture="6" size="1111 1 2" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			<voxbox id_="689939584" name="blocks" pos="0.0 -0.4 48.99999" rot="0.0 90.0 0.0" texture="6" size="85 9 67" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 		</voxbox>
->>>>>>> Stashed changes
 	</group>
 	<group id_="414016192" open_="true" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
@@ -65,11 +55,7 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
-<<<<<<< Updated upstream
-		<spawnpoint id_="123149664" pos="-84.7 0.5 -35.1" rot="0.0 0.0 0.0"/>
-=======
 		<spawnpoint id_="123149664" pos="89.1 0.5 -35.1" rot="0.0 0.0 0.0"/>
->>>>>>> Stashed changes
 		<group id_="524582144" open_="true" name="Music" layer="v1">
 			<trigger id_="1334656512" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 		</group>
@@ -4924,28 +4910,6 @@
 	<group id_="1219764992" open_="true" name="scripts">
 		<script id_="2126904064" file="MOD/main/script/tools.lua"/>
 		<script id_="1534422528" file="MOD/main/script/tools-2.lua"/>
-<<<<<<< Updated upstream
-		<group id_="747876928" open_="true" name="AI Stuff" layer="v2">
-			<instance id_="791133312" pos="-45.9 0.5 -85.4" rot="0.0 -180.0 0.0" file="MOD/technicals/stationwagon.xml"/>
-			<script id_="1597537536" pos="0.0 0.0 -36.1" file="MOD/technicals/AVF_AI.lua"/>
-			<group id_="666672896" open_="true" name="triggers" tags="checkpoints">
-				<trigger id_="1509976064" name="checkpoint" tags="checkpoint=1" pos="-45.0 0.5 -34.8" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
-				<trigger id_="1903609344" name="checkpoint" tags="checkpoint=2" pos="110.9 0.5 -35.4" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
-				<trigger id_="1495098496" name="checkpoint" tags="checkpoint=3" pos="108.9 0.5 -72.0" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
-				<trigger id_="2060643200" name="checkpoint" tags="checkpoint=4" pos="-45.6 0.5 -71.8" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
-				<trigger id_="2007424640" name="checkpoint" tags="checkpoint=5" pos="-44.6 0.5 14.7" rot="0.0 0.0 0.0" type="box" size="10 5 10"/>
-				<voxbox id_="553812992" pos="-50.2 0.2 -88.2" rot="0.0 0.0 0.0" size="88 30 2" color="0.42 0.42 0.42"/>
-			</group>
-			<instance id_="352670752" pos="87.2 0.5 7.5" rot="0.0 90.0 0.0" file="MOD/technicals/taskmaster-4wd.xml"/>
-			<instance id_="1301493376" pos="-11.89999 0.5 -74.1" rot="0.0 -90.0 0.0" file="MOD/technicals/van.xml"/>
-			<instance id_="396844704" pos="112.4 0.5 -47.2" rot="0.0 180.0 0.0" file="MOD/technicals/salooncar.xml"/>
-			<instance id_="398286592" pos="-5.2 0.6 -48.3" rot="0.0 -180.0 0.0" file="MOD/technicals/suv1.xml"/>
-			<instance id_="1444239488" pos="87.8 0.5 -36.6" rot="0.0 90.0 0.0" file="MOD/technicals/suv2.xml"/>
-		</group>
-		<group id_="1683394944" open_="true" name="script" layer="scripts">
-			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
-		</group>
-=======
 		<group id_="1683394944" open_="true" name="script" layer="scripts">
 			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
 		</group>
@@ -4966,7 +4930,6 @@
 			<instance id_="1807724288" pos="-21.9 0.5 -43.0" rot="0.0 -180.0 0.0" file="MOD/technicals/suv1.xml"/>
 			<instance id_="1767548288" pos="106.4 0.5 -36.6" rot="0.0 90.0 0.0" file="MOD/technicals/suv2.xml"/>
 		</group>
->>>>>>> Stashed changes
 	</group>
 	<group id_="395271744" open_="true" name="firestarters">
 		<location id_="539328640" tags="firestarter" pos="-32.2 6.0 -47.5"/>
@@ -4991,15 +4954,9 @@
 		<location id_="1066794560" tags="firestarter" pos="99.4 5.3 -59.1" rot="0.0 -180.0 0.0"/>
 	</group>
 	<layers>
-<<<<<<< Updated upstream
-		<layer name="scripts" visible="false"/>
-		<layer name="v1" visible="false"/>
-		<layer name="v2" visible="false"/>
-=======
 		<layer name="scripts" visible="true"/>
 		<layer name="v1" visible="false"/>
 		<layer name="v2" visible="true"/>
->>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
