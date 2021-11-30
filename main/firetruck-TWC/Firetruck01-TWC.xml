@@ -1,0 +1,541 @@
+<prefab version="0.8.0">
+	<group id_="1969870208" open_="true" name="instance=MOD/main/firetruck-TWC/Firetruck01-TWC.xml" pos="23.0 27.2 -5.7" rot="0.0 -90.0 0.0">
+		<vehicle id_="1620804224" open_="true" name="firetruck 01" tags="YLVF nodrive=mod" pos="0.1 -0.1 0.1" sound="semitruck2" spring="2.3" damping="0.4" topspeed="110" acceleration="0.5" strength="400" antispin="0.1" antiroll="0.76" difflock="0.9" steerassist="0.4" friction="2.6">
+			<group id_="647731840" open_="true" name="properties" prop0="desc=Enable YLVF to drive" prop1="strength=11">
+				<body id_="1199447552" open_="true" name="body" tags="nocull" pos="-0.05 1.3 0.1" dynamic="true">
+					<vox id_="196292304" pos="0.05 -0.9 -0.1" rot="0 180 0" strength="15" file="MOD/main/firetruck-TWC/firetruck01.vox" object="chassis">
+						<location id_="851823360" tags="camera" pos="0.0 1.6 0.0"/>
+						<location id_="947511808" tags="exhaust" pos="-0.9 0.15 -0.25" rot="0.0 -90.0 0.0"/>
+					</vox>
+					<group id_="1327447168" open_="true" name="wheels" pos="-0.05 -1.3 0.0">
+						<wheel id_="345985664" open_="true" name="FL" pos="-0.8 0.7 -3.6" rot="8.0 0.0 0.0" steer="1.3">
+							<vox id_="648321664" pos="-0.2 -0.6 0.0" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-front"/>
+						</wheel>
+						<wheel id_="1640072960" open_="true" name="FR" pos="0.9 0.7 -3.6" rot="8.0 0.0 0.0" steer="1.3">
+							<vox id_="159720976" pos="0.2 -0.6 0.0" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-front"/>
+						</wheel>
+						<wheel id_="1083376256" open_="true" name="ML" pos="-0.6 0.7 2.1" drive="1">
+							<vox id_="1426674688" pos="-0.3 -0.6 0.0" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-rear"/>
+						</wheel>
+						<wheel id_="1186208512" open_="true" name="MR" pos="0.7 0.7 2.1" drive="1">
+							<vox id_="1646954624" pos="0.3 -0.6 0.0" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-rear"/>
+						</wheel>
+						<wheel id_="1724947200" open_="true" name="BL" pos="-0.6 0.7 3.7" drive="1">
+							<vox id_="62131920" pos="-0.3 -0.6 0.0" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-rear"/>
+						</wheel>
+						<wheel id_="751547200" open_="true" name="BR" pos="0.7 0.7 3.7" rot="0.0 0.0 0.0" drive="1">
+							<vox id_="93591120" pos="0.3 -0.6 0.0" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="wheel-rear"/>
+						</wheel>
+					</group>
+					<vox id_="547193472" pos="0.05 -0.7 -3.9" rot="0.0 -180.0 0.0" strength="15" file="MOD/main/firetruck-TWC/firetruck01.vox" object="cabin">
+						<location id_="1697813760" tags="player" pos="0.75 1.7 0.3"/>
+						<light id_="1285239424" pos="0.4 2.4 -0.9" rot="90.0 0.0 0.0" type="area" scale="0.4" size="0.2 0.2" fogscale="0"/>
+						<light id_="711174528" pos="-0.3 2.4 -0.9" rot="90.0 0.0 0.0" type="area" scale="0.4" size="0.2 0.2" fogscale="0"/>
+					</vox>
+					<group id_="1601142144" name="extended lights" pos="-0.05 -0.5 0.1" rot="0.0 180.0 0.0" prop0="strength=10">
+						<group id_="2027742080" name="headlights" pos="-0.1 0.0 5.7">
+							<vox id_="1903150464" tags="Ylight=FM" pos="0.75 0.35 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2"/>
+							<vox id_="240728416" tags="Ylight=FM" pos="-0.65 0.35 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2"/>
+							<vox id_="883610304" open_="true" tags="Ylight=BCN Ylogic=41" pos="0.75 0.15 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2">
+								<light id_="75567616" pos="-0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+								<light id_="1401048576" pos="0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+							</vox>
+							<vox id_="667983680" open_="true" tags="Ylight=FM" pos="1.05 0.15 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2">
+								<light id_="573868224" pos="-0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+								<light id_="1030223232" pos="0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+							</vox>
+							<vox id_="1906558592" open_="true" tags="Ylight=BCN Ylogic=40" pos="-0.65 0.15 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2">
+								<light id_="1073086400" pos="-0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+								<light id_="1668976128" pos="0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+							</vox>
+							<vox id_="490632448" open_="true" tags="Ylight=FM" pos="-0.95 0.15 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="headlight-1*2">
+								<light id_="1158681600" pos="-0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+								<light id_="825476288" pos="0.05 0.05 -0.05" rot="10.0 0.0 0.0" type="cone" scale="8" angle="50" reach="20" fogscale="0.2" glare="0.3"/>
+							</vox>
+						</group>
+						<group id_="378690112" name="blinkers" pos="-0.1 0.0 -0.1">
+							<vox id_="1248864640" tags="Ylight=BL" pos="1.05 0.35 5.85" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*2"/>
+							<vox id_="1618772480" tags="Ylight=BR" pos="-0.95 0.35 5.85" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*2"/>
+							<vox id_="1338326784" tags="Ylight=BL" pos="1.25 0.05 5.55" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*1"/>
+							<vox id_="1074200576" tags="Ylight=BR" pos="-1.25 0.05 5.55" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*1"/>
+							<vox id_="1226515584" tags="Ylight=BL" pos="1.25 0.35 -2.65" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*1"/>
+							<vox id_="1645381760" tags="Ylight=BR" pos="-1.25 0.35 -2.65" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*1"/>
+							<vox id_="1407537024" tags="Ylight=BL" pos="1.05 0.52 -5.65" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*2"/>
+							<vox id_="1461673088" tags="Ylight=BR" pos="-0.95 0.52 -5.65" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="yellow-1*2"/>
+						</group>
+						<group id_="1165563392" name="beacons (on body)" pos="-0.1 0.6 5.7">
+							<vox id_="1273376640" open_="true" tags="Ylight=BCN Ylogic=40" pos="0.85 0.05 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="1940246144" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1279865088" open_="true" tags="Ylight=BCN Ylogic=41" pos="-0.85 0.05 0.05" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="2128804736" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1856551552" open_="true" tags="Ylight=BCN Ylogic=31" pos="1.25 0.25 -1.85" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="762951168" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="1463704832" open_="true" tags="Ylight=BCN Ylogic=30" pos="-1.15 0.25 -1.85" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="1022555072" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="1306539904" open_="true" tags="Ylight=BCN Ylogic=30" pos="1.25 -0.05 -8.5" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="1848293504" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="1818276224" open_="true" tags="Ylight=BCN Ylogic=31" pos="-1.15 -0.05 -8.5" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="1171986304" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="795590080" open_="true" tags="Ylight=BCN Ylogic=21" pos="1.25 -0.75 -11.65" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="1150292480" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="80548656" open_="true" tags="Ylight=BCN Ylogic=20" pos="-1.15 -0.75 -11.65" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+								<light id_="611684800" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+							</vox>
+							<vox id_="82908096" open_="true" tags="Ylight=BCN Ylogic=31" pos="1.35 1.35 -4.25" rot="0.0 90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="853724032" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="703637440" open_="true" tags="Ylight=BCN Ylogic=30" pos="-1.25 1.35 -4.35" rot="0.0 -90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="245643920" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="59051540" open_="true" tags="Ylight=BCN Ylogic=20" pos="1.35 1.35 -4.65" rot="0.0 90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1297626496" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1819062656" open_="true" tags="Ylight=BCN Ylogic=21" pos="-1.25 1.35 -4.75" rot="0.0 -90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="660643200" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="2086793600" open_="true" tags="Ylight=BCN Ylogic=20" pos="1.35 1.35 -3.85" rot="0.0 90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1259351040" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="510687680" open_="true" tags="Ylight=BCN Ylogic=21" pos="-1.25 1.35 -3.95" rot="0.0 -90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="701671232" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1551266304" open_="true" tags="Ylight=BCN Ylogic=30" pos="1.35 1.35 -10.75" rot="0.0 90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="631871168" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="64950140" open_="true" tags="Ylight=BCN Ylogic=31" pos="-1.25 1.35 -10.85" rot="0.0 -90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="853199744" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="129048256" open_="true" tags="Ylight=BCN Ylogic=21" pos="1.35 1.35 -11.15" rot="0.0 90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1105659776" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1137512192" open_="true" tags="Ylight=BCN Ylogic=20" pos="-1.25 1.35 -11.25" rot="0.0 -90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="96147184" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="91231680" open_="true" tags="Ylight=BCN Ylogic=21" pos="1.35 1.35 -10.35" rot="0.0 90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1781311616" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="2097280000" open_="true" tags="Ylight=BCN Ylogic=20" pos="-1.25 1.35 -10.45" rot="0.0 -90.0 0.0" collide="false" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1318992512" pos="0.05 0.1 0.0" type="area" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="703440832" open_="true" tags="Ylight=BCN Ylogic=31" pos="1.15 1.45 -11.55" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="313150112" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="103422120" open_="true" tags="Ylight=BCN Ylogic=30" pos="-0.95 1.45 -11.55" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-2*3">
+								<light id_="589401216" pos="0.05 0.1 0.0" type="area" color="1 0 0" scale="6" size="0.3 0.2" fogscale="0.2" glare="0.5"/>
+							</vox>
+							<vox id_="1534881280" open_="true" tags="Ylight=BCN Ylogic=40" pos="0.75 1.45 -11.55" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1002696448" pos="0.05 0.1 0.0" type="area" scale="3" size="0.3 0.2" fogscale="0.2" glare="0.3"/>
+							</vox>
+							<vox id_="157361536" open_="true" tags="Ylight=BCN Ylogic=41" pos="-0.55 1.45 -11.55" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-2*3">
+								<light id_="1570272896" pos="0.05 0.1 0.0" type="area" scale="3" size="0.3 0.2" fogscale="0.2" glare="0.3"/>
+							</vox>
+						</group>
+						<group id_="1590328064" name="beacons (attached)" pos="-0.1 0.6 5.7">
+							<vox id_="482374400" tags="Yhorn=0007" pos="0.0 1.3 -0.6" file="MOD/main/firetruck-TWC/firetruck01.vox" object="beacon FM"/>
+							<vox id_="196226752" open_="true" tags="Ylight=BCN Ylogic=31" pos="0.5 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*3">
+								<light id_="64950140" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" color="1 0 0" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="980150720" open_="true" tags="Ylight=BCN Ylogic=31" pos="-0.5 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*3">
+								<light id_="487224352" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" color="1 0 0" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1405767424" open_="true" tags="Ylight=BCN Ylogic=30" pos="0.2 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="1063714176" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1966200" open_="true" tags="Ylight=BCN Ylogic=30" pos="-0.2 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="1857338112" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1997986944" open_="true" tags="Ylight=BCN Ylogic=21" pos="0.8 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="1952829824" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="717466368" open_="true" tags="Ylight=BCN Ylogic=21" pos="-0.8 1.4 -0.4" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="648125056" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1482252672" open_="true" tags="Ylight=BCN Ylogic=30" pos="0.5 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*3">
+								<light id_="912120192" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" color="1 0 0" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="364926720" open_="true" tags="Ylight=BCN Ylogic=30" pos="-0.5 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*3">
+								<light id_="1919469952" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" color="1 0 0" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1435325952" open_="true" tags="Ylight=BCN Ylogic=31" pos="0.2 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="1083900544" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1597668608" open_="true" tags="Ylight=BCN Ylogic=31" pos="-0.2 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="1158550528" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="481653472" open_="true" tags="Ylight=BCN Ylogic=20" pos="0.8 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="159983136" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+							<vox id_="1629521024" open_="true" tags="Ylight=BCN Ylogic=20" pos="-0.8 1.4 -0.7" file="MOD/main/firetruck-TWC/firetruck01.vox" object="white-1*3">
+								<light id_="960554240" pos="0.05 0.05 -0.05" rot="0.0 -90.0 0.0" type="capsule" scale="3" size="0.3" glare="0.3"/>
+							</vox>
+						</group>
+					</group>
+					<group id_="505510016" name="normal lights" pos="0.05 -0.7 -3.9" rot="0.0 180.0 0.0" prop0="strength=10">
+						<vox id_="1472880384" open_="true" pos="1.05 0.85 -9.75" rot="0.0 90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+							<light id_="1545760896" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" size="0.2 0.1" fogscale="0.2"/>
+						</vox>
+						<vox id_="1533701504" open_="true" pos="-0.95 0.85 -9.75" rot="0.0 90.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="red-1*2">
+							<light id_="2101998848" pos="0.1 0.05 0.0" rot="0.0 90.0 0.0" type="area" color="1 0 0" size="0.2 0.1" fogscale="0.2"/>
+						</vox>
+						<vox id_="1817227520" open_="true" pos="1.05 0.58 -9.75" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="braking-1*2">
+							<light id_="1618182656" pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="area" color="1 0 0" scale="3" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+						</vox>
+						<vox id_="1899742464" open_="true" pos="-0.95 0.58 -9.75" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="braking-1*2">
+							<light id_="426599872" pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="area" color="1 0 0" scale="3" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+						</vox>
+						<vox id_="1523608320" open_="true" pos="1.05 0.45 -9.75" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="reverse-1*2">
+							<light id_="2052450688" pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="area" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+						</vox>
+						<vox id_="394223104" open_="true" pos="-0.95 0.45 -9.75" rot="0.0 0.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="reverse-1*2">
+							<light id_="1808445184" pos="0.0 0.05 -0.1" rot="0.0 180.0 0.0" type="area" scale="2" size="0.2 0.1" fogscale="0.2" glare="0.2"/>
+						</vox>
+					</group>
+					<vox id_="1448761728" pos="0.05 -0.8 -3.8" rot="0.0 180.0 0.0" strength="15" file="MOD/main/firetruck-TWC/firetruck01.vox" object="engine">
+						<location id_="1535536640" tags="vital" pos="0.05 0.7 1.1"/>
+					</vox>
+					<voxbox id_="1301624448" pos="-0.1 -0.65 -2.7" rot="0.0 0.0 0.0" strength="15" size="2 2 46" brush="MOD/main/firetruck-TWC/firetruck01.vox" object="shaft"/>
+					<voxbox id_="1211703552" pos="-0.1 -0.65 2.3" rot="0.0 0.0 0.0" strength="15" size="2 2 12" brush="MOD/main/firetruck-TWC/firetruck01.vox" object="shaft"/>
+					<vox id_="376199616" pos="0.05 -0.7 1.9" rot="0 180 0" strength="15" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rescue">
+						<voxbox id_="699705024" pos="1.2 1.44 0.5" rot="0.0 180.0 0.0" size="2 1 14" brush="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+						<voxbox id_="1000795776" pos="-0.9 1.44 0.5" rot="0.0 180.0 0.0" size="2 1 14" brush="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+					</vox>
+					<vox id_="1753588224" pos="0.05 -0.7 -5.9" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="bumper-front"/>
+					<vox id_="96999200" tags="Yhorn=0307" pos="0.65 -0.7 -6.1" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-bumper"/>
+					<vox id_="2112354176" tags="Yhorn=0307" pos="-0.55 -0.7 -6.1" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-bumper"/>
+					<vox id_="356668672" pos="0.05 -0.7 6.0" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="bumper-back"/>
+					<vox id_="205664512" tags="Yhorn=03" pos="1.2 1.45 -4.45" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-1">
+						<vox id_="603688960" tags="Yhorn=03" pos="0.05 -0.05 0.25" rot="0.0 0.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-2"/>
+					</vox>
+					<vox id_="844482880" tags="Yhorn=03" pos="-1.1 1.45 -4.45" rot="0.0 180.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-1">
+						<vox id_="261111360" tags="Yhorn=03" pos="0.05 -0.05 0.25" rot="0.0 0.0 0.0" strength="25" file="MOD/main/firetruck-TWC/firetruck01.vox" object="horn-2"/>
+					</vox>
+					<vox id_="1566930304" pos="-0.7 0.4 -4.75" rot="60.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="steering wheel-1"/>
+					<vox id_="1186339584" pos="-0.75 0.3 -5.05" rot="50.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="steering wheel-2"/>
+				</body>
+				<group id_="1663470720" open_="true" name="doors">
+					<body id_="1087570816" open_="true" name="front L" tags="Ydoor=driver nocull" pos="-1.4 1.5 -4.7" dynamic="true">
+						<vox id_="75436544" pos="0.2 -0.5 0.0" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="doorFL"/>
+						<vox id_="101455920" pos="0.0 0.3 -0.3" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="mirrorL"/>
+						<joint id_="1081934336" pos="0.1 0.2 -0.4" rot="90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+						<joint id_="205074656" pos="0.1 -0.3 -0.4" rot="90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+					</body>
+					<body id_="323964224" open_="true" name="front R" tags="Ydoor nocull" pos="1.2 1.5 -4.7" dynamic="true">
+						<vox id_="1077412096" pos="-0.1 -0.5 0.0" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="doorFR"/>
+						<vox id_="928701824" pos="0.2 0.3 -0.3" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="mirrorR"/>
+						<joint id_="730771008" pos="0.0 -0.3 -0.4" rot="-90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+						<joint id_="193801776" pos="0.0 0.2 -0.4" rot="-90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+					</body>
+					<body id_="1832301824" open_="true" name="back L" tags="Ydoor nocull" pos="-1.3 1.7 -2.8" dynamic="true">
+						<vox id_="841336960" pos="0.1 -0.7 0.1" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="doorBL"/>
+						<joint id_="1287795456" pos="-0.0 0.8 -0.3" rot="90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+						<joint id_="1338916608" pos="-0.0 0.0 -0.3" rot="90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+					</body>
+					<body id_="362763904" open_="true" name="back R" tags="Ydoor nocull" pos="1.2 1.7 -2.8" dynamic="true">
+						<vox id_="440756512" pos="0.0 -0.7 0.1" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="doorBR"/>
+						<joint id_="936369984" pos="0.0 0.8 -0.3" rot="-90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+						<joint id_="1766892800" pos="0.0 0.0 -0.3" rot="-90.0 -90.0 0.0" type="hinge" limits="0 75"/>
+					</body>
+				</group>
+				<group id_="983755392" open_="true" name="hatches">
+					<body id_="450653056" name="SL1" tags="Yhood nocull" pos="-1.3 1.1 -1.1" dynamic="true">
+						<vox id_="912841088" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-L1"/>
+						<vox id_="85660784" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="1852029312" pos="0.0 0.5 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.9"/>
+						<joint id_="1423528832" pos="0.0 0.5 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.9"/>
+						<joint id_="1215504896" pos="0.0 -0.4 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.9"/>
+						<joint id_="1111623936" pos="0.0 -0.4 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.9"/>
+					</body>
+					<body id_="624202944" name="SR1" tags="Yhood nocull" pos="1.1 1.7 -1.1" dynamic="true">
+						<vox id_="1478844544" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-R1"/>
+						<vox id_="1230906752" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="432105216" pos="0.1 0.3 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.7"/>
+						<joint id_="903272256" pos="0.1 0.3 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.7"/>
+						<joint id_="226833936" pos="0.1 -0.4 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.7"/>
+						<joint id_="1202003584" pos="0.1 -0.4 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.7"/>
+					</body>
+					<body id_="58265060" name="SL2" tags="Yhood nocull" pos="-1.3 1.6 0.6" dynamic="true">
+						<vox id_="1161172224" pos="0.1 -0.8 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-L2"/>
+						<vox id_="1201479296" pos="0.1 -0.9 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock16"/>
+						<joint id_="470839360" pos="0.0 0.9 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="45091520" pos="0.0 0.9 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1623622400" pos="0.0 -0.9 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="907466816" pos="0.0 -0.9 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+					</body>
+					<body id_="1203314432" name="SR2" tags="Yhood nocull" pos="1.1 1.6 0.6" dynamic="true">
+						<vox id_="30476100" pos="0.1 -0.8 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-R2"/>
+						<vox id_="451898304" pos="0.1 -0.9 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock16"/>
+						<joint id_="876859648" pos="0.1 0.9 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1157436416" pos="0.1 0.9 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1771284096" pos="0.1 -0.9 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="646158848" pos="0.1 -0.9 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+					</body>
+					<body id_="2069818752" name="SL3" tags="Yhood nocull" pos="-1.3 2.1 2.2" dynamic="true">
+						<vox id_="490763520" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-L3"/>
+						<vox id_="1782360320" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="1252862592" pos="0.0 0.4 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="1112738176" pos="0.0 0.4 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="1296643328" pos="0.0 -0.4 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="784251648" pos="0.0 -0.4 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+					</body>
+					<body id_="1204035328" name="SR3" tags="Yhood nocull" pos="1.1 2.1 2.2" dynamic="true">
+						<vox id_="1198005632" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-R3"/>
+						<vox id_="1720949376" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="811123072" pos="0.1 0.4 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="475754848" pos="0.1 0.4 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="1101923968" pos="0.1 -0.4 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="5636440" pos="0.1 -0.4 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+					</body>
+					<body id_="1621590656" name="SL4" tags="Yhood nocull" pos="-1.3 2.1 3.8" dynamic="true">
+						<vox id_="576358784" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-L4"/>
+						<vox id_="1539206912" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="1544712320" pos="0.0 0.4 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="136192128" pos="0.0 0.4 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="1689752320" pos="0.0 -0.4 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="541032704" pos="0.0 -0.4 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 0.8"/>
+					</body>
+					<body id_="548963072" name="SR4" tags="Yhood nocull" pos="1.1 2.1 3.8" dynamic="true">
+						<vox id_="2074209920" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-R4"/>
+						<vox id_="1234511488" pos="0.1 -0.4 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock14"/>
+						<joint id_="1953091968" pos="0.1 0.4 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="1354384128" pos="0.1 0.4 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="954917824" pos="0.1 -0.4 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+						<joint id_="462974560" pos="0.1 -0.4 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 0.8"/>
+					</body>
+					<body id_="698590848" name="SL5" tags="Yhood nocull" pos="-1.3 1.6 5.3" dynamic="true">
+						<vox id_="1141903360" pos="0.1 -0.8 -0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-L5"/>
+						<vox id_="1691915136" pos="0.1 -0.9 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock12"/>
+						<joint id_="225588672" pos="0.0 0.9 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1390889856" pos="0.0 0.9 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="921033600" pos="0.0 -0.9 -0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1186732800" pos="0.0 -0.9 0.5" rot="-90.0 -180.0 -2.0" type="prismatic" limits="0 1.8"/>
+					</body>
+					<body id_="1561031680" name="SR5" tags="Yhood nocull" pos="1.1 1.6 5.3" dynamic="true">
+						<vox id_="660708736" pos="0.1 -0.8 -0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-R5"/>
+						<vox id_="865652352" pos="0.1 -0.9 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-lock12"/>
+						<joint id_="1613529216" pos="0.1 0.9 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="1632601344" pos="0.1 0.9 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="850381504" pos="0.1 -0.9 0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+						<joint id_="912513408" pos="0.1 -0.9 -0.5" rot="-90.0 0.0 -2.0" type="prismatic" limits="0 1.8"/>
+					</body>
+					<body id_="252787776" name="TLF" tags="Yhood nocull" pos="-0.9 3.1 1.3" dynamic="true">
+						<vox id_="1012724096" pos="0.1 0.0 -0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-TLF"/>
+						<joint id_="1615233280" pos="-0.3 0.1 -0.8" type="hinge" limits="0 80"/>
+						<joint id_="2105275904" pos="-0.3 0.1 0.9" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="1935723904" name="TRF" tags="Yhood nocull" pos="0.7 3.1 1.3" dynamic="true">
+						<vox id_="1757061888" pos="0.0 0.0 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-TRF"/>
+						<joint id_="695444928" pos="0.4 0.1 -0.9" rot="0.0 180.0 0.0" type="hinge" limits="0 80"/>
+						<joint id_="1663208576" pos="0.4 0.1 0.8" rot="0.0 180.0 0.0" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="2056448640" name="TLB" tags="Yhood nocull" pos="-0.9 3.1 4.4" dynamic="true">
+						<vox id_="589859968" pos="0.1 0.0 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-TLB"/>
+						<joint id_="1535208960" pos="-0.3 0.1 -0.8" type="hinge" limits="0 80"/>
+						<joint id_="1155208064" pos="-0.3 0.1 0.9" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="498956032" name="TRB" tags="Yhood nocull" pos="0.7 3.1 4.4" dynamic="true">
+						<vox id_="953213760" pos="0.0 0.0 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="hatch-TRB"/>
+						<joint id_="992144512" pos="0.4 0.1 -0.9" rot="0.0 180.0 0.0" type="hinge" limits="0 80"/>
+						<joint id_="1661897728" pos="0.4 0.1 0.8" rot="0.0 180.0 0.0" type="hinge" limits="0 80"/>
+					</body>
+					<group id_="1691587456" name="SL2-internal" pos="-0.7 0.6 0.6">
+						<body id_="1714395264" name="SL2-1" tags="Yhood nocull" pos="0.0 1.3 0.55" dynamic="true">
+							<vox id_="259014080" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="1493394432" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1931201664" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1779607680" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="845269376" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+						<body id_="936173376" name="SL2-2" tags="Yhood nocull" pos="0.0 1.3 0.15" dynamic="true">
+							<vox id_="188230880" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="990637120" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1098778112" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1876672384" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1432245632" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+						<body id_="360076768" name="SL2-3" tags="Yhood nocull" pos="0.0 1.3 -0.25" dynamic="true">
+							<vox id_="820298624" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="248199984" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1974457984" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1269706368" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1147998592" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+						<body id_="174139776" name="SL2-4" tags="Yhood nocull" pos="-0.2 0.2 0.0" dynamic="true">
+							<vox id_="2059594496" pos="0.0 -0.1 0.0" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-16*5"/>
+							<joint id_="1161499904" pos="0.1 -0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.3"/>
+							<joint id_="594644416" pos="0.1 -0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.3"/>
+							<joint id_="219231296" pos="-0.2 -0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.3"/>
+							<joint id_="764786240" pos="-0.2 -0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.3"/>
+						</body>
+					</group>
+					<group id_="1231365504" name="SR2-internal" pos="0.6 0.6 0.6" rot="0.0 180.0 0.0">
+						<body id_="195833520" name="SR2-1" tags="Yhood nocull" pos="0.0 1.3 -0.55" dynamic="true">
+							<vox id_="649894656" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="285688864" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1008922752" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1737530880" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1593539584" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+						<body id_="1272262528" name="SR2-2" tags="Yhood nocull" pos="0.0 1.3 -0.15" dynamic="true">
+							<vox id_="191507872" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="2078994304" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="395861600" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1279078656" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1772791424" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+						<body id_="671260672" name="SR2-3" tags="Yhood nocull" pos="0.0 1.3 0.25" dynamic="true">
+							<vox id_="252066848" pos="0.1 -0.6 -0.05" rot="0.0 -180.0 0.0" density="2" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-11"/>
+							<joint id_="33622020" pos="-0.3 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1181489536" pos="-0.3 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="550077248" pos="0.5 -0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+							<joint id_="1540255488" pos="0.5 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 0.9"/>
+						</body>
+					</group>
+					<group id_="505510016" name="SL3-internal" pos="-0.7 1.6 2.2">
+						<body id_="1825616640" name="Tray 1-1" tags="nocull" pos="0.0 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="1904330240" pos="0.1 -0.09 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*12"/>
+						</body>
+						<body id_="1073086400" name="Tray 1-2" tags="Yhood nocull" pos="0.4 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="43321940" pos="-0.4 -0.1 -0.71" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<vox id_="1652197888" pos="0.2 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+							<vox id_="746435072" pos="-0.4 -0.1 0.61" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<joint id_="1720752640" pos="0.0 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="542802304" pos="0.0 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="1822732928" pos="0.1 0.0 0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="452684768" pos="0.1 0.0 -0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="2093085440" pos="-0.8 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="1695978624" pos="-0.8 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+						</body>
+						<body id_="561219008" name="Tray 1-1" tags="nocull" pos="0.0 0.65 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="392191360" pos="0.1 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*12"/>
+						</body>
+						<body id_="920705920" name="Tray 1-2" tags="Yhood nocull" pos="0.4 0.65 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="623678656" pos="-0.4 -0.1 -0.71" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<vox id_="773830784" pos="0.2 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+							<vox id_="300697536" pos="-0.4 -0.1 0.61" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<joint id_="1006956544" pos="0.0 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="149889984" pos="0.0 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="495416864" pos="0.1 0.0 0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="384261024" pos="0.1 0.0 -0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="1237657344" pos="-0.8 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1189485440" pos="-0.8 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+						</body>
+					</group>
+					<group id_="492139872" name="SR3-internal" pos="0.6 1.6 2.2" rot="0.0 180.0 0.0">
+						<body id_="1070792512" name="Tray 1-1" tags="nocull" pos="0.0 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="816628416" pos="0.1 -0.09 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*12"/>
+						</body>
+						<body id_="488272992" name="Tray 1-2" tags="Yhood nocull" pos="0.4 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="51055660" pos="-0.4 -0.1 -0.71" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<vox id_="1459117056" pos="0.2 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+							<vox id_="1940573824" pos="-0.4 -0.1 0.61" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<joint id_="388390048" pos="0.0 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="925097088" pos="0.0 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="306202880" pos="0.1 0.0 0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="5964140" pos="0.1 0.0 -0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="1705285248" pos="-0.8 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+							<joint id_="1563718912" pos="-0.8 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.05"/>
+						</body>
+						<body id_="498693856" name="Tray 1-1" tags="nocull" pos="0.0 0.65 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="1312176384" pos="0.1 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*12"/>
+						</body>
+						<body id_="1871298048" name="Tray 1-2" tags="Yhood nocull" pos="0.4 0.65 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<vox id_="409493920" pos="-0.4 -0.1 -0.71" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<vox id_="1202593408" pos="0.2 -0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+							<vox id_="182528896" pos="-0.4 -0.1 0.61" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							<joint id_="573212864" pos="0.0 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="2111240064" pos="0.0 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="2041833216" pos="0.1 0.0 0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="1060306112" pos="0.1 0.0 -0.4" rot="0.0 -90.0 0.0"/>
+							<joint id_="1381910912" pos="-0.8 0.0 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="17433640" pos="-0.8 0.0 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+						</body>
+					</group>
+					<group id_="1923730048" name="SL4-internal" pos="-0.7 1.6 3.8">
+						<body id_="1503291008" name="Tray" tags="Yhood nocull" pos="0.0 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<compound id_="1011675456" pos="0.0 -0.2 0.0">
+								<vox id_="1032713792" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*14"/>
+								<vox id_="1566406016" pos="-0.4 0.3 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+								<vox id_="921099136" pos="0.1 0.2 -0.7" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+								<vox id_="663330368" pos="0.1 0.2 0.6" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							</compound>
+							<joint id_="1899087104" pos="0.5 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1223500672" pos="0.5 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="232011600" pos="-0.3 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1543073792" pos="-0.3 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+						</body>
+					</group>
+					<group id_="1779673216" name="SR4-internal" pos="0.5 1.6 3.8" rot="0.0 180.0 0.0">
+						<body id_="413885088" name="Tray-1" tags="Yhood nocull" pos="-0.1 0.2 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<compound id_="1908393728" pos="0.0 -0.2 0.0">
+								<vox id_="344871488" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*14"/>
+								<vox id_="1883554048" pos="-0.4 0.3 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+								<vox id_="1861794816" pos="0.1 0.2 -0.7" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+								<vox id_="2107045504" pos="0.1 0.2 0.6" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							</compound>
+							<joint id_="822133760" pos="0.5 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="983624320" pos="0.5 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="755610688" pos="-0.3 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1998707840" pos="-0.3 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+						</body>
+						<body id_="267730896" name="Tray-2" tags="Yhood nocull" pos="-0.1 0.6 0.0" rot="0.0 0.0 0.0" dynamic="true">
+							<compound id_="257965440" pos="0.0 -0.2 0.0">
+								<vox id_="1773381376" pos="0.1 0.1 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="tray-11*14"/>
+								<vox id_="811647360" pos="-0.4 0.3 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-1"/>
+								<vox id_="1583053184" pos="0.1 0.2 -0.7" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+								<vox id_="357389632" pos="0.1 0.2 0.6" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="rotbar-2"/>
+							</compound>
+							<joint id_="419390464" pos="0.5 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="313739968" pos="0.5 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1542287232" pos="-0.3 0.1 -0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+							<joint id_="1329020160" pos="-0.3 0.1 0.7" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1"/>
+						</body>
+					</group>
+					<group id_="788380672" name="SL5-internal">
+						<body id_="1699976576" tags="Yhood nocull" pos="-0.6 1.7 4.8" dynamic="true">
+							<vox id_="1724947200" pos="0.2 -0.9 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="toolboard-back"/>
+							<joint id_="1501259264" pos="0.9 -0.3 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.1"/>
+							<joint id_="1238640512" pos="0.9 0.6 0.0" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.1"/>
+							<joint id_="2147418112" pos="-0.0 -0.3 -0.1" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.1"/>
+							<joint id_="125640176" pos="-0.0 0.6 -0.1" rot="0.0 -90.0 0.0" type="prismatic" limits="0 1.1"/>
+						</body>
+					</group>
+				</group>
+				<body id_="1821028864" name="fuel" tags="nocull" pos="0.8 0.9 -1.2" dynamic="true">
+					<vox id_="44108420" tags="explosive=1" pos="0.1 -0.3 0.0" rot="0.0 -180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="fuel"/>
+					<joint id_="1872739968" pos="-0.3 0.0 -0.4"/>
+					<joint id_="1260399744" pos="-0.3 0.0 0.4"/>
+					<joint id_="901961472" pos="0.3 0.3 -0.4"/>
+					<joint id_="67768360" pos="0.3 0.3 0.4"/>
+				</body>
+				<group id_="2089415168" open_="true" name="internal">
+					<body id_="223950176" tags="Yhood nocull" pos="-0.05 2.8 -3.45" dynamic="true">
+						<vox id_="530480768" pos="0.05 -0.2 -0.05" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="internalF"/>
+						<joint id_="1329151232" pos="-0.25 0.2 0.0" rot="0.0 -90.0 -90.0" type="hinge" limits="0 80"/>
+						<joint id_="288244928" pos="0.25 0.2 0.0" rot="0.0 -90.0 -90.0" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="1312372992" tags="Yhood nocull" pos="-0.05 2.8 -2.35" dynamic="true">
+						<vox id_="1278554368" pos="0.05 -0.1 -0.05" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="internalM"/>
+						<joint id_="1651935744" pos="0.25 0.2 0.0" rot="0.0 -270.0 -90.0" type="hinge" limits="0 80"/>
+						<joint id_="1199513088" pos="-0.25 0.2 0.0" rot="0.0 -270.0 -90.0" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="395861600" tags="Yhood nocull" pos="-0.85 2.8 -2.35" dynamic="true">
+						<vox id_="577931712" pos="0.05 -0.2 -0.05" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="internalL"/>
+						<joint id_="1031206336" pos="0.0 0.2 0.0" rot="0.0 -270.0 -90.0" type="hinge" limits="0 80"/>
+					</body>
+					<body id_="239286544" tags="Yhood nocull" pos="0.75 2.8 -2.35" dynamic="true">
+						<vox id_="280445664" pos="0.05 -0.2 -0.05" rot="0.0 180.0 0.0" file="MOD/main/firetruck-TWC/firetruck01.vox" object="internalR"/>
+						<joint id_="267665360" pos="0.0 0.2 0.0" rot="0.0 -270.0 -90.0" type="hinge" limits="0 80"/>
+					</body>
+				</group>
+			</group>
+		</vehicle>
+	</group>
+</prefab>
+

@@ -192,7 +192,7 @@ function tick(dt)
 	if hit then
 	--local hitPoint = VecAdd(pos, VecScale(dir, dist))
 		local mat,r,g,b = GetShapeMaterialAtPosition(shape, point)
-		DebugWatch("Raycast hit voxel made out of ", mat.." | r:"..r.."g:"..g.."b:"..b)
+		--DebugWatch("Raycast hit voxel made out of ", mat.." | r:"..r.."g:"..g.."b:"..b)
 	end
 
 
@@ -202,10 +202,10 @@ end
 
 function markLoc()
 	
-	if InputPressed("g") and not RACESTARTED then
+	if GetTime() <= 5 then
 
 		RACESTARTED = true
-		DebugPrint("race Started")
+		--DebugPrint("race Started")
 		goalOrigPos = GetTriggerTransform(currentCheckpoint).pos
 
 		goalPos = VecAdd(goalOrigPos,Vec(math.random(-0,0),0,math.random(-0,0)))
@@ -425,7 +425,7 @@ function scanPos(vehicleTransform,detect,boundsSize)
     if(hit) then
 		local hitPoint = VecAdd(vehicleTransform.pos, VecScale(direction, dist))
 		local mat = GetShapeMaterialAtPosition(shape, hitPoint)
-		DebugPrint("Raycast hit voxel made out of " .. mat)
+		--DebugPrint("Raycast hit voxel made out of " .. mat)
     end
 
 	-- for i = 1,ai.numScans do 
@@ -462,10 +462,10 @@ function vehicleDetection5( )
 	local fwdL = 	TransformToParentPoint(vehicleTransform,Vec(detectRange,0,-detectRange))
 	local fwdR = 	TransformToParentPoint(vehicleTransform,Vec(-detectRange,0,-detectRange))
 	local boundsSize = VecSub(max, min)
-	DebugWatch("min",VecStr(min))
+	--DebugWatch("min",VecStr(min))
 
-	DebugWatch("max",VecStr(max))
-	DebugWatch("boundsize",boundsSize)
+	--DebugWatch("max",VecStr(max))
+	--DebugWatch("boundsize",boundsSize)
 	costs = { }
 	bestCost = {key = 0, val = 1000, target = Vec(0,0,0)}
 
@@ -515,7 +515,7 @@ function vehicleDetection5( )
 					for colKey, validSurfaceColours in ipairs(ai.validSurfaceColours) do 
 						
 						local validRange = validSurfaceColours.range
-						DebugPrint((validSurfaceColours.r-validRange.." | "..validSurfaceColours.r+validRange.." | "..r))
+						--DebugPrint((validSurfaceColours.r-validRange.." | "..validSurfaceColours.r+validRange.." | "..r))
 						if(inRange(validSurfaceColours.r-validRange,validSurfaceColours.r+validRange,r)
 						 and inRange(validSurfaceColours.g-validRange,validSurfaceColours.g+validRange,g) 
 						 and inRange(validSurfaceColours.b-validRange,validSurfaceColours.b+validRange,b)) then 
@@ -608,7 +608,7 @@ function vehicleDetection4( )
 
 		    costs[key] = costFunc(TransformToParentPoint(
 		    								vehicleTransform,detect),hit,key)
-		    DebugWatch("costs: "..key,costs[key])
+		    --DebugWatch("costs: "..key,costs[key])
 		    if(hit and dist<detectRange)then
 		    	lineColour = hitColour
 		    else
@@ -643,17 +643,17 @@ function vehicleDetection4( )
 		    								vehicleTransform, Vec(VecLength(direction)/2, detectRange/2, VecLength(direction)/2))
 				local ma2 = TransformToParentPoint(
 		    								vehicleTransform, Vec(VecLength(direction)/2, detectRange/2, VecLength(direction)/2))
-		    DebugWatch("mi",mi)
-		    DebugWatch("ma",ma)
-		    DebugWatch("fwd",fwdPos)
+		    --DebugWatch("mi",mi)
+		    --DebugWatch("ma",ma)
+		    --DebugWatch("fwd",fwdPos)
 		    	QueryRejectVehicle(vehicle.id)
 		    	QueryRequire("static")
 				local list2 = QueryAabbBodies(mi2, ma2)
 				QueryRequire("static")
 				QueryRejectVehicle(vehicle.id)
 				local list1= QueryAabbBodies(mi, ma)
-		    	DebugWatch("list1",#list1)
-		    	DebugWatch("list2",#list2)
+		    	--DebugWatch("list1",#list1)
+		    	--DebugWatch("list2",#list2)
 		    	if(#list2==0) then 
 		    		lineColour = detectColour
 		    		costs[key] = costs[key] *5
@@ -666,11 +666,11 @@ function vehicleDetection4( )
 				    	bestCost.val = costs[key] 
 				    	bestCost.target = detect
 				    end
-			    DebugLine(mi, ma, lineColour[1], lineColour[2], lineColour[3])
-			    DebugLine(mi2, ma2, lineColour[1], lineColour[2], lineColour[3])
+			    --DebugLine(mi, ma, lineColour[1], lineColour[2], lineColour[3])
+			    --DebugLine(mi2, ma2, lineColour[1], lineColour[2], lineColour[3])
 		    end
 
-		    DebugLine(vehiclePos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
+		    --DebugLine(vehiclePos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
 
 
 		end
@@ -696,10 +696,10 @@ function vehicleDetection3( )
 	local fwdL = 	TransformToParentPoint(vehicleTransform,Vec(detectRange,0,-detectRange))
 	local fwdR = 	TransformToParentPoint(vehicleTransform,Vec(-detectRange,0,-detectRange))
 	local boundsSize = VecSub(max, min)
-	DebugWatch("min",VecStr(min))
+	--DebugWatch("min",VecStr(min))
 
-	DebugWatch("max",VecStr(max))
-	DebugWatch("boundsize",boundsSize)
+	--DebugWatch("max",VecStr(max))
+	--DebugWatch("boundsize",boundsSize)
 	costs = { }
 	bestCost = {key = 0, val = 1000, target = Vec(0,0,0)}
 
@@ -733,7 +733,7 @@ function vehicleDetection3( )
 
 		    costs[key] = costFunc(TransformToParentPoint(
 		    								vehicleTransform,detect),hit,key)
-		    DebugWatch("costs: "..key,costs[key])
+		    --DebugWatch("costs: "..key,costs[key])
 		    if(hit )then
 		    	lineColour = hitColour
 		    else
@@ -743,7 +743,7 @@ function vehicleDetection3( )
 			    	bestCost.target = detect
 			    end
 		    end
-		    DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
+		    --DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
 
 
 		end
@@ -784,10 +784,10 @@ function vehicleDetection2( )
 		    if(hit and dist<detectRange)then
 		    	lineColour = hitColour
 		    end
-		    DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
+		    --DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
 		    costs[key] = costFunc(TransformToParentPoint(
 		    								vehicleTransform,detect),hit,key)
-		    DebugWatch("costs: "..key,costs[key])
+		    --DebugWatch("costs: "..key,costs[key])
 		    if costs[key] < bestCost.val  then
 		    	bestCost.key = key
 		    	bestCost.val = costs[key] 
@@ -827,10 +827,10 @@ function vehicleDetection( )
 		    if(hit and dist<detectRange)then
 		    	lineColour = hitColour
 		    end
-		    DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
+		    --DebugLine(vehicleTransform.pos, fwdPos, lineColour[1], lineColour[2], lineColour[3])
 		    costs[key] = costFunc(TransformToParentPoint(
 		    								vehicleTransform,detect),hit)
-		    DebugWatch("costs: "..key,costs[key])
+		    --DebugWatch("costs: "..key,costs[key])
 		    if costs[key] < bestCost.val  then
 		    	bestCost.key = key
 		    	bestCost.val = costs[key] 
@@ -862,7 +862,7 @@ function controlVehicle( targetCost)
 
 		if(VecLength(
 										VecSub(GetVehicleTransform(vehicle.id).pos,goalPos))>2) then
-			DebugWatch("pre updated",VecStr(targetMove))
+			--DebugWatch("pre updated",VecStr(targetMove))
 			if(targetMove[1] ~= 0 and targetMove[3] ==0) then 
 				targetMove[3] = 1
 				
@@ -877,8 +877,8 @@ function controlVehicle( targetCost)
 			end 
 
 			DriveVehicle(vehicle.id, -targetMove[3]*drivePower,-targetMove[1], hBrake)
-			DebugWatch("post updated",VecStr(targetMove))
-			DebugWatch("motion2",VecStr(detectPoints[targetCost.key]))
+			--DebugWatch("post updated",VecStr(targetMove))
+			--DebugWatch("motion2",VecStr(detectPoints[targetCost.key]))
 		else 
 			DriveVehicle(vehicle.id, 0,0, true)
 		end
