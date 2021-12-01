@@ -47,7 +47,11 @@
 	</group>
 	<group id_="414016192" open_="true" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
+<<<<<<< Updated upstream
 		<environment id_="1735761408" template="night" skyboxrot="-45"/>
+=======
+		<environment id_="1735761408" template="sunset" skyboxrot="-45"/>
+>>>>>>> Stashed changes
 		<boundary id_="1800449280" pos="35.0 0.0 0.0">
 			<vertex pos="-157.10001 -81.2"/>
 			<vertex pos="102.5 -81.0"/>
@@ -55,7 +59,11 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
+<<<<<<< Updated upstream
 		<spawnpoint id_="123149664" pos="89.1 0.5 -35.1" rot="0.0 0.0 0.0"/>
+=======
+		<spawnpoint id_="123149664" pos="-88.9 0.5 -34.8" rot="0.0 0.0 0.0"/>
+>>>>>>> Stashed changes
 		<group id_="524582144" open_="true" name="Music" layer="v1">
 			<trigger id_="1334656512" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 		</group>
@@ -4956,7 +4964,11 @@
 	<layers>
 		<layer name="scripts" visible="true"/>
 		<layer name="v1" visible="false"/>
+<<<<<<< Updated upstream
 		<layer name="v2" visible="true"/>
+=======
+		<layer name="v2" visible="false"/>
+>>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
