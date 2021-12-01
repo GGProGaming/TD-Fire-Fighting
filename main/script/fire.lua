@@ -82,13 +82,30 @@ function tick(dt)
 			end				
 			break
 		end
-	end	
+	end
+	
+	if employeeReady > 0 then
+		return
+  	elseif GetInt('savegame.mod.tasks.running') > 0 then	
+		for i=1, tasksRunning do
+			DebugPrint("Task completed! You received 100$.")		
+			SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') + 100)
+		end		
+		tasksRunning = 0
+    end
 	
 	if employeeReady > 0 then		
-		DebugPrint("Employee "..employeeReady.." deleted the fire." .. Employees[employeeReady].speed)
-		RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
-		SetFloat('savegame.mod.employees.'..employeeReady..'.currentWaitingTime', Employees[employeeReady].speed)		
+			DebugPrint("Employee "..employeeReady.." deleted the fire." .. Employees[employeeReady].speed)
+			RemoveAabbFires(Vec(-10000,-10000,-10000), Vec(10000,10000,10000))
+			SetFloat('savegame.mod.employees.'..employeeReady..'.currentWaitingTime', Employees[employeeReady].speed)		
+	elseif GetInt('savegame.mod.tasks.running') > 0 then
+		for i=1, tasksRunning do
+			DebugPrint("Task completed! You received 100$.")		
+			SetInt('savegame.mod.userMoney', GetInt('savegame.mod.userMoney') + 100)
+		end		
+		tasksRunning = 0
 	end
+<<<<<<< Updated upstream
   elseif GetInt('savegame.mod.tasks.running') > 0 then
 	for i=1, tasksRunning do
 		DebugPrint("Task completed! You received 100$.")		
@@ -107,4 +124,7 @@ function tick(dt)
 			tasksRunning = 0
 		end
 	end
+=======
+end
+>>>>>>> Stashed changes
 end

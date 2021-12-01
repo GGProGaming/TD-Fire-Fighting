@@ -5013,7 +5013,11 @@
 	<layers>
 		<layer name="scripts" visible="true"/>
 		<layer name="v1" visible="false"/>
+<<<<<<< Updated upstream
 		<layer name="v2" visible="true"/>
+=======
+		<layer name="v2" visible="false"/>
+>>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
