@@ -45,7 +45,7 @@
 			<voxbox id_="29165300" pos="131.5 9.7 0.0" rot="0.0 0.0 0.0" size="107 42 20"/>
 		</voxbox>
 	</group>
-	<group id_="414016192" name="Basic">
+	<group id_="414016192" open_="true" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
 		<environment id_="1735761408" template="sunset" skyboxrot="-45"/>
 		<boundary id_="1800449280" pos="35.0 0.0 0.0">
@@ -61,7 +61,7 @@
 		</group>
 	</group>
 	<group id_="1266363904" open_="true" name="Gardens">
-		<group id_="696755712" name="Houses">
+		<group id_="696755712" open_="true" name="Houses">
 			<voxbox id_="1312569600" pos="108.7 -0.11 -70.60001" rot="0.0 -90.0 0.0" texture="1 0.5" size="309 5 1501" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 			<voxbox id_="890623040" pos="-25.7 0.5 -39.9" rot="0.0 -90.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock">
 				<voxbox id_="1149178368" pos="-2.0 0.0 0.0" rot="0.0 0.0 0.0" texture="6" size="2 1 103" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
@@ -1043,7 +1043,7 @@
 			</vox>
 		</group>
 	</group>
-	<group id_="1578465408" name="Houses">
+	<group id_="1578465408" open_="true" name="Houses">
 		<group id_="2143616768" name="Model 1" pos="-0.5 0.6 -52.3" rot="0.0 0.0 0.0">
 			<group id_="1977669504" open_="true" name="Structure">
 				<group id_="75960864" name="Roof">
@@ -4334,7 +4334,7 @@
 			</body>
 		</vehicle>
 	</group>
-	<group id_="1219764992" name="scripts">
+	<group id_="1219764992" open_="true" name="scripts">
 		<script id_="2126904064" file="MOD/main/script/tools.lua"/>
 		<script id_="1534422528" file="MOD/main/script/tools-2.lua"/>
 		<group id_="747876928" open_="true" name="AI Stuff" layer="v2">
@@ -4358,7 +4358,7 @@
 			<script id_="1641187200" file="MOD/main/script/fire.lua"/>
 		</group>
 	</group>
-	<group id_="395271744" name="firestarters">
+	<group id_="395271744" open_="true" name="firestarters">
 		<location id_="539328640" tags="firestarter" pos="-32.2 6.0 -47.5"/>
 		<location id_="1908852480" tags="firestarter" pos="-23.5 1.6 -56.4"/>
 		<location id_="2100229248" tags="firestarter" pos="-16.5 1.6 -16.0" rot="0.0 180.0 0.0"/>
@@ -4380,7 +4380,7 @@
 		<location id_="1447254272" tags="firestarter" pos="55.4 5.9 -18.3" rot="0.0 -180.0 0.0"/>
 		<location id_="1066794560" tags="firestarter" pos="99.4 5.3 -59.1" rot="0.0 -180.0 0.0"/>
 	</group>
-	<group id_="1804447232" name="instance=MOD/FireStation.xml" pos="-67.0 0.5 -18.9" rot="0.0 -90.0 0.0">
+	<group id_="1804447232" open_="true" name="instance=MOD/FireStation.xml" pos="-67.0 0.5 -18.9" rot="0.0 -90.0 0.0">
 		<group id_="1775675264" open_="true" name="Firestation">
 			<group id_="697017920" open_="true" name="Structure">
 				<group id_="790805632" open_="true" name="1st floor">
@@ -5099,11 +5099,7 @@
 	<layers>
 		<layer name="scripts" visible="true"/>
 		<layer name="v1" visible="false"/>
-<<<<<<< Updated upstream
-		<layer name="v2" visible="true"/>
-=======
 		<layer name="v2" visible="false"/>
->>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>

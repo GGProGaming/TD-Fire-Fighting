@@ -105,7 +105,6 @@ function tick(dt)
 		end		
 		tasksRunning = 0
 	end
-<<<<<<< Updated upstream
   elseif GetInt('savegame.mod.tasks.running') > 0 then
 	for i=1, tasksRunning do
 		DebugPrint("Task completed! You received 100$.")		
@@ -124,7 +123,4 @@ function tick(dt)
 			tasksRunning = 0
 		end
 	end
-=======
-end
->>>>>>> Stashed changes
 end
