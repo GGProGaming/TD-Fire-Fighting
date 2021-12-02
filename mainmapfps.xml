@@ -875,14 +875,14 @@
 						<voxbox id_="1432704384" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 39" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
 					</group>
 				</group>
-				<group id_="1352745600" name="Decoration emply" rot="0.0 0.0 0.0">
+				<group id_="1352745600" open_="true" name="Decoration emply" rot="0.0 0.0 0.0">
 					<vox id_="1905051136" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen wood"/>
 					<vox id_="1643677696" pos="7.5 0.3 -2.5" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="975104128" pos="7.5 1.0 -2.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="211169888" pos="1.3 1.2 -0.2" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="1054604160" pos="1.5 0.3 -0.3" rot="0.0 -90.0 0.0" texture="5" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="medium"/>
 					<vox id_="1001844416" pos="0.9 0.3 -4.6" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
-					<vox id_="403923008" pos="-0.7 0.3 -4.8" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
+					<vox id_="403923008" pos="2.3 0.3 -3.8" rot="0.0 -160.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="542933376" pos="7.4 0.3 0.3" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<group id_="751874880" name="Lights">
 						<voxbox id_="1597734144" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
@@ -956,7 +956,11 @@
 			</voxbox>
 			<voxbox id_="1728945152" pos="-49.6 -0.01 -31.3" rot="0.0 -90.0 0.0" texture="1 0.5" size="371 5 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
 		</group>
+<<<<<<< Updated upstream
 		+		<group id_="1251158656" open_="true" name="Light">
+=======
+		<group id_="1251158656" open_="true" name="Light">
+>>>>>>> Stashed changes
 			<vox id_="1731370240" pos="-14.2 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
 				<light id_="1928514560" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
 				<light id_="315181856" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
@@ -3988,8 +3992,8 @@
 				</group>
 			</group>
 		</group>
-		<group id_="1827320704" name="Model 1" pos="-11.5 0.6 -19.0" rot="0.0 180.0 0.0">
-			<group id_="1434473984" name="Structure">
+		<group id_="1827320704" open_="true" name="Model 1" pos="-11.5 0.6 -19.0" rot="0.0 180.0 0.0">
+			<group id_="1434473984" open_="true" name="Structure">
 				<group id_="744010112" open_="true" name="Roof">
 					<voxbox id_="1446008960" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
 					<voxbox id_="1828172800" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
@@ -4006,7 +4010,7 @@
 						<vertex pos="-0.9 4.3"/>
 					</voxagon>
 				</group>
-				<group id_="719498112" name="Walls">
+				<group id_="719498112" open_="true" name="Walls">
 					<voxbox id_="1482056064" pos="-0.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
 					<voxbox id_="1749786880" pos="8.1 0.0 -5.5" rot="0.0 0.0 0.0" size="2 42 68" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
 					<voxbox id_="619680704" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
@@ -4027,7 +4031,7 @@
 						<voxbox id_="432629536" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
 					</group>
 					<voxbox id_="2138177024" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
-					<voxbox id_="2040718976" pos="0.3 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
+					<voxbox id_="2040718976" pos="0.3 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 79" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
 				</group>
 				<group id_="915200576" name="Floor">
 					<voxbox id_="914872832" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood1"/>
@@ -5041,8 +5045,13 @@
 	</group>
 	<layers>
 		<layer name="scripts" visible="true"/>
+<<<<<<< Updated upstream
 		<layer name="v1" visible="false"/>
 		<layer name="v2" visible="false"/>
+=======
+		<layer name="v1" visible="true"/>
+		<layer name="v2" visible="true"/>
+>>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>

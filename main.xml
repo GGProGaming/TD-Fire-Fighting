@@ -752,7 +752,6 @@
 		</group>
 	</group>
 	<group id_="603754496" open_="true" name="1" pos="-5.4 0.5 -44.0" rot="0 90 0">
-		<script id_="1782819072" pos="-61.8 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/menu.lua"/>
 		<group id_="1055128448" name="environment" pos="-63.5 0.0 -5.00001" rot="0.0 -90.0 0.0"/>
 		<group id_="192359904" open_="true" name="menu" pos="-52.89999 1.1 1.5" rot="0.0 -90.0 0.0">
 			<group id_="260980288" open_="true" name="sign" pos="-9.9 -0.9 8.2">
@@ -788,6 +787,7 @@
 			</group>
 		</group>
 	</group>
+	<script id_="1904526848" pos="-61.8 0.0 0.0" rot="0.0 -90.0 0.0" file="MOD/menu.lua"/>
 	<layers/>
 </scene>
 

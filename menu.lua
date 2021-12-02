@@ -111,27 +111,27 @@ function tick(dt)
 	end
 			if currentCar ~= 4 and currentCar ~= 3 and currentCar ~= 2 and InputPressed("space") or InputPressed("lmb") then
 				if GetBool("savegame.mod.v1") and GetBool("savegame.mod.v2") and GetBool("savegame.mod.fps") then
-				StartLevel("", "MOD/mainmapfps.xml","v2 car", "v1c car" .. currentCar) 
+					StartLevel("", "MOD/mainmapfps.xml","v2 car", "v1 car" .. currentCar) 
 			else
 				if GetBool("savegame.mod.v1") and GetBool("savegame.mod.fps") then
-				StartLevel("", "MOD/mainmapfps.xml","v1 car" .. currentCar)
+					StartLevel("", "MOD/mainmapfps.xml","v1 car" .. currentCar)
 			else
 				if GetBool("savegame.mod.v2") and GetBool("savegame.mod.fps") then
-				StartLevel("", "MOD/mainmapfps.xml","v2 car" .. currentCar)
+					StartLevel("", "MOD/mainmapfps.xml","v2 car" .. currentCar)
 			else
 				if GetBool("savegame.mod.fps") then
-				StartLevel("", "MOD/mainmapfps.xml" .. currentCar)
+					StartLevel("", "MOD/mainmapfps.xml","car" .. currentCar)
 			else
 				if GetBool("savegame.mod.v1") and GetBool("savegame.mod.v2") then
-				StartLevel("", "MOD/mainmap.xml","v2 car", "v1 car" .. currentCar)
+					StartLevel("", "MOD/mainmap.xml","v2 car", "v1 car" .. currentCar)
 			else
 				if GetBool("savegame.mod.v1") then
-				StartLevel("", "MOD/mainmap.xml","v1 car" .. currentCar)
+					StartLevel("", "MOD/mainmap.xml","v1 car" .. currentCar)
 			else
 				if GetBool("savegame.mod.v2") then
-				StartLevel("", "MOD/mainmap.xml","v2 car" .. currentCar)
+					StartLevel("", "MOD/mainmap.xml","v2 car" .. currentCar)
 			else
-				StartLevel("", "MOD/mainmap.xml" .. currentCar)
+				StartLevel("", "MOD/mainmap.xml","car" .. currentCar)
 
 
 
