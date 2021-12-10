@@ -2,3 +2,4 @@ name = FireFighting Simulator
 author = GGProGaming; GameCat; Rubikow
 description = A fun but simple fire fighting tycoon styled map where you can fight fires, buy upgrades, furnish your fire station and more! Recommended to play with no mods enabled. WORK IN PROGRESS:)
 tags = Map, Gameplay
+[noupload]

@@ -47,11 +47,7 @@
 	</group>
 	<group id_="414016192" open_="true" name="Basic">
 		<script id_="508328256" file="sandbox.lua"/>
-<<<<<<< Updated upstream
-		<environment id_="1735761408" template="night" skyboxrot="-45"/>
-=======
 		<environment id_="1735761408" template="sunset" skyboxrot="-45"/>
->>>>>>> Stashed changes
 		<boundary id_="1800449280" pos="35.0 0.0 0.0">
 			<vertex pos="-157.10001 -81.2"/>
 			<vertex pos="102.5 -81.0"/>
@@ -59,11 +55,7 @@
 			<vertex pos="-164.7 92.1"/>
 		</boundary>
 		<script id_="1475502080" file="main.lua"/>
-<<<<<<< Updated upstream
-		<spawnpoint id_="123149664" pos="89.1 0.5 -35.1" rot="0.0 0.0 0.0"/>
-=======
 		<spawnpoint id_="123149664" pos="-88.9 0.5 -34.8" rot="0.0 0.0 0.0"/>
->>>>>>> Stashed changes
 		<group id_="524582144" open_="true" name="Music" layer="v1">
 			<trigger id_="1334656512" name="bgm" tags="bgm" pos="0.0 -64.7 0.0" type="box" size="500 500 500" sound="MOD/snd/tycoonV3.ogg"/>
 		</group>
@@ -883,14 +875,14 @@
 						<voxbox id_="1432704384" pos="-3.9 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 39" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall2" material="wood"/>
 					</group>
 				</group>
-				<group id_="1352745600" name="Decoration emply" rot="0.0 0.0 0.0">
+				<group id_="1352745600" open_="true" name="Decoration emply" rot="0.0 0.0 0.0">
 					<vox id_="1905051136" pos="5.6 0.3 -3.8" rot="0.0 -90.0 0.0" file="MOD/main/Furniture/Kitchen/basic.vox" object="Kitchen wood"/>
 					<vox id_="1643677696" pos="7.5 0.3 -2.5" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="975104128" pos="7.5 1.0 -2.5" rot="0.0 -90.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="211169888" pos="1.3 1.2 -0.2" rot="0.0 -70.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="1054604160" pos="1.5 0.3 -0.3" rot="0.0 -90.0 0.0" texture="5" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="medium"/>
 					<vox id_="1001844416" pos="0.9 0.3 -4.6" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
-					<vox id_="403923008" pos="-0.7 0.3 -4.8" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
+					<vox id_="403923008" pos="2.3 0.3 -3.8" rot="0.0 -160.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<vox id_="542933376" pos="7.4 0.3 0.3" rot="0.0 -110.0 0.0" prop="true" file="MOD/main/assets tuxedolabs/props/crates.vox" object="tiny"/>
 					<group id_="751874880" name="Lights">
 						<voxbox id_="1597734144" pos="1.8 4.4 1.8" rot="0.0 0.0 0.0" size="1 1 1" brush="MOD/main/Furniture/Kitchen/basic.vox" object="Light">
@@ -963,6 +955,92 @@
 				<voxbox id_="1038546816" pos="3.3 0.7 33.2" rot="0.0 0.0 0.0" texture="6" size="2 1 21" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="rock"/>
 			</voxbox>
 			<voxbox id_="1728945152" pos="-49.6 -0.01 -31.3" rot="0.0 -90.0 0.0" texture="1 0.5" size="371 5 199" brush="MOD/main/Structure/Houses/Structure/Gardens.vox" object="Grass 1"/>
+		</group>
+		<group id_="1251158656" open_="true" name="Light">
+			<vox id_="1731370240" pos="-14.2 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1928514560" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="315181856" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="783530688" pos="-25.0 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="37357800" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="758232256" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1079443840" pos="10.7 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1898038400" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="975759488" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="596479552" pos="21.5 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1439913856" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="2144796544" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1150816896" pos="46.3 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="845269376" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="2142633728" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1557885824" pos="57.09999 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="444295648" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="889836608" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="25953840" pos="81.7 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1200758400" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="72814944" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="154412240" pos="91.29999 0.5 3.5" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1376143360" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="378165792" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1830466688" pos="91.39999 0.5 -29.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1866120448" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="111942320" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1573615360" pos="56.09999 0.5 -29.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="964945408" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="638949440" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="510491072" pos="21.19999 0.5 -29.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="721202176" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="1544450048" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="2020729344" pos="-14.10001 0.5 -29.9" rot="0.0 90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="702916480" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="754562048" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1333804544" pos="61.4 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1433556480" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="1273638784" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1439586048" pos="72.2 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="497841856" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="1294021760" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1264790912" pos="43.8 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="422077600" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="74518976" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="793886016" pos="23.5 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="2025710336" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="303056960" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="838322112" pos="-8.3 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="634558272" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="1245653248" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="758363328" pos="2.5 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="491287840" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="383802240" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="2062281600" pos="-19.9 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1811001344" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="33556480" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1393904768" pos="93.1 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="304760992" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="567052096" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
+			<vox id_="1218978432" pos="103.09998 0.5 -40.3" rot="0.0 -90.0 0.0" file="MOD/main/Structure/Houses/Structure/Gardens.vox" object="light">
+				<light id_="1568699904" pos="1.0 8.0 0.1" rot="90.0 0.0 40.0" type="cone" scale="10"/>
+				<light id_="582060736" pos="-1.0 8.0 0.1" rot="90.0 -180.0 30.0" type="cone" scale="7"/>
+			</vox>
 		</group>
 	</group>
 	<group id_="1578465408" open_="true" name="Houses">
@@ -3910,8 +3988,8 @@
 				</group>
 			</group>
 		</group>
-		<group id_="1827320704" name="Model 1" pos="-11.5 0.6 -19.0" rot="0.0 180.0 0.0">
-			<group id_="1434473984" name="Structure">
+		<group id_="1827320704" open_="true" name="Model 1" pos="-11.5 0.6 -19.0" rot="0.0 180.0 0.0">
+			<group id_="1434473984" open_="true" name="Structure">
 				<group id_="744010112" open_="true" name="Roof">
 					<voxbox id_="1446008960" pos="-0.8 4.2 -6.6" rot="0.0 0.0 0.0" texture="1" size="49 31 107" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
 					<voxbox id_="1828172800" pos="9.2 4.2 4.1" rot="0.0 180.0 0.0" texture="1" size="51 31 106" brush="MOD/main/Structure/Houses/Structure/roofs.vox" object="Green"/>
@@ -3928,7 +4006,7 @@
 						<vertex pos="-0.9 4.3"/>
 					</voxagon>
 				</group>
-				<group id_="719498112" name="Walls">
+				<group id_="719498112" open_="true" name="Walls">
 					<voxbox id_="1482056064" pos="-0.1 0.0 -5.4" rot="0.0 90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
 					<voxbox id_="1749786880" pos="8.1 0.0 -5.5" rot="0.0 0.0 0.0" size="2 42 68" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
 					<voxbox id_="619680704" pos="8.2 0.0 1.2" rot="0.0 -90.0 0.0" size="2 42 83" brush="MOD/main/Structure/Houses/Structure/Exterior walls.vox" object="Exterior wall 1"/>
@@ -3949,7 +4027,7 @@
 						<voxbox id_="432629536" pos="0.2 0.3 -5.4" rot="0.0 0.0 0.0" size="1 39 66" brush="MOD/main/Structure" material="wood"/>
 					</group>
 					<voxbox id_="2138177024" pos="8.0 0.3 0.8" rot="0.0 -90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
-					<voxbox id_="2040718976" pos="0.3 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 80" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
+					<voxbox id_="2040718976" pos="0.3 0.3 -5.0" rot="0.0 90.0 0.0" size="4 39 79" brush="MOD/main/Structure/Houses/Structure/Interior walls.vox" object="Wall1" material="wood"/>
 				</group>
 				<group id_="915200576" name="Floor">
 					<voxbox id_="914872832" pos="0.0 0.0 -5.4" rot="0.0 0.0 0.0" size="81 3 91" brush="MOD/main/Structure/Houses/Structure/Floors2.vox" object="Wood1"/>
@@ -4963,12 +5041,8 @@
 	</group>
 	<layers>
 		<layer name="scripts" visible="true"/>
-		<layer name="v1" visible="false"/>
-<<<<<<< Updated upstream
+		<layer name="v1" visible="true"/>
 		<layer name="v2" visible="true"/>
-=======
-		<layer name="v2" visible="false"/>
->>>>>>> Stashed changes
 		<layer name="Furnishings" visible="false"/>
 	</layers>
 </scene>
